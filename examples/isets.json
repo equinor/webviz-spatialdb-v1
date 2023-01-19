@@ -1,0 +1,4619 @@
+[
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 258,
+    "interpretSetName": "G-1_AY_GOC_iSet",
+    "insertDate": "2022-05-25T14:35:24",
+    "insertUser": "TNHE",
+    "updateDate": "2022-05-25T14:35:24",
+    "updateUser": "TNHE"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 228,
+    "interpretSetName": "G-40 CY1_MWP_sval",
+    "insertDate": "2021-10-19T10:00:40",
+    "insertUser": "SVALV",
+    "updateDate": "2021-10-19T10:01:01",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 224,
+    "interpretSetName": "G-38_BY_iSet",
+    "insertDate": "2021-09-16T10:01:10",
+    "insertUser": "TNHE",
+    "updateDate": "2021-09-16T10:01:10",
+    "updateUser": "TNHE"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 222,
+    "interpretSetName": "sval_AMAP2021",
+    "insertDate": "2021-06-30T12:12:07",
+    "insertUser": "SVALV",
+    "updateDate": "2021-06-30T12:12:18",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 220,
+    "interpretSetName": "mfare_Summer_intern_2021",
+    "insertDate": "2021-06-18T13:23:12",
+    "insertUser": "MFARE",
+    "updateDate": "2021-06-18T13:23:27",
+    "updateUser": "MFARE"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 219,
+    "interpretSetName": "EMCR_ISet_001",
+    "insertDate": "2021-03-02T13:31:35",
+    "insertUser": "EMCR",
+    "updateDate": "2021-03-02T13:31:36",
+    "updateUser": "EMCR"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 216,
+    "interpretSetName": "sval_jan2021",
+    "insertDate": "2021-01-05T15:08:53",
+    "insertUser": "SVALV",
+    "updateDate": "2021-01-05T15:09:05",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 214,
+    "interpretSetName": "put_G-13CY",
+    "insertDate": "2020-12-28T16:52:58",
+    "insertUser": "PUT",
+    "updateDate": "2020-12-30T12:48:54",
+    "updateUser": "PUT"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 205,
+    "interpretSetName": "put_Grane_G13_General",
+    "insertDate": "2020-08-24T13:02:35",
+    "insertUser": "PUT",
+    "updateDate": "2020-08-24T13:02:51",
+    "updateUser": "PUT"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 203,
+    "interpretSetName": "put_Grane_G13_RNS_points",
+    "insertDate": "2020-08-18T14:09:57",
+    "insertUser": "PUT",
+    "updateDate": "2020-08-18T14:25:09",
+    "updateUser": "PUT"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 201,
+    "interpretSetName": "ISet_ebkr_Grane20",
+    "insertDate": "2020-08-05T13:17:58",
+    "insertUser": "EBKR",
+    "updateDate": "2020-08-05T13:18:15",
+    "updateUser": "EBKR"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 200,
+    "interpretSetName": "EBKR_ISet_Graneproj20_2",
+    "insertDate": "2020-07-07T15:31:10",
+    "insertUser": "EBKR",
+    "updateDate": "2020-07-07T15:31:10",
+    "updateUser": "EBKR"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 197,
+    "interpretSetName": "TNHE G-29 Data Quality",
+    "insertDate": "2020-06-04T07:06:28",
+    "insertUser": "TNHE",
+    "updateDate": "2020-06-04T07:06:37",
+    "updateUser": "TNHE"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 196,
+    "interpretSetName": "G-29 Data Quailty Study",
+    "insertDate": "2020-05-28T13:12:35",
+    "insertUser": "TNHE",
+    "updateDate": "2020-05-28T13:12:44",
+    "updateUser": "TNHE"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 195,
+    "interpretSetName": "TNHE_Overburden_Monitoring",
+    "insertDate": "2020-05-28T12:41:27",
+    "insertUser": "TNHE",
+    "updateDate": "2020-05-28T12:41:36",
+    "updateUser": "TNHE"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 194,
+    "interpretSetName": "TNHE_Grane_Basics",
+    "insertDate": "2020-05-15T07:30:03",
+    "insertUser": "TNHE",
+    "updateDate": "2020-05-15T07:30:20",
+    "updateUser": "TNHE"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 193,
+    "interpretSetName": "TNHE_PRM10_DECIMATION",
+    "insertDate": "2020-05-15T07:10:17",
+    "insertUser": "TNHE",
+    "updateDate": "2020-05-15T07:22:57",
+    "updateUser": "TNHE"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 191,
+    "interpretSetName": "ISet",
+    "insertDate": "2020-04-21T10:46:04",
+    "insertUser": "RAON",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 189,
+    "interpretSetName": "sval_G-26AY",
+    "insertDate": "2020-02-24T07:15:09",
+    "insertUser": "SVALV",
+    "updateDate": "2020-09-11T17:40:58",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 176,
+    "interpretSetName": "SVAL_G10DG2",
+    "insertDate": "2019-01-15T12:45:55",
+    "insertUser": "SVALV",
+    "updateDate": "2019-01-15T12:45:55",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 158,
+    "interpretSetName": "SVAL_april2018",
+    "insertDate": "2018-04-04T12:56:28",
+    "insertUser": "SVALV",
+    "updateDate": "2018-04-04T12:56:28",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 152,
+    "interpretSetName": "thrau_G5",
+    "insertDate": "2018-02-23T09:21:20",
+    "insertUser": "THRAU",
+    "updateDate": "2018-02-23T09:21:40",
+    "updateUser": "THRAU"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 145,
+    "interpretSetName": "sval_g35_des17",
+    "insertDate": "2017-12-06T14:02:33",
+    "insertUser": "SVALV",
+    "updateDate": "2017-12-06T14:02:33",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 144,
+    "interpretSetName": "SVAL_G-35B_nov",
+    "insertDate": "2017-11-29T09:21:11",
+    "insertUser": "SVALV",
+    "updateDate": "2017-11-29T09:21:11",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 143,
+    "interpretSetName": "SVAL_G5C_nov17",
+    "insertDate": "2017-11-29T09:20:40",
+    "insertUser": "SVALV",
+    "updateDate": "2017-11-29T09:20:41",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 141,
+    "interpretSetName": "SVAL_okt17",
+    "insertDate": "2017-10-17T13:00:59",
+    "insertUser": "SVALV",
+    "updateDate": "2017-10-17T13:00:59",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 129,
+    "interpretSetName": "SVAL_G39",
+    "insertDate": "2017-06-21T09:07:36",
+    "insertUser": "SVALV",
+    "updateDate": "2017-06-21T09:07:36",
+    "updateUser": "SVALV"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 124,
+    "interpretSetName": "OYLAR_ISet_URMC",
+    "insertDate": "2017-04-19T07:57:47",
+    "insertUser": "OYLARS",
+    "updateDate": "2017-04-19T07:57:48",
+    "updateUser": "OYLARS"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 80,
+    "interpretSetName": "PS_Statics_ST14221",
+    "insertDate": "2015-10-02T12:37:21",
+    "insertUser": "HMZ",
+    "updateDate": "2015-10-02T12:37:32",
+    "updateUser": "HMZ"
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 72,
+    "interpretSetName": "ISet",
+    "insertDate": "2015-06-12T08:18:01",
+    "insertUser": "TRONAN",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 3,
+    "interpretationSetId": 71,
+    "interpretSetName": "FINAL DELIVERIES 4D 2013",
+    "insertDate": "2015-05-22T13:02:21",
+    "insertUser": "SSRO",
+    "updateDate": "2015-05-22T13:03:38",
+    "updateUser": "SSRO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 535,
+    "interpretSetName": "CMAP_msatr_220927",
+    "insertDate": "2022-09-27T08:48:31",
+    "insertUser": "MSATR",
+    "updateDate": "2022-09-27T08:48:31",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 534,
+    "interpretSetName": "joskol_Q_2_backup",
+    "insertDate": "2022-09-26T12:56:12",
+    "insertUser": "JOSKOL",
+    "updateDate": "2022-09-26T12:56:12",
+    "updateUser": "JOSKOL"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 533,
+    "interpretSetName": "B-27B_GOC_Iset",
+    "insertDate": "2022-09-19T12:02:09",
+    "insertUser": "MEDI",
+    "updateDate": "2022-09-19T12:02:34",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 532,
+    "interpretSetName": "SF_CMAP_Tiles_TVM_Sept2022",
+    "insertDate": "2022-09-06T11:12:46",
+    "insertUser": "TVM",
+    "updateDate": "2022-09-06T11:12:46",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 531,
+    "interpretSetName": "AnystLundeBacup",
+    "insertDate": "2022-08-25T08:53:21",
+    "insertUser": "ANYST",
+    "updateDate": "2022-08-25T08:53:29",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 530,
+    "interpretSetName": "pthom_B40B_Aanullus_Aug22",
+    "insertDate": "2022-08-18T10:18:53",
+    "insertUser": "PTHOM",
+    "updateDate": "2022-08-18T10:19:24",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 529,
+    "interpretSetName": "ISet_Aug2022_prosa_B41B",
+    "insertDate": "2022-08-08T16:57:00",
+    "insertUser": "PROSA",
+    "updateDate": "2022-08-08T16:57:00",
+    "updateUser": "PROSA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 527,
+    "interpretSetName": "Vs_profile_Summer22",
+    "insertDate": "2022-07-12T10:58:54",
+    "insertUser": "PTHOM",
+    "updateDate": "2022-07-12T10:58:54",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 526,
+    "interpretSetName": "SSRO_ISet_test",
+    "insertDate": "2022-06-28T13:41:04",
+    "insertUser": "SSRO",
+    "updateDate": "2022-06-28T13:41:04",
+    "updateUser": "SSRO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 525,
+    "interpretSetName": "Sommerstudenter2022 - overlagring",
+    "insertDate": "2022-06-23T14:38:35",
+    "insertUser": "TVM",
+    "updateDate": "2022-06-24T09:33:52",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 524,
+    "interpretSetName": "ANYST_ISet_LundeBackup",
+    "insertDate": "2022-06-21T14:45:34",
+    "insertUser": "ANYST",
+    "updateDate": "2022-06-21T14:45:34",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 523,
+    "interpretSetName": "01_btra_GFS_Statfjord",
+    "insertDate": "2022-06-21T08:18:22",
+    "insertUser": "BTRA",
+    "updateDate": "2022-06-21T08:18:39",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 522,
+    "interpretSetName": "01_btra_GFS_Brent",
+    "insertDate": "2022-06-21T07:57:48",
+    "insertUser": "BTRA",
+    "updateDate": "2022-06-21T08:12:33",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 521,
+    "interpretSetName": "34_10_A_41_C_GOC",
+    "insertDate": "2022-06-20T13:28:50",
+    "insertUser": "PTHOM",
+    "updateDate": "2022-06-20T13:28:51",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 520,
+    "interpretSetName": "01_GFSor_General",
+    "insertDate": "2022-06-17T10:21:20",
+    "insertUser": "BTRA",
+    "updateDate": "2022-06-17T10:21:37",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 519,
+    "interpretSetName": "01_Btra_4D_2011",
+    "insertDate": "2022-06-17T08:42:51",
+    "insertUser": "BTRA",
+    "updateDate": "2022-06-17T08:43:21",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 518,
+    "interpretSetName": "01_Btra_GFS_4D",
+    "insertDate": "2022-06-17T07:42:26",
+    "insertUser": "BTRA",
+    "updateDate": "2022-06-17T07:42:43",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 517,
+    "interpretSetName": "msatr_G_1_wellpath",
+    "insertDate": "2022-06-14T09:16:24",
+    "insertUser": "MSATR",
+    "updateDate": "2022-06-14T09:16:25",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 516,
+    "interpretSetName": "K-4_CH_DG0",
+    "insertDate": "2022-06-09T13:44:55",
+    "insertUser": "SSRO",
+    "updateDate": "2022-06-09T13:44:55",
+    "updateUser": "SSRO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 515,
+    "interpretSetName": "220225_A_7C_iset_bcup",
+    "insertDate": "2022-05-25T10:00:37",
+    "insertUser": "MSATR",
+    "updateDate": "2022-05-25T10:00:37",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 514,
+    "interpretSetName": "3410_I_3_BH_RF_Brent_2022",
+    "insertDate": "2022-05-24T08:37:55",
+    "insertUser": "ANYST",
+    "updateDate": "2022-05-24T08:38:23",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 513,
+    "interpretSetName": "PTHOM_A29B_ow2",
+    "insertDate": "2022-05-18T14:51:03",
+    "insertUser": "PTHOM",
+    "updateDate": "2022-05-18T14:51:03",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 512,
+    "interpretSetName": "01_btra_Lunde_GFS_Well_Planning",
+    "insertDate": "2022-05-18T07:43:04",
+    "insertUser": "BTRA",
+    "updateDate": "2022-05-18T07:43:34",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 511,
+    "interpretSetName": "RimfaksToMartin",
+    "insertDate": "2022-05-13T13:43:56",
+    "insertUser": "ANYST",
+    "updateDate": "2022-05-13T13:44:07",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 510,
+    "interpretSetName": "pthom_ISet_A29B",
+    "insertDate": "2022-05-11T09:52:29",
+    "insertUser": "PTHOM",
+    "updateDate": "2022-05-11T09:52:30",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 509,
+    "interpretSetName": "B_41B_msat",
+    "insertDate": "2022-05-04T10:23:10",
+    "insertUser": "MSATR",
+    "updateDate": "2022-05-04T10:23:10",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 508,
+    "interpretSetName": "ISet6",
+    "insertDate": "2022-04-06T14:32:37",
+    "insertUser": "AEKE",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 507,
+    "interpretSetName": "A-41C_GOC",
+    "insertDate": "2022-04-05T09:56:26",
+    "insertUser": "PTHOM",
+    "updateDate": "2022-04-05T09:56:26",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 505,
+    "interpretSetName": "01_EQ20M13_GFSor",
+    "insertDate": "2022-04-04T08:01:50",
+    "insertUser": "BTRA",
+    "updateDate": "2022-04-04T08:02:32",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 501,
+    "interpretSetName": "ISet UIB data 2022",
+    "insertDate": "2022-03-21T10:27:30",
+    "insertUser": "TVM",
+    "updateDate": "2022-03-21T10:28:12",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 498,
+    "interpretSetName": "CLLO_Solan_Ludvig",
+    "insertDate": "2022-03-14T12:44:35",
+    "insertUser": "CLLO",
+    "updateDate": "2022-03-14T13:44:41",
+    "updateUser": "CLLO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 496,
+    "interpretSetName": "WellPlanning_C40B",
+    "insertDate": "2022-03-07T14:47:48",
+    "insertUser": "MALEO",
+    "updateDate": "2022-03-07T14:49:19",
+    "updateUser": "MALEO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 495,
+    "interpretSetName": "B_5B",
+    "insertDate": "2022-03-03T11:47:54",
+    "insertUser": "MSATR",
+    "updateDate": "2022-03-03T11:47:54",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 494,
+    "interpretSetName": "rpf_test_rg_ds2022",
+    "insertDate": "2022-02-15T14:24:54",
+    "insertUser": "PROSA",
+    "updateDate": "2022-02-15T14:24:55",
+    "updateUser": "PROSA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 493,
+    "interpretSetName": "01_GFSor_Lunde",
+    "insertDate": "2022-02-10T10:14:57",
+    "insertUser": "BTRA",
+    "updateDate": "2022-02-10T10:15:25",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 492,
+    "interpretSetName": "eask_A-17B_GOC",
+    "insertDate": "2022-02-09T13:07:55",
+    "insertUser": "EASK",
+    "updateDate": "2022-02-09T13:07:55",
+    "updateUser": "EASK"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 491,
+    "interpretSetName": "eask_A-17B_250321",
+    "insertDate": "2022-02-07T13:49:18",
+    "insertUser": "EASK",
+    "updateDate": "2022-02-07T13:49:19",
+    "updateUser": "EASK"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 490,
+    "interpretSetName": "pthom_B5AT3",
+    "insertDate": "2022-02-02T11:48:03",
+    "insertUser": "PTHOM",
+    "updateDate": "2022-02-02T11:48:04",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 489,
+    "interpretSetName": "ISet4",
+    "insertDate": "2022-01-27T15:01:16",
+    "insertUser": "ANYST",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 488,
+    "interpretSetName": "PTHOM_E2_int",
+    "insertDate": "2022-01-25T15:09:59",
+    "insertUser": "PTHOM",
+    "updateDate": "2022-01-25T15:09:59",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 487,
+    "interpretSetName": "EASK_A-42A_WellPlan_250122",
+    "insertDate": "2022-01-25T11:38:27",
+    "insertUser": "EASK",
+    "updateDate": "2022-01-25T11:38:27",
+    "updateUser": "EASK"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 486,
+    "interpretSetName": "PROSA_AMAP2022",
+    "insertDate": "2022-01-24T12:26:15",
+    "insertUser": "PROSA",
+    "updateDate": "2022-01-24T12:26:15",
+    "updateUser": "PROSA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 485,
+    "interpretSetName": "ISet3",
+    "insertDate": "2022-01-18T17:04:16",
+    "insertUser": "ANYST",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 484,
+    "interpretSetName": "01_GF SAT AIM",
+    "insertDate": "2022-01-18T13:23:53",
+    "insertUser": "ANYST",
+    "updateDate": "2022-01-18T13:24:29",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 483,
+    "interpretSetName": "A-7C_iset",
+    "insertDate": "2022-01-17T13:43:02",
+    "insertUser": "MSATR",
+    "updateDate": "2022-01-17T13:43:02",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 481,
+    "interpretSetName": "PROSA_ISet_A7C_2022",
+    "insertDate": "2022-01-07T14:12:53",
+    "insertUser": "PROSA",
+    "updateDate": "2022-01-07T14:12:54",
+    "updateUser": "PROSA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 480,
+    "interpretSetName": "PROSA_ISet_B41B_2022",
+    "insertDate": "2022-01-07T14:06:20",
+    "insertUser": "PROSA",
+    "updateDate": "2022-01-07T14:06:20",
+    "updateUser": "PROSA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 479,
+    "interpretSetName": "eask_A-42A",
+    "insertDate": "2022-01-06T14:07:46",
+    "insertUser": "EASK",
+    "updateDate": "2022-01-06T14:07:46",
+    "updateUser": "EASK"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 478,
+    "interpretSetName": "well_maturation_B_41B",
+    "insertDate": "2022-01-06T09:37:35",
+    "insertUser": "MSATR",
+    "updateDate": "2022-01-06T09:37:35",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 477,
+    "interpretSetName": "msatr_B_41B",
+    "insertDate": "2022-01-05T10:22:32",
+    "insertUser": "MSATR",
+    "updateDate": "2022-01-05T10:22:32",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 476,
+    "interpretSetName": "A-17B_GOC",
+    "insertDate": "2021-12-14T14:46:31",
+    "insertUser": "PTHOM",
+    "updateDate": "2021-12-14T14:46:31",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 475,
+    "interpretSetName": "01_F-1 AH_GFS_Statfjord",
+    "insertDate": "2021-12-14T11:59:52",
+    "insertUser": "BTRA",
+    "updateDate": "2021-12-14T12:00:41",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 474,
+    "interpretSetName": "PTHOM_A17B",
+    "insertDate": "2021-12-13T14:50:46",
+    "insertUser": "PTHOM",
+    "updateDate": "2021-12-13T14:50:46",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 473,
+    "interpretSetName": "01_TFL_Thinned_Fault_Likelihood_cubes",
+    "insertDate": "2021-12-08T08:51:56",
+    "insertUser": "MALEO",
+    "updateDate": "2021-12-08T08:52:21",
+    "updateUser": "MALEO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 471,
+    "interpretSetName": "B-18 AT3_GOC",
+    "insertDate": "2021-11-29T08:38:17",
+    "insertUser": "PTHOM",
+    "updateDate": "2021-11-29T08:38:17",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 470,
+    "interpretSetName": "Anyst_H_SolanLudvig",
+    "insertDate": "2021-11-26T15:02:35",
+    "insertUser": "ANYST",
+    "updateDate": "2021-11-26T15:02:58",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 467,
+    "interpretSetName": "ISet5",
+    "insertDate": "2021-11-22T16:16:17",
+    "insertUser": "EASK",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 466,
+    "interpretSetName": "eask_B-27B_well correlation",
+    "insertDate": "2021-11-22T16:15:06",
+    "insertUser": "EASK",
+    "updateDate": "2021-11-22T16:15:44",
+    "updateUser": "EASK"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 465,
+    "interpretSetName": "01_AVO_Avocado_(emg or jlei)",
+    "insertDate": "2021-11-18T15:50:58",
+    "insertUser": "MALEO",
+    "updateDate": "2022-03-02T09:43:29",
+    "updateUser": "MALEO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 464,
+    "interpretSetName": "B-41B_PBTH74_AMAP22",
+    "insertDate": "2021-11-02T10:21:39",
+    "insertUser": "MEDI",
+    "updateDate": "2021-11-02T10:21:56",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 463,
+    "interpretSetName": "ISet4",
+    "insertDate": "2021-10-07T12:59:20",
+    "insertUser": "MEDI",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 462,
+    "interpretSetName": "MEDI_RAm-AMAP",
+    "insertDate": "2021-10-06T09:25:28",
+    "insertUser": "MEDI",
+    "updateDate": "2021-10-06T09:25:28",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 461,
+    "interpretSetName": "Anyst_Lunde",
+    "insertDate": "2021-09-09T09:02:47",
+    "insertUser": "ANYST",
+    "updateDate": "2021-09-09T09:02:56",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 460,
+    "interpretSetName": "01_WCP_GFMain_C-29_AB_AnatasLw_Lomvi",
+    "insertDate": "2021-09-08T08:58:38",
+    "insertUser": "MALEO",
+    "updateDate": "2021-12-01T12:42:30",
+    "updateUser": "MALEO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 459,
+    "interpretSetName": "bous_B27",
+    "insertDate": "2021-08-30T10:11:54",
+    "insertUser": "BOUS",
+    "updateDate": "2021-08-30T10:12:43",
+    "updateUser": "BOUS"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 458,
+    "interpretSetName": "01_GIS",
+    "insertDate": "2021-08-25T10:18:06",
+    "insertUser": "ANYST",
+    "updateDate": "2021-08-25T10:18:15",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 457,
+    "interpretSetName": "Gullveig2021",
+    "insertDate": "2021-08-20T11:58:34",
+    "insertUser": "ORIR",
+    "updateDate": "2021-08-20T11:58:39",
+    "updateUser": "ORIR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 456,
+    "interpretSetName": "bous_B27B_session",
+    "insertDate": "2021-08-19T13:55:17",
+    "insertUser": "BOUS",
+    "updateDate": "2021-08-30T10:12:06",
+    "updateUser": "BOUS"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 455,
+    "interpretSetName": "ISet2",
+    "insertDate": "2021-08-19T11:52:55",
+    "insertUser": "ANYST",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 454,
+    "interpretSetName": "ANYST_ISet_Overburden13082021",
+    "insertDate": "2021-08-13T08:48:33",
+    "insertUser": "ANYST",
+    "updateDate": "2021-08-13T08:48:33",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 453,
+    "interpretSetName": "Anyst_WorkingBackup",
+    "insertDate": "2021-08-12T08:42:28",
+    "insertUser": "ANYST",
+    "updateDate": "2021-08-12T08:42:45",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 452,
+    "interpretSetName": "PTHOM_A43C_CT2_DS",
+    "insertDate": "2021-07-14T08:29:10",
+    "insertUser": "PTHOM",
+    "updateDate": "2021-07-14T08:29:10",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 451,
+    "interpretSetName": "B27_WellPlanning",
+    "insertDate": "2021-07-08T16:30:32",
+    "insertUser": "BOUS",
+    "updateDate": "2021-07-08T16:30:47",
+    "updateUser": "BOUS"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 449,
+    "interpretSetName": "PUB_ISet_A-43CT3_prosa",
+    "insertDate": "2021-06-28T10:39:20",
+    "insertUser": "PROSA",
+    "updateDate": "2021-06-28T10:39:21",
+    "updateUser": "PROSA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 447,
+    "interpretSetName": "GFHF_Seismic_Multiples_ISET",
+    "insertDate": "2021-06-25T14:39:21",
+    "insertUser": "ANNF",
+    "updateDate": "2021-06-25T14:40:11",
+    "updateUser": "ANNF"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 446,
+    "interpretSetName": "ISet",
+    "insertDate": "2021-06-24T11:55:32",
+    "insertUser": "ORIR",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 445,
+    "interpretSetName": "msatr_210622_A43_CT3",
+    "insertDate": "2021-06-22T09:18:42",
+    "insertUser": "MSATR",
+    "updateDate": "2021-06-22T09:18:42",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 444,
+    "interpretSetName": "GFMain_RAM",
+    "insertDate": "2021-06-10T08:25:18",
+    "insertUser": "MEDI",
+    "updateDate": "2021-06-10T08:25:31",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 441,
+    "interpretSetName": "KRSO_ISet_001",
+    "insertDate": "2021-05-06T10:21:47",
+    "insertUser": "KRSO",
+    "updateDate": "2021-05-06T10:21:47",
+    "updateUser": "KRSO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 438,
+    "interpretSetName": "TVM_POZO_ISet_rev0",
+    "insertDate": "2021-04-28T14:17:56",
+    "insertUser": "TVM",
+    "updateDate": "2021-04-28T14:21:28",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 435,
+    "interpretSetName": "B-27B_PXTG64",
+    "insertDate": "2021-03-29T10:17:44",
+    "insertUser": "MEDI",
+    "updateDate": "2021-03-29T10:17:55",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 434,
+    "interpretSetName": "ISet",
+    "insertDate": "2021-03-09T15:30:50",
+    "insertUser": "ACHIR",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 433,
+    "interpretSetName": "WellPlanning_B9B",
+    "insertDate": "2021-03-04T17:25:13",
+    "insertUser": "BOUS",
+    "updateDate": "2021-03-04T17:25:22",
+    "updateUser": "BOUS"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 432,
+    "interpretSetName": "Sonto_tiles",
+    "insertDate": "2021-03-04T13:47:26",
+    "insertUser": "SONTO",
+    "updateDate": "2021-03-04T13:47:30",
+    "updateUser": "SONTO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 430,
+    "interpretSetName": "01_APx_GFMain_Anatas_Onyx",
+    "insertDate": "2021-03-03T08:59:36",
+    "insertUser": "MALEO",
+    "updateDate": "2021-03-03T09:01:01",
+    "updateUser": "MALEO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 429,
+    "interpretSetName": "GiSi_4D_Analysis_2019_upd",
+    "insertDate": "2021-02-15T11:14:03",
+    "insertUser": "SSRO",
+    "updateDate": "2021-02-15T11:14:03",
+    "updateUser": "SSRO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 428,
+    "interpretSetName": "PTHOM_A-29B_ISet",
+    "insertDate": "2021-02-10T15:16:03",
+    "insertUser": "PTHOM",
+    "updateDate": "2021-02-10T15:16:03",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 427,
+    "interpretSetName": "Skinfaks_South_J-1/N-5",
+    "insertDate": "2021-02-10T14:02:59",
+    "insertUser": "ORIR",
+    "updateDate": "2021-02-17T11:44:30",
+    "updateUser": "ORIR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 426,
+    "interpretSetName": "01_WCP_GiSi_C-51A_DW611_2021-02",
+    "insertDate": "2021-02-08T09:26:18",
+    "insertUser": "MALEO",
+    "updateDate": "2021-02-08T09:49:24",
+    "updateUser": "MALEO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 425,
+    "interpretSetName": "4D_and_AmpMap_26Jan",
+    "insertDate": "2021-01-26T13:33:10",
+    "insertUser": "MSATR",
+    "updateDate": "2021-01-26T13:33:10",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 424,
+    "interpretSetName": "A_43C_25Jan21",
+    "insertDate": "2021-01-25T13:12:31",
+    "insertUser": "MSATR",
+    "updateDate": "2021-01-25T13:12:32",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 422,
+    "interpretSetName": "A-43C_iset_15jan21",
+    "insertDate": "2021-01-15T14:39:35",
+    "insertUser": "MSATR",
+    "updateDate": "2021-01-15T14:39:35",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 421,
+    "interpretSetName": "B-18A_GOC_ISet",
+    "insertDate": "2021-01-08T14:48:16",
+    "insertUser": "PTHOM",
+    "updateDate": "2021-01-08T14:48:50",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 420,
+    "interpretSetName": "GBRU_gis_iSet_test",
+    "insertDate": "2020-12-28T11:09:34",
+    "insertUser": "GBRU",
+    "updateDate": "2020-12-28T11:09:34",
+    "updateUser": "GBRU"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 417,
+    "interpretSetName": "btra_E-1_AH",
+    "insertDate": "2020-12-14T13:47:24",
+    "insertUser": "BTRA",
+    "updateDate": "2020-12-14T13:47:42",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 416,
+    "interpretSetName": "Iset_OMV_expl_Skinfaks N1_N2A",
+    "insertDate": "2020-12-14T07:47:35",
+    "insertUser": "ROLMO",
+    "updateDate": "2020-12-14T07:48:17",
+    "updateUser": "ROLMO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 414,
+    "interpretSetName": "01_GF SAT Overburden 2020",
+    "insertDate": "2020-12-11T13:10:10",
+    "insertUser": "ANYST",
+    "updateDate": "2020-12-11T14:16:02",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 412,
+    "interpretSetName": "btra_H-3Rimfaks",
+    "insertDate": "2020-12-09T08:59:23",
+    "insertUser": "BTRA",
+    "updateDate": "2020-12-09T08:59:40",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 411,
+    "interpretSetName": "btra_Q-2_AH",
+    "insertDate": "2020-12-08T07:02:35",
+    "insertUser": "BTRA",
+    "updateDate": "2021-06-01T08:57:47",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 410,
+    "interpretSetName": "B_37Y2_ISET",
+    "insertDate": "2020-12-04T08:14:02",
+    "insertUser": "RHERR",
+    "updateDate": "2020-12-04T08:14:02",
+    "updateUser": "RHERR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 409,
+    "interpretSetName": "GFSAT_GV_RAM3",
+    "insertDate": "2020-12-01T14:54:48",
+    "insertUser": "SSRO",
+    "updateDate": "2020-12-01T14:54:48",
+    "updateUser": "SSRO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 408,
+    "interpretSetName": "GSYP_Cook_model_2019",
+    "insertDate": "2020-12-01T13:01:35",
+    "insertUser": "GSYP",
+    "updateDate": "2020-12-01T13:01:35",
+    "updateUser": "GSYP"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 407,
+    "interpretSetName": "B_37Y2_extra",
+    "insertDate": "2020-11-15T20:52:44",
+    "insertUser": "MSATR",
+    "updateDate": "2020-11-15T20:52:44",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 406,
+    "interpretSetName": "msatr_A_43C_wellpath",
+    "insertDate": "2020-11-12T10:37:19",
+    "insertUser": "MSATR",
+    "updateDate": "2020-11-12T10:37:19",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 404,
+    "interpretSetName": "SSRO_WesterlyProvince",
+    "insertDate": "2020-11-10T10:17:11",
+    "insertUser": "SSRO",
+    "updateDate": "2020-11-10T10:17:12",
+    "updateUser": "SSRO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 403,
+    "interpretSetName": "msat_201104",
+    "insertDate": "2020-11-04T13:52:59",
+    "insertUser": "MSATR",
+    "updateDate": "2020-11-04T13:52:59",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 401,
+    "interpretSetName": "RHERR_AMAP_Wellplanning",
+    "insertDate": "2020-10-01T12:56:21",
+    "insertUser": "RHERR",
+    "updateDate": "2020-10-01T12:56:21",
+    "updateUser": "RHERR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 400,
+    "interpretSetName": "RHERR_GFA_AMAP",
+    "insertDate": "2020-10-01T12:55:25",
+    "insertUser": "RHERR",
+    "updateDate": "2020-10-01T12:55:25",
+    "updateUser": "RHERR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 399,
+    "interpretSetName": "B-15B_GOC_ISet",
+    "insertDate": "2020-09-30T10:18:13",
+    "insertUser": "PTHOM",
+    "updateDate": "2020-09-30T10:18:13",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 396,
+    "interpretSetName": "ISet1",
+    "insertDate": "2020-09-25T13:51:29",
+    "insertUser": "ANYST",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 392,
+    "interpretSetName": "ISet",
+    "insertDate": "2020-09-22T08:20:14",
+    "insertUser": "MEDI",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 391,
+    "interpretSetName": "btra_O_4_H_Drilling",
+    "insertDate": "2020-09-11T09:50:48",
+    "insertUser": "BTRA",
+    "updateDate": "2020-09-11T09:51:47",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 389,
+    "interpretSetName": "B_15B_GOC_ISet",
+    "insertDate": "2020-09-01T12:41:34",
+    "insertUser": "PTHOM",
+    "updateDate": "2020-09-01T12:41:52",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 388,
+    "interpretSetName": "A-31A_GOC_ISet",
+    "insertDate": "2020-08-25T13:28:01",
+    "insertUser": "PTHOM",
+    "updateDate": "2020-08-25T13:28:45",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 387,
+    "interpretSetName": "RHERR_AMAP",
+    "insertDate": "2020-08-11T08:15:46",
+    "insertUser": "RHERR",
+    "updateDate": "2020-08-11T08:15:46",
+    "updateUser": "RHERR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 386,
+    "interpretSetName": "btra_M-4CH",
+    "insertDate": "2020-07-09T11:34:37",
+    "insertUser": "BTRA",
+    "updateDate": "2020-07-09T11:34:53",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 385,
+    "interpretSetName": "Iset_Cook_gsyp_230620",
+    "insertDate": "2020-06-23T11:32:24",
+    "insertUser": "GSYP",
+    "updateDate": "2020-06-23T11:32:24",
+    "updateUser": "GSYP"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 384,
+    "interpretSetName": "Skinfaks_N-1/N-3/J-3_2020",
+    "insertDate": "2020-06-18T15:09:00",
+    "insertUser": "ORIR",
+    "updateDate": "2021-02-10T14:50:28",
+    "updateUser": "ORIR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 383,
+    "interpretSetName": "01_WCP_GFMain_C-47A_DW6001_2020_05",
+    "insertDate": "2020-05-06T14:26:18",
+    "insertUser": "MEDI",
+    "updateDate": "2020-05-06T14:27:20",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 382,
+    "interpretSetName": "ISet3",
+    "insertDate": "2020-05-06T11:09:11",
+    "insertUser": "MSATR",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 381,
+    "interpretSetName": "GiSi_4D_Analysis_2019",
+    "insertDate": "2020-04-23T17:17:30",
+    "insertUser": "SSRO",
+    "updateDate": "2020-04-23T17:17:31",
+    "updateUser": "SSRO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 379,
+    "interpretSetName": "WCP NO 33/12-N-1/3 B/C/DH",
+    "insertDate": "2020-04-02T07:21:07",
+    "insertUser": "SSRO",
+    "updateDate": "2020-04-02T07:21:07",
+    "updateUser": "SSRO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 378,
+    "interpretSetName": "pthom_A-31A",
+    "insertDate": "2020-03-31T07:56:15",
+    "insertUser": "PTHOM",
+    "updateDate": "2020-03-31T07:56:38",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 377,
+    "interpretSetName": "A_19_B_w_pilot_GOC_iset",
+    "insertDate": "2020-03-25T11:57:04",
+    "insertUser": "MSATR",
+    "updateDate": "2020-03-25T11:57:04",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 375,
+    "interpretSetName": "btrat_G-4_Drilling",
+    "insertDate": "2020-03-16T10:03:52",
+    "insertUser": "BTRA",
+    "updateDate": "2020-03-16T10:04:13",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 374,
+    "interpretSetName": "btra_G-3_drilling",
+    "insertDate": "2020-03-16T09:20:30",
+    "insertUser": "BTRA",
+    "updateDate": "2020-03-16T09:20:51",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 373,
+    "interpretSetName": "MEDI_Statfjord-Lunde-Lomvi_Interp",
+    "insertDate": "2020-03-10T10:21:44",
+    "insertUser": "MEDI",
+    "updateDate": "2020-03-10T10:22:04",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 372,
+    "interpretSetName": "Test2_A_19B_GOC_msat",
+    "insertDate": "2020-03-09T14:49:17",
+    "insertUser": "MSATR",
+    "updateDate": "2020-03-09T14:49:17",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 371,
+    "interpretSetName": "eask_ISet_090321",
+    "insertDate": "2020-03-09T14:15:41",
+    "insertUser": "EASK",
+    "updateDate": "2020-03-09T14:16:14",
+    "updateUser": "EASK"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 369,
+    "interpretSetName": "msat_feasibility_overburden",
+    "insertDate": "2020-03-02T13:33:14",
+    "insertUser": "MSATR",
+    "updateDate": "2020-03-02T13:33:14",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 367,
+    "interpretSetName": "MEDI_L1L2_IntraLundeD3",
+    "insertDate": "2020-02-27T14:49:08",
+    "insertUser": "MEDI",
+    "updateDate": "2020-05-14T09:45:49",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 365,
+    "interpretSetName": "msat_target_hunt",
+    "insertDate": "2020-02-24T12:29:21",
+    "insertUser": "MSATR",
+    "updateDate": "2020-02-24T12:29:22",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 364,
+    "interpretSetName": "02_bckup_GF_HF_Master_ 240220",
+    "insertDate": "2020-02-24T11:58:53",
+    "insertUser": "TVM",
+    "updateDate": "2020-02-24T12:04:09",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 361,
+    "interpretSetName": "ISet",
+    "insertDate": "2020-02-13T09:54:37",
+    "insertUser": "AOBRA",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 360,
+    "interpretSetName": "01_WCP_GFMain_B-17B_PBTG55_DW601_2020_01",
+    "insertDate": "2020-01-30T14:26:58",
+    "insertUser": "ELIGRI",
+    "updateDate": "2020-01-30T14:32:59",
+    "updateUser": "ELIGRI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 359,
+    "interpretSetName": "ISet2",
+    "insertDate": "2020-01-30T14:25:31",
+    "insertUser": "ELIGRI",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 357,
+    "interpretSetName": "msat_4D_work_Tarbert_BCU_200117",
+    "insertDate": "2020-01-17T09:41:03",
+    "insertUser": "MSATR",
+    "updateDate": "2020-01-17T09:41:03",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 355,
+    "interpretSetName": "Anyst_FluidModelling_Skinfaks_2020",
+    "insertDate": "2020-01-16T10:20:48",
+    "insertUser": "ANYST",
+    "updateDate": "2020-01-16T10:21:19",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 354,
+    "interpretSetName": "ISet1",
+    "insertDate": "2020-01-15T11:45:49",
+    "insertUser": "EASK",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 352,
+    "interpretSetName": "GF HF FaultInterp LomviLundeStatfj 2020",
+    "insertDate": "2020-01-14T08:25:25",
+    "insertUser": "MALEO",
+    "updateDate": "2020-01-14T08:26:36",
+    "updateUser": "MALEO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 351,
+    "interpretSetName": "Msat_2019_4D",
+    "insertDate": "2020-01-09T13:58:04",
+    "insertUser": "MSATR",
+    "updateDate": "2020-01-09T13:58:04",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 350,
+    "interpretSetName": "gsyp_GF HF Master Feb2019_Sept2019copy",
+    "insertDate": "2020-01-09T10:03:25",
+    "insertUser": "ANYST",
+    "updateDate": "2020-01-09T10:16:34",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 349,
+    "interpretSetName": "test",
+    "insertDate": "2020-01-08T12:37:09",
+    "insertUser": "ANYST",
+    "updateDate": "2020-01-08T12:37:18",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 348,
+    "interpretSetName": "01_GF SAT Gullveig Master March2019_copy",
+    "insertDate": "2020-01-08T12:36:28",
+    "insertUser": "ANYST",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 347,
+    "interpretSetName": "A_19B_iSet_GOC",
+    "insertDate": "2020-01-06T08:52:29",
+    "insertUser": "MSATR",
+    "updateDate": "2020-01-06T08:52:30",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 346,
+    "interpretSetName": "Backup_iSet_A_19B_GOC",
+    "insertDate": "2020-01-03T14:35:49",
+    "insertUser": "MSATR",
+    "updateDate": "2020-01-03T14:35:49",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 345,
+    "interpretSetName": "A_19B_GOC",
+    "insertDate": "2020-01-02T15:40:14",
+    "insertUser": "MSATR",
+    "updateDate": "2020-01-02T15:40:14",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 344,
+    "interpretSetName": "ISet",
+    "insertDate": "2019-12-20T11:21:56",
+    "insertUser": "ANYST",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 340,
+    "interpretSetName": "B_42_G_GOC_extra",
+    "insertDate": "2019-12-09T08:46:10",
+    "insertUser": "ELIGRI",
+    "updateDate": "2019-12-09T08:47:36",
+    "updateUser": "ELIGRI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 337,
+    "interpretSetName": "ANYST_ISet_281119",
+    "insertDate": "2019-11-28T13:41:02",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-28T13:41:02",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 335,
+    "interpretSetName": "B_42_G_GOC",
+    "insertDate": "2019-11-28T12:11:12",
+    "insertUser": "ELIGRI",
+    "updateDate": "2019-11-28T12:24:04",
+    "updateUser": "ELIGRI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 333,
+    "interpretSetName": "pthom_A25C_ISet1",
+    "insertDate": "2019-11-14T09:50:48",
+    "insertUser": "PTHOM",
+    "updateDate": "2019-11-14T09:50:58",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 332,
+    "interpretSetName": "btra_O-3 H",
+    "insertDate": "2019-11-12T11:31:25",
+    "insertUser": "BTRA",
+    "updateDate": "2019-11-12T11:31:39",
+    "updateUser": "BTRA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 331,
+    "interpretSetName": "01_4D_2019_SIM_Streamer_Seis_Inversion",
+    "insertDate": "2019-11-11T13:00:53",
+    "insertUser": "SSRO",
+    "updateDate": "2019-11-20T11:26:33",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 327,
+    "interpretSetName": "01_4D_2019_seismic_volumes_TS & tstrain",
+    "insertDate": "2019-11-06T12:42:02",
+    "insertUser": "TVM",
+    "updateDate": "2020-06-16T09:48:47",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 325,
+    "interpretSetName": "Pcube_2019_GF_Main Lunde_Lomvi",
+    "insertDate": "2019-11-01T12:05:20",
+    "insertUser": "MALEO",
+    "updateDate": "2019-11-25T08:32:16",
+    "updateUser": "MALEO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 324,
+    "interpretSetName": "01_GF_SAT_Rimfaks_Map_Input",
+    "insertDate": "2019-10-25T08:51:53",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:22:21",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 322,
+    "interpretSetName": "01_GF SAT EQI4D_Project",
+    "insertDate": "2019-10-22T14:26:27",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:25:15",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 321,
+    "interpretSetName": "01_EQI4D2019_project",
+    "insertDate": "2019-10-22T13:11:05",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-21T08:23:11",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 320,
+    "interpretSetName": "gsyp_GF HF Master Feb2019_Sept2019",
+    "insertDate": "2019-09-26T12:27:43",
+    "insertUser": "GSYP",
+    "updateDate": "2019-09-26T12:33:00",
+    "updateUser": "GSYP"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 313,
+    "interpretSetName": "ANYST_RimfaksModelInput2019",
+    "insertDate": "2019-09-20T10:35:38",
+    "insertUser": "ANYST",
+    "updateDate": "2019-09-20T10:35:38",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 312,
+    "interpretSetName": "B-42G",
+    "insertDate": "2019-09-18T12:28:29",
+    "insertUser": "MSATR",
+    "updateDate": "2019-09-18T12:28:30",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 310,
+    "interpretSetName": "01_WCP_GFSAT_J-03_GI_SFN4_DWNNN_2019_08",
+    "insertDate": "2019-08-27T08:48:32",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:19:17",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 308,
+    "interpretSetName": "ISet",
+    "insertDate": "2019-08-16T13:45:41",
+    "insertUser": "SCH",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 307,
+    "interpretSetName": "hdu_SCH_summerint2019_overburdenGFSAT",
+    "insertDate": "2019-08-16T12:58:45",
+    "insertUser": "HDU",
+    "updateDate": "2020-11-19T09:29:48",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 306,
+    "interpretSetName": "B_42_G_msat",
+    "insertDate": "2019-08-13T12:39:30",
+    "insertUser": "MSATR",
+    "updateDate": "2019-08-13T12:39:30",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 305,
+    "interpretSetName": "01_GF Prospects, Leads, Licenses",
+    "insertDate": "2019-08-07T08:33:48",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:25:29",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 304,
+    "interpretSetName": "anyst_Betaridge(VestligProvins)_2019",
+    "insertDate": "2019-08-01T11:52:12",
+    "insertUser": "ANYST",
+    "updateDate": "2019-08-06T13:02:02",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 303,
+    "interpretSetName": "ISet",
+    "insertDate": "2019-08-01T09:25:12",
+    "insertUser": "MALEO",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 302,
+    "interpretSetName": "Kahn_GF HF Master Feb2019",
+    "insertDate": "2019-06-21T10:22:05",
+    "insertUser": "TVM",
+    "updateDate": "2019-06-21T10:23:36",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 295,
+    "interpretSetName": "SummerStudents_OVR_2019",
+    "insertDate": "2019-06-17T14:28:16",
+    "insertUser": "TVM",
+    "updateDate": "2019-06-17T14:52:02",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 287,
+    "interpretSetName": "ELIGRI_GF HF Master Feb2019",
+    "insertDate": "2019-05-21T09:52:50",
+    "insertUser": "ELIGRI",
+    "updateDate": "2019-05-21T09:54:04",
+    "updateUser": "ELIGRI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 284,
+    "interpretSetName": "01_GF_LicenseWide_JCOO_DOMES",
+    "insertDate": "2019-05-10T12:55:27",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:23:56",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 281,
+    "interpretSetName": "01_4D survey 2019 - data to 4D str proc",
+    "insertDate": "2019-05-08T13:41:09",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:27:06",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 279,
+    "interpretSetName": "UsedForCopying_copy",
+    "insertDate": "2019-04-26T09:19:42",
+    "insertUser": "ANYST",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 275,
+    "interpretSetName": "01_WCP_GFMain_C-25A_PCCI51_DW601_2018-12",
+    "insertDate": "2019-04-25T08:03:17",
+    "insertUser": "MALEO",
+    "updateDate": "2019-11-20T11:18:58",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 272,
+    "interpretSetName": "UsedForCopying",
+    "insertDate": "2019-04-24T11:35:39",
+    "insertUser": "ANYST",
+    "updateDate": "2019-04-24T11:36:25",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 271,
+    "interpretSetName": "01_GF_Overburden - JCOO (NotUsed)",
+    "insertDate": "2019-04-23T14:04:45",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:23:40",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 270,
+    "interpretSetName": "01_GF_SAT_JCOO RF - SF - SFS",
+    "insertDate": "2019-04-16T09:43:56",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:23:22",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 268,
+    "interpretSetName": "01_GF SAT Gullveig Master March2019",
+    "insertDate": "2019-04-15T15:19:48",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:24:52",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 267,
+    "interpretSetName": "01_GF SAT Skinfaks Master March2019",
+    "insertDate": "2019-04-15T10:22:24",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:24:21",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 266,
+    "interpretSetName": "01_GF SAT Gulltopp  Master March2019",
+    "insertDate": "2019-04-15T10:20:44",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:25:03",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 265,
+    "interpretSetName": "$$Anyst_NotMyArea_DoWeNeedIt?",
+    "insertDate": "2019-04-15T08:59:18",
+    "insertUser": "ANYST",
+    "updateDate": "2019-04-15T09:00:06",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 264,
+    "interpretSetName": "krso_Models_New",
+    "insertDate": "2019-04-12T11:24:40",
+    "insertUser": "KRSO",
+    "updateDate": "2019-04-29T10:37:45",
+    "updateUser": "KRSO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 261,
+    "interpretSetName": "B-25 A WCP",
+    "insertDate": "2019-04-10T13:55:45",
+    "insertUser": "MEDI",
+    "updateDate": "2019-04-10T13:55:54",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 260,
+    "interpretSetName": "krso_gfsat_alldata",
+    "insertDate": "2019-04-09T10:02:15",
+    "insertUser": "KRSO",
+    "updateDate": "2019-04-12T12:18:32",
+    "updateUser": "KRSO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 257,
+    "interpretSetName": "01_Anyst_4DWestSat",
+    "insertDate": "2019-04-02T09:01:06",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:25:46",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 256,
+    "interpretSetName": "01_GF SAT Rimfaks Master March 2019",
+    "insertDate": "2019-04-01T11:37:14",
+    "insertUser": "ANYST",
+    "updateDate": "2019-11-20T11:24:37",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 254,
+    "interpretSetName": "01_Glaucodot_GF SAT Master March2019",
+    "insertDate": "2019-03-22T11:05:48",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:15:37",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 253,
+    "interpretSetName": "01_Nøkken Master March2019",
+    "insertDate": "2019-03-22T11:03:52",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:16:58",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 252,
+    "interpretSetName": "01_Alun_Epidot GF SAT Master March2019",
+    "insertDate": "2019-03-22T11:03:10",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:25:57",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 251,
+    "interpretSetName": "01_Rutil_GF SAT Master March2019",
+    "insertDate": "2019-03-22T11:02:18",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:17:47",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 250,
+    "interpretSetName": "01_Opal_GF SAT Master March2019",
+    "insertDate": "2019-03-22T11:01:21",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:17:16",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 249,
+    "interpretSetName": "01_Gulltopp_GF SAT Master March2019",
+    "insertDate": "2019-03-22T10:58:09",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:22:05",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 248,
+    "interpretSetName": "01_Gullveig GF SAT Master March2019",
+    "insertDate": "2019-03-22T10:57:42",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:21:51",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 247,
+    "interpretSetName": "01_Skinfaks Soer GF SAT Master March2019",
+    "insertDate": "2019-03-22T10:56:00",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:18:16",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 246,
+    "interpretSetName": "01_GRD_Rimfaksdal_GF SAT MasterMarch2019",
+    "insertDate": "2019-03-22T10:55:27",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:16:32",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 245,
+    "interpretSetName": "01_Rimfaks GF SAT Master March2019",
+    "insertDate": "2019-03-22T10:53:32",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:17:33",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 244,
+    "interpretSetName": "01_Skinfaks GF SAT_Master March2019",
+    "insertDate": "2019-03-22T10:52:19",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:18:03",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 243,
+    "interpretSetName": "01_GF_Soer_Master_March2019",
+    "insertDate": "2019-03-22T10:51:27",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:14:37",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 242,
+    "interpretSetName": "01_Gimle_Sindre Master March2019",
+    "insertDate": "2019-03-22T10:50:29",
+    "insertUser": "TVM",
+    "updateDate": "2019-11-20T11:15:05",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 241,
+    "interpretSetName": "01_GF_HF_Master_ Mai2021",
+    "insertDate": "2019-03-22T10:48:22",
+    "insertUser": "TVM",
+    "updateDate": "2021-05-26T16:59:51",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 234,
+    "interpretSetName": "eask_A-25C_wellplanning",
+    "insertDate": "2019-03-19T10:42:41",
+    "insertUser": "EASK",
+    "updateDate": "2019-03-19T10:45:31",
+    "updateUser": "EASK"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 233,
+    "interpretSetName": "WellplanMaster_2019, 2020..",
+    "insertDate": "2019-03-15T13:41:53",
+    "insertUser": "TVM",
+    "updateDate": "2019-04-11T09:58:44",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 232,
+    "interpretSetName": "AnystSuggest_4DMaster 2008, 2011, 2016..",
+    "insertDate": "2019-03-15T13:41:27",
+    "insertUser": "TVM",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 231,
+    "interpretSetName": "AnystSuggest_4DMaster 2008, 2011, 2016..",
+    "insertDate": "2019-03-15T13:14:11",
+    "insertUser": "TVM",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 229,
+    "interpretSetName": "GFHF Prospect Manta",
+    "insertDate": "2019-03-12T09:57:56",
+    "insertUser": "MALEO",
+    "updateDate": "2019-03-12T11:48:15",
+    "updateUser": "MALEO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 222,
+    "interpretSetName": "GF HF Master Feb2019_bckup_rev0",
+    "insertDate": "2019-02-19T15:26:55",
+    "insertUser": "TVM",
+    "updateDate": "2019-02-19T15:28:24",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 220,
+    "interpretSetName": "AnystSuggest_Models",
+    "insertDate": "2019-02-18T11:03:06",
+    "insertUser": "ANYST",
+    "updateDate": "2019-02-18T11:03:28",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 219,
+    "interpretSetName": "AnystSuggest_Structural",
+    "insertDate": "2019-02-18T10:56:32",
+    "insertUser": "ANYST",
+    "updateDate": "2019-02-18T10:57:09",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 216,
+    "interpretSetName": "GF HF Master Feb2019_bckup",
+    "insertDate": "2019-02-12T09:48:04",
+    "insertUser": "TVM",
+    "updateDate": "2019-02-12T09:50:36",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 213,
+    "interpretSetName": "GF HF well planning projects GFC",
+    "insertDate": "2019-02-07T10:17:31",
+    "insertUser": "TVM",
+    "updateDate": "2019-02-07T10:17:55",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 212,
+    "interpretSetName": "GF HF well planning projects GFB",
+    "insertDate": "2019-02-07T10:17:05",
+    "insertUser": "TVM",
+    "updateDate": "2019-02-07T10:17:23",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 211,
+    "interpretSetName": "GF HF well planning projects GFA",
+    "insertDate": "2019-02-07T10:15:36",
+    "insertUser": "TVM",
+    "updateDate": "2019-02-07T10:17:01",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 210,
+    "interpretSetName": "GF HF Master Feb2019_PUB",
+    "insertDate": "2019-02-06T12:03:31",
+    "insertUser": "TVM",
+    "updateDate": "2019-03-22T11:00:06",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 209,
+    "interpretSetName": "4D_2011_GF_MF",
+    "insertDate": "2019-02-05T12:41:42",
+    "insertUser": "PTHOM",
+    "updateDate": "2019-02-05T12:56:40",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 208,
+    "interpretSetName": "4D_2008_GF_MF",
+    "insertDate": "2019-02-05T11:46:02",
+    "insertUser": "PTHOM",
+    "updateDate": "2019-02-05T12:55:41",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 207,
+    "interpretSetName": "$$MEDI_Statf_Lunde_Lomvi_FloodingMaps",
+    "insertDate": "2019-01-23T08:33:17",
+    "insertUser": "MEDI",
+    "updateDate": "2020-09-02T09:30:23",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 204,
+    "interpretSetName": "01_GF_HF_Statfjord_4D",
+    "insertDate": "2019-01-14T12:25:56",
+    "insertUser": "MEDI",
+    "updateDate": "2021-01-26T13:08:42",
+    "updateUser": "MEDI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 191,
+    "interpretSetName": "Anyst_GFC_Shet",
+    "insertDate": "2018-10-19T11:12:18",
+    "insertUser": "ANYST",
+    "updateDate": "2018-10-19T11:12:33",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 172,
+    "interpretSetName": "MALEO_ISet_001",
+    "insertDate": "2018-05-15T16:01:37",
+    "insertUser": "MALEO",
+    "updateDate": "2018-05-15T16:01:37",
+    "updateUser": "MALEO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 169,
+    "interpretSetName": "gsyp_B-15B_200418",
+    "insertDate": "2018-04-20T12:31:40",
+    "insertUser": "GSYP",
+    "updateDate": "2018-04-20T12:31:40",
+    "updateUser": "GSYP"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 165,
+    "interpretSetName": "Shetland_003",
+    "insertDate": "2018-03-12T13:59:02",
+    "insertUser": "PTHOM",
+    "updateDate": "2018-03-12T13:59:03",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 164,
+    "interpretSetName": "Shetland_002",
+    "insertDate": "2018-03-12T13:38:17",
+    "insertUser": "PTHOM",
+    "updateDate": "2018-03-12T13:38:17",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 163,
+    "interpretSetName": "Shetland_001",
+    "insertDate": "2018-03-12T13:35:11",
+    "insertUser": "PTHOM",
+    "updateDate": "2018-03-12T13:35:11",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 154,
+    "interpretSetName": "GF_4D_statfjord",
+    "insertDate": "2017-10-24T13:46:07",
+    "insertUser": "MSATR",
+    "updateDate": "2017-10-24T13:46:07",
+    "updateUser": "MSATR"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 153,
+    "interpretSetName": "PTHOM_SL_18",
+    "insertDate": "2017-10-23T15:55:42",
+    "insertUser": "PTHOM",
+    "updateDate": "2017-10-23T15:55:43",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 151,
+    "interpretSetName": "PTHOM_ISet_SL",
+    "insertDate": "2017-10-18T16:10:36",
+    "insertUser": "PTHOM",
+    "updateDate": "2017-10-18T16:10:36",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 149,
+    "interpretSetName": "Anyst_GT_2017",
+    "insertDate": "2017-08-14T09:41:37",
+    "insertUser": "ANYST",
+    "updateDate": "2017-08-14T09:41:45",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 147,
+    "interpretSetName": "JOSKE_PCUBE2017",
+    "insertDate": "2017-06-26T10:19:09",
+    "insertUser": "JOSKE",
+    "updateDate": "2017-06-26T10:19:09",
+    "updateUser": "JOSKE"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 145,
+    "interpretSetName": "PTHOM_DC_May2017",
+    "insertDate": "2017-05-09T10:26:23",
+    "insertUser": "PTHOM",
+    "updateDate": "2017-05-09T10:26:23",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 144,
+    "interpretSetName": "ANYST_001_C_8B",
+    "insertDate": "2017-05-02T09:18:13",
+    "insertUser": "SSIL",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 141,
+    "interpretSetName": "PTHOM_AllData_OBC2017",
+    "insertDate": "2017-03-30T09:50:22",
+    "insertUser": "PTHOM",
+    "updateDate": "2017-03-30T09:50:22",
+    "updateUser": "PTHOM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 137,
+    "interpretSetName": "zyi_Gullfaks_Brent_w2s_iSet",
+    "insertDate": "2017-03-29T10:33:28",
+    "insertUser": "ZYI",
+    "updateDate": "2017-03-29T10:33:47",
+    "updateUser": "ZYI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 131,
+    "interpretSetName": "CLPA_Prestack_23-03-2017",
+    "insertDate": "2017-03-23T10:50:50",
+    "insertUser": "CLPA",
+    "updateDate": "2017-03-23T10:50:50",
+    "updateUser": "CLPA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 129,
+    "interpretSetName": "TVM_ISet_March_2017",
+    "insertDate": "2017-03-23T09:00:40",
+    "insertUser": "TVM",
+    "updateDate": "2017-03-23T09:00:40",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 118,
+    "interpretSetName": "anyst_RF_I-4BH_WCP",
+    "insertDate": "2016-11-03T10:11:06",
+    "insertUser": "ANYST",
+    "updateDate": "2016-11-03T10:11:24",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 113,
+    "interpretSetName": "DAEC_ISet_001",
+    "insertDate": "2016-09-29T15:03:06",
+    "insertUser": "DAEC",
+    "updateDate": "2016-09-29T15:03:06",
+    "updateUser": "DAEC"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 111,
+    "interpretSetName": "tinek_DIRM_FMU",
+    "insertDate": "2016-09-21T14:22:51",
+    "insertUser": "TINEK",
+    "updateDate": "2016-09-21T14:23:00",
+    "updateUser": "TINEK"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 85,
+    "interpretSetName": "Anyst",
+    "insertDate": "2015-10-23T12:56:02",
+    "insertUser": "ANYST",
+    "updateDate": "2015-10-23T12:56:08",
+    "updateUser": "ANYST"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 79,
+    "interpretSetName": "TVM_ISet_001",
+    "insertDate": "2015-08-31T17:13:33",
+    "insertUser": "TVM",
+    "updateDate": "2015-08-31T17:13:33",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 75,
+    "interpretSetName": "clpa_ISet_B16A",
+    "insertDate": "2015-05-11T12:45:33",
+    "insertUser": "CLPA",
+    "updateDate": "2015-05-11T12:45:33",
+    "updateUser": "CLPA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 74,
+    "interpretSetName": "TVM_ISet_SLMay201_001",
+    "insertDate": "2015-05-11T11:52:17",
+    "insertUser": "TVM",
+    "updateDate": "2015-05-11T11:52:17",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 70,
+    "interpretSetName": "clpa_ISet_Shetland",
+    "insertDate": "2015-03-10T14:48:29",
+    "insertUser": "CLPA",
+    "updateDate": "2015-03-10T14:48:34",
+    "updateUser": "CLPA"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 47,
+    "interpretSetName": "IB_ISet_002_Well_Planning",
+    "insertDate": "2014-06-16T11:27:34",
+    "insertUser": "IB",
+    "updateDate": "2014-06-16T11:27:35",
+    "updateUser": "IB"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 46,
+    "interpretSetName": "B&B Gullfaks Demo",
+    "insertDate": "2014-04-29T14:42:14",
+    "insertUser": "HHAGEN",
+    "updateDate": "2014-04-29T14:42:15",
+    "updateUser": "HHAGEN"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 38,
+    "interpretSetName": "joana",
+    "insertDate": "2013-05-24T09:25:50",
+    "insertUser": "IB",
+    "updateDate": "2013-05-24T09:25:53",
+    "updateUser": "IB"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 31,
+    "interpretSetName": "Lomvi_Gullfaks",
+    "insertDate": "2012-10-16T10:06:41",
+    "insertUser": "EMG",
+    "updateDate": "2012-10-16T10:06:56",
+    "updateUser": "EMG"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 27,
+    "interpretSetName": "sbus_overburden",
+    "insertDate": "2012-08-31T15:34:10",
+    "insertUser": "SBUS",
+    "updateDate": "2012-08-31T15:34:17",
+    "updateUser": "SBUS"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 26,
+    "interpretSetName": "sbus_G-1AH",
+    "insertDate": "2012-08-29T09:59:28",
+    "insertUser": "SBUS",
+    "updateDate": "2012-08-29T09:59:45",
+    "updateUser": "SBUS"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 21,
+    "interpretSetName": "grco_Triassic",
+    "insertDate": "2012-02-22T14:48:27",
+    "insertUser": "BASI",
+    "updateDate": "2012-02-22T14:49:41",
+    "updateUser": "BASI"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 17,
+    "interpretSetName": "Skinfaks",
+    "insertDate": "2011-11-17T13:26:23",
+    "insertUser": "GRCO",
+    "updateDate": "2011-11-17T13:26:29",
+    "updateUser": "GRCO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 16,
+    "interpretSetName": "Skinfaks Sor",
+    "insertDate": "2011-11-16T14:49:37",
+    "insertUser": "GRCO",
+    "updateDate": "2011-11-16T14:49:54",
+    "updateUser": "GRCO"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 11,
+    "interpretSetName": "working_set",
+    "insertDate": "2010-11-29T12:22:04",
+    "insertUser": "SBUS",
+    "updateDate": "2010-11-29T12:22:14",
+    "updateUser": "SBUS"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 6,
+    "interpretSetName": "Utsira_Hordaland_TVM",
+    "insertDate": "2010-10-08T09:54:55",
+    "insertUser": "TVM",
+    "updateDate": "2010-10-08T09:55:15",
+    "updateUser": "TVM"
+  },
+  {
+    "sourceProjectId": 2,
+    "interpretationSetId": 1,
+    "interpretSetName": "G-4",
+    "insertDate": "2010-09-01T08:50:14",
+    "insertUser": "TROROGN",
+    "updateDate": "2010-09-01T08:50:20",
+    "updateUser": "TROROGN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 340,
+    "interpretSetName": "ioj_A5A_A7A",
+    "insertDate": "2022-07-11T15:50:27",
+    "insertUser": "IOJ",
+    "updateDate": "2022-07-11T15:50:27",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 339,
+    "interpretSetName": "A-28_D_Drilling_GOC",
+    "insertDate": "2022-06-16T08:45:31",
+    "insertUser": "IOJ",
+    "updateDate": "2022-06-16T08:45:31",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 337,
+    "interpretSetName": "A-19 C Drilling",
+    "insertDate": "2022-06-10T09:52:08",
+    "insertUser": "AANTA",
+    "updateDate": "2022-06-10T09:52:08",
+    "updateUser": "AANTA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 336,
+    "interpretSetName": "F-4 CH Drilling",
+    "insertDate": "2022-06-10T09:32:11",
+    "insertUser": "AANTA",
+    "updateDate": "2022-06-10T09:32:11",
+    "updateUser": "AANTA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 334,
+    "interpretSetName": "AANTA_AIM_2022",
+    "insertDate": "2022-05-16T13:43:57",
+    "insertUser": "AANTA",
+    "updateDate": "2022-05-16T13:44:22",
+    "updateUser": "AANTA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 333,
+    "interpretSetName": "Heidrun_A-5_A_pozo_seis_surf",
+    "insertDate": "2022-04-26T08:27:53",
+    "insertUser": "AORLO",
+    "updateDate": "2022-04-26T08:28:13",
+    "updateUser": "AORLO"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 332,
+    "interpretSetName": "ellan_A-24_B_mars",
+    "insertDate": "2022-03-23T14:21:48",
+    "insertUser": "ELLAN",
+    "updateDate": "2022-03-23T14:21:48",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 331,
+    "interpretSetName": "A-24_B_ellan_",
+    "insertDate": "2022-02-21T10:21:06",
+    "insertUser": "ELLAN",
+    "updateDate": "2022-02-21T10:21:06",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 330,
+    "interpretSetName": "A-24_B_ellan",
+    "insertDate": "2022-02-21T10:20:10",
+    "insertUser": "ELLAN",
+    "updateDate": "2022-02-21T10:20:10",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 329,
+    "interpretSetName": "D-5_AH_Drilling_GOC",
+    "insertDate": "2022-02-02T12:54:50",
+    "insertUser": "AANTA",
+    "updateDate": "2022-02-02T12:55:00",
+    "updateUser": "AANTA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 328,
+    "interpretSetName": "E-2 CH_Drilling_GOC",
+    "insertDate": "2021-12-20T10:41:27",
+    "insertUser": "KATSV",
+    "updateDate": "2021-12-20T10:41:28",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 327,
+    "interpretSetName": "iSet_4D_2021",
+    "insertDate": "2021-11-08T12:54:40",
+    "insertUser": "IOJ",
+    "updateDate": "2021-11-08T12:54:40",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 324,
+    "interpretSetName": "E-2 CH Alpha Horst",
+    "insertDate": "2021-10-07T14:45:05",
+    "insertUser": "KATSV",
+    "updateDate": "2021-10-07T14:45:05",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 323,
+    "interpretSetName": "ioj_A28D_MWP_Iset",
+    "insertDate": "2021-10-05T23:43:15",
+    "insertUser": "IOJ",
+    "updateDate": "2021-10-05T23:43:15",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 322,
+    "interpretSetName": "A-32_A_Drilling_GOC",
+    "insertDate": "2021-10-01T13:26:29",
+    "insertUser": "AANTA",
+    "updateDate": "2021-10-01T13:26:29",
+    "updateUser": "AANTA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 321,
+    "interpretSetName": "ioj_4D2021_prelim",
+    "insertDate": "2021-10-01T10:56:49",
+    "insertUser": "IOJ",
+    "updateDate": "2021-10-01T10:56:49",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 320,
+    "interpretSetName": "THROS_ISet_ESC",
+    "insertDate": "2021-09-22T10:58:57",
+    "insertUser": "THROS",
+    "updateDate": "2021-09-22T10:58:57",
+    "updateUser": "THROS"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 319,
+    "interpretSetName": "Iset_A20B_drilling",
+    "insertDate": "2021-09-16T10:21:16",
+    "insertUser": "IOJ",
+    "updateDate": "2021-09-16T10:21:16",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 318,
+    "interpretSetName": "ioj_Iset_A4",
+    "insertDate": "2021-08-19T08:36:35",
+    "insertUser": "IOJ",
+    "updateDate": "2021-08-19T08:36:35",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 317,
+    "interpretSetName": "ioj_A4_GOC",
+    "insertDate": "2021-06-29T12:45:27",
+    "insertUser": "IOJ",
+    "updateDate": "2021-06-29T12:45:27",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 316,
+    "interpretSetName": "ioj_A4_drilling",
+    "insertDate": "2021-06-28T09:55:02",
+    "insertUser": "IOJ",
+    "updateDate": "2021-06-28T09:55:03",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 315,
+    "interpretSetName": "KATSV_AlphaHorst",
+    "insertDate": "2021-04-09T16:02:16",
+    "insertUser": "KATSV",
+    "updateDate": "2021-04-09T16:02:16",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 314,
+    "interpretSetName": "ioj_A4_mars21_new",
+    "insertDate": "2021-03-14T23:53:51",
+    "insertUser": "IOJ",
+    "updateDate": "2021-03-14T23:53:51",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 313,
+    "interpretSetName": "ioj_A4_mars21",
+    "insertDate": "2021-03-14T21:28:48",
+    "insertUser": "IOJ",
+    "updateDate": "2021-03-14T21:28:49",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 312,
+    "interpretSetName": "katsv_A-13AT3",
+    "insertDate": "2020-12-16T09:58:41",
+    "insertUser": "KATSV",
+    "updateDate": "2020-12-16T09:58:41",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 311,
+    "interpretSetName": "PUB_ISet_A43B_drilling_GOC",
+    "insertDate": "2020-12-16T09:03:49",
+    "insertUser": "IOJ",
+    "updateDate": "2020-12-16T09:03:49",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 310,
+    "interpretSetName": "ioj_iset_interpretation_HD_nov20",
+    "insertDate": "2020-11-13T15:25:27",
+    "insertUser": "IOJ",
+    "updateDate": "2020-11-13T15:25:27",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 309,
+    "interpretSetName": "ioj_iset_HD_nov20",
+    "insertDate": "2020-11-04T10:05:52",
+    "insertUser": "IOJ",
+    "updateDate": "2020-11-04T10:05:52",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 308,
+    "interpretSetName": "A-35_F_Drilling",
+    "insertDate": "2020-10-30T09:55:11",
+    "insertUser": "AANTA",
+    "updateDate": "2020-10-30T09:55:37",
+    "updateUser": "AANTA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 307,
+    "interpretSetName": "bsm_HD_basic",
+    "insertDate": "2020-09-30T14:46:50",
+    "insertUser": "BSM",
+    "updateDate": "2020-09-30T14:46:57",
+    "updateUser": "BSM"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 305,
+    "interpretSetName": "A-12_Drilling_GOC",
+    "insertDate": "2020-09-17T10:04:36",
+    "insertUser": "AANTA",
+    "updateDate": "2020-09-17T15:06:36",
+    "updateUser": "AANTA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 304,
+    "interpretSetName": "AANTA_2020",
+    "insertDate": "2020-08-17T10:34:46",
+    "insertUser": "AANTA",
+    "updateDate": "2020-08-17T10:34:47",
+    "updateUser": "AANTA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 302,
+    "interpretSetName": "A-12_B_Drilling",
+    "insertDate": "2020-07-10T09:46:47",
+    "insertUser": "VMBE",
+    "updateDate": "2020-07-10T09:47:01",
+    "updateUser": "VMBE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 301,
+    "interpretSetName": "E-3 HH drilling",
+    "insertDate": "2020-07-07T14:23:48",
+    "insertUser": "KATSV",
+    "updateDate": "2020-07-07T14:23:48",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 300,
+    "interpretSetName": "E-3 HH_geophysics",
+    "insertDate": "2020-06-30T13:34:55",
+    "insertUser": "KATSV",
+    "updateDate": "2020-06-30T13:34:55",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 299,
+    "interpretSetName": "katsv_E-1 DH",
+    "insertDate": "2020-05-06T10:03:00",
+    "insertUser": "KATSV",
+    "updateDate": "2020-05-06T10:03:00",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 298,
+    "interpretSetName": "A-40_B_Drilling",
+    "insertDate": "2020-03-20T18:09:00",
+    "insertUser": "VMBE",
+    "updateDate": "2020-03-20T18:09:00",
+    "updateUser": "VMBE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 297,
+    "interpretSetName": "A-15_B_Drilling",
+    "insertDate": "2020-02-26T11:56:15",
+    "insertUser": "AANTA",
+    "updateDate": "2020-02-26T11:56:25",
+    "updateUser": "AANTA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 296,
+    "interpretSetName": "ioj_A43B_iSet",
+    "insertDate": "2020-02-04T16:46:50",
+    "insertUser": "IOJ",
+    "updateDate": "2020-02-04T16:46:50",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 295,
+    "interpretSetName": "vmbe_surfaces_18",
+    "insertDate": "2020-01-20T14:15:24",
+    "insertUser": "VMBE",
+    "updateDate": "2020-01-20T14:16:29",
+    "updateUser": "VMBE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 294,
+    "interpretSetName": "vmbe_4D",
+    "insertDate": "2020-01-20T14:07:35",
+    "insertUser": "VMBE",
+    "updateDate": "2020-01-20T14:07:40",
+    "updateUser": "VMBE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 293,
+    "interpretSetName": "katsv_E-1DH_0",
+    "insertDate": "2020-01-07T12:49:18",
+    "insertUser": "KATSV",
+    "updateDate": "2020-01-07T12:49:18",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 292,
+    "interpretSetName": "PUB_A-13_AT3",
+    "insertDate": "2019-12-16T15:07:49",
+    "insertUser": "KATSV",
+    "updateDate": "2019-12-16T15:07:49",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 291,
+    "interpretSetName": "ioj_A50B_drilling",
+    "insertDate": "2019-11-28T22:39:16",
+    "insertUser": "IOJ",
+    "updateDate": "2019-11-28T22:39:16",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 290,
+    "interpretSetName": "Vmbe_Heidrun_Intro_2019",
+    "insertDate": "2019-10-02T15:30:30",
+    "insertUser": "VMBE",
+    "updateDate": "2019-10-02T15:30:57",
+    "updateUser": "VMBE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 289,
+    "interpretSetName": "THROS_ISet_Heidrun_NFE",
+    "insertDate": "2019-09-17T14:13:56",
+    "insertUser": "THROS",
+    "updateDate": "2019-09-17T14:13:57",
+    "updateUser": "THROS"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 287,
+    "interpretSetName": "HDFAU_ISet_001_Rdeh9July2019",
+    "insertDate": "2019-07-09T07:53:11",
+    "insertUser": "RDEH",
+    "updateDate": "2019-07-09T07:53:11",
+    "updateUser": "RDEH"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 286,
+    "interpretSetName": "HDFAU_Iset_RDEH_21June2019",
+    "insertDate": "2019-06-21T14:16:42",
+    "insertUser": "RDEH",
+    "updateDate": "2019-06-21T14:16:42",
+    "updateUser": "RDEH"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 285,
+    "interpretSetName": "RDEH_Heidrun_9Apr2019",
+    "insertDate": "2019-04-09T10:45:15",
+    "insertUser": "RDEH",
+    "updateDate": "2019-04-09T10:45:15",
+    "updateUser": "RDEH"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 281,
+    "interpretSetName": "sonto_HDSE",
+    "insertDate": "2019-04-08T15:46:39",
+    "insertUser": "SONTO",
+    "updateDate": "2019-04-08T15:46:40",
+    "updateUser": "SONTO"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 280,
+    "interpretSetName": "katsv_N_4D18",
+    "insertDate": "2019-04-02T14:23:34",
+    "insertUser": "KATSV",
+    "updateDate": "2019-04-02T14:23:34",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 279,
+    "interpretSetName": "katsv_N_4D",
+    "insertDate": "2019-04-02T14:20:10",
+    "insertUser": "KATSV",
+    "updateDate": "2019-04-02T14:20:10",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 278,
+    "interpretSetName": "Sonto_A27-A",
+    "insertDate": "2019-04-01T11:59:44",
+    "insertUser": "SONTO",
+    "updateDate": "2019-04-01T11:59:44",
+    "updateUser": "SONTO"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 277,
+    "interpretSetName": "ioj_4D2019_Iset",
+    "insertDate": "2019-03-28T09:29:50",
+    "insertUser": "IOJ",
+    "updateDate": "2019-03-28T09:29:50",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 276,
+    "interpretSetName": "hmbl-A-46B-horizons",
+    "insertDate": "2019-03-07T12:23:56",
+    "insertUser": "HMBL",
+    "updateDate": "2019-03-07T12:23:56",
+    "updateUser": "HMBL"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 275,
+    "interpretSetName": "hmbl_A-46B",
+    "insertDate": "2019-03-07T12:23:20",
+    "insertUser": "HMBL",
+    "updateDate": "2019-03-07T12:23:20",
+    "updateUser": "HMBL"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 274,
+    "interpretSetName": "Katsv_HDN_280119",
+    "insertDate": "2019-01-28T11:01:48",
+    "insertUser": "KATSV",
+    "updateDate": "2019-01-28T11:01:48",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 273,
+    "interpretSetName": "ioj_iSet_4D19",
+    "insertDate": "2019-01-04T09:58:21",
+    "insertUser": "IOJ",
+    "updateDate": "2019-01-04T09:58:21",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 271,
+    "interpretSetName": "SONTO_AMAP",
+    "insertDate": "2018-11-28T08:44:05",
+    "insertUser": "SONTO",
+    "updateDate": "2018-11-28T08:44:05",
+    "updateUser": "SONTO"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 267,
+    "interpretSetName": "katsv_Nsouth",
+    "insertDate": "2018-11-22T09:43:11",
+    "insertUser": "KATSV",
+    "updateDate": "2018-11-22T09:43:11",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 266,
+    "interpretSetName": "katsv_A-50B",
+    "insertDate": "2018-11-16T12:55:33",
+    "insertUser": "KATSV",
+    "updateDate": "2018-11-16T12:55:33",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 258,
+    "interpretSetName": "4D amps",
+    "insertDate": "2018-10-17T10:06:22",
+    "insertUser": "SONTO",
+    "updateDate": "2018-10-17T10:06:27",
+    "updateUser": "SONTO"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 257,
+    "interpretSetName": "GBRU_4D_amplitude_test",
+    "insertDate": "2018-10-16T15:39:01",
+    "insertUser": "GBRU",
+    "updateDate": "2018-10-16T16:14:47",
+    "updateUser": "GBRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 255,
+    "interpretSetName": "Sonto_4DA-1A",
+    "insertDate": "2018-10-12T09:26:59",
+    "insertUser": "SONTO",
+    "updateDate": "2018-10-12T09:26:59",
+    "updateUser": "SONTO"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 251,
+    "interpretSetName": "SIGRU_03102018",
+    "insertDate": "2018-10-03T13:28:12",
+    "insertUser": "SIGRU",
+    "updateDate": "2018-10-03T13:28:12",
+    "updateUser": "SIGRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 250,
+    "interpretSetName": "katsv_LTOP-I1M ML",
+    "insertDate": "2018-10-03T08:42:28",
+    "insertUser": "KATSV",
+    "updateDate": "2018-10-03T08:42:29",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 249,
+    "interpretSetName": "A-30 D drilling",
+    "insertDate": "2018-08-22T09:47:36",
+    "insertUser": "HSOLE",
+    "updateDate": "2018-08-22T09:47:36",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 248,
+    "interpretSetName": "sonto_4D_M-No",
+    "insertDate": "2018-08-20T15:55:42",
+    "insertUser": "SONTO",
+    "updateDate": "2018-08-20T15:55:42",
+    "updateUser": "SONTO"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 247,
+    "interpretSetName": "4D 2018",
+    "insertDate": "2018-08-17T14:33:18",
+    "insertUser": "KATSV",
+    "updateDate": "2018-08-17T14:33:18",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 245,
+    "interpretSetName": "JTORS_Aarestudy_ISet",
+    "insertDate": "2018-08-16T13:22:30",
+    "insertUser": "JTORS",
+    "updateDate": "2018-08-16T13:22:31",
+    "updateUser": "JTORS"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 244,
+    "interpretSetName": "sigru_070818",
+    "insertDate": "2018-08-07T12:42:17",
+    "insertUser": "SIGRU",
+    "updateDate": "2018-08-07T12:42:17",
+    "updateUser": "SIGRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 242,
+    "interpretSetName": "SIGRU_4D_02082018",
+    "insertDate": "2018-08-02T10:51:11",
+    "insertUser": "SIGRU",
+    "updateDate": "2018-08-02T10:51:11",
+    "updateUser": "SIGRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 241,
+    "interpretSetName": "SIGRU_4D_010818",
+    "insertDate": "2018-08-01T09:32:44",
+    "insertUser": "SIGRU",
+    "updateDate": "2018-08-01T09:32:44",
+    "updateUser": "SIGRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 239,
+    "interpretSetName": "jlip_4D_M_segment",
+    "insertDate": "2018-07-24T14:17:00",
+    "insertUser": "JLIP",
+    "updateDate": "2018-07-24T14:17:00",
+    "updateUser": "JLIP"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 238,
+    "interpretSetName": "jlip_Heidrun_4D",
+    "insertDate": "2018-07-24T10:45:52",
+    "insertUser": "JLIP",
+    "updateDate": "2018-07-24T10:45:52",
+    "updateUser": "JLIP"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 237,
+    "interpretSetName": "jlip_ISET_4D_2018",
+    "insertDate": "2018-07-23T12:16:30",
+    "insertUser": "JLIP",
+    "updateDate": "2018-07-23T12:16:30",
+    "updateUser": "JLIP"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 236,
+    "interpretSetName": "hsole_4D_2018",
+    "insertDate": "2018-07-17T11:49:42",
+    "insertUser": "HSOLE",
+    "updateDate": "2018-07-17T11:49:42",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 235,
+    "interpretSetName": "HEID_12_07_2018",
+    "insertDate": "2018-07-12T14:06:06",
+    "insertUser": "HSOLE",
+    "updateDate": "2018-07-12T14:06:06",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 234,
+    "interpretSetName": "katsv_HDN_4D2018",
+    "insertDate": "2018-07-06T08:44:05",
+    "insertUser": "KATSV",
+    "updateDate": "2018-07-06T08:44:06",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 233,
+    "interpretSetName": "SIGRU_4D_2018",
+    "insertDate": "2018-07-05T19:11:19",
+    "insertUser": "SIGRU",
+    "updateDate": "2018-07-05T19:11:19",
+    "updateUser": "SIGRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 232,
+    "interpretSetName": "katsv_4D2018_HDN",
+    "insertDate": "2018-07-04T12:26:55",
+    "insertUser": "KATSV",
+    "updateDate": "2018-07-04T12:26:55",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 231,
+    "interpretSetName": "jlip_timeshifts",
+    "insertDate": "2018-06-22T12:36:58",
+    "insertUser": "JLIP",
+    "updateDate": "2018-06-22T12:36:58",
+    "updateUser": "JLIP"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 230,
+    "interpretSetName": "jlip_4D_iset",
+    "insertDate": "2018-06-21T16:32:12",
+    "insertUser": "JLIP",
+    "updateDate": "2018-06-21T16:32:28",
+    "updateUser": "JLIP"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 226,
+    "interpretSetName": "hsole_A-6 A",
+    "insertDate": "2018-06-04T13:26:41",
+    "insertUser": "HSOLE",
+    "updateDate": "2018-06-04T13:26:41",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 225,
+    "interpretSetName": "GBRU_Usability_Class",
+    "insertDate": "2018-05-29T14:04:44",
+    "insertUser": "GBRU",
+    "updateDate": "2018-05-29T14:04:45",
+    "updateUser": "GBRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 224,
+    "interpretSetName": "IOJ_VR_DEMO",
+    "insertDate": "2018-05-25T14:56:13",
+    "insertUser": "IOJ",
+    "updateDate": "2018-05-25T14:56:28",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 223,
+    "interpretSetName": "SIGRU_240618",
+    "insertDate": "2018-05-24T10:42:45",
+    "insertUser": "SIGRU",
+    "updateDate": "2018-05-24T10:42:45",
+    "updateUser": "SIGRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 222,
+    "interpretSetName": "ellan_Auto4D",
+    "insertDate": "2018-04-27T15:01:52",
+    "insertUser": "ELLAN",
+    "updateDate": "2018-04-27T15:02:21",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 221,
+    "interpretSetName": "SIGRU_06042018",
+    "insertDate": "2018-04-06T09:04:18",
+    "insertUser": "SIGRU",
+    "updateDate": "2018-04-06T09:04:18",
+    "updateUser": "SIGRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 220,
+    "interpretSetName": "A-48A_ISet_001",
+    "insertDate": "2018-04-05T13:53:18",
+    "insertUser": "OCS",
+    "updateDate": "2018-04-05T13:53:18",
+    "updateUser": "OCS"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 218,
+    "interpretSetName": "katsv_E-3GH_plan6",
+    "insertDate": "2018-03-16T17:25:21",
+    "insertUser": "KATSV",
+    "updateDate": "2018-03-16T17:25:21",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 215,
+    "interpretSetName": "4D_2018_important_areas",
+    "insertDate": "2018-02-20T11:10:32",
+    "insertUser": "ELLAN",
+    "updateDate": "2018-02-20T11:10:44",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 214,
+    "interpretSetName": "4D_2018_important_areas",
+    "insertDate": "2018-02-19T14:19:12",
+    "insertUser": "SIGRU",
+    "updateDate": "2018-02-19T14:19:22",
+    "updateUser": "SIGRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 212,
+    "interpretSetName": "GBRU_Def_Seis_Display",
+    "insertDate": "2018-02-14T14:52:38",
+    "insertUser": "GBRU",
+    "updateDate": "2018-02-14T14:52:38",
+    "updateUser": "GBRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 211,
+    "interpretSetName": "katsv_E-3 GH",
+    "insertDate": "2018-02-09T08:56:27",
+    "insertUser": "KATSV",
+    "updateDate": "2018-02-09T08:56:28",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 210,
+    "interpretSetName": "katsv_E-3 GH CP",
+    "insertDate": "2018-02-08T16:16:29",
+    "insertUser": "KATSV",
+    "updateDate": "2018-02-08T16:16:29",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 208,
+    "interpretSetName": "BASIC_session_HD_01_2018",
+    "insertDate": "2018-01-26T08:30:24",
+    "insertUser": "SWIT",
+    "updateDate": "2018-01-26T08:30:24",
+    "updateUser": "SWIT"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 205,
+    "interpretSetName": "GBRU_Test",
+    "insertDate": "2018-01-16T11:36:38",
+    "insertUser": "GBRU",
+    "updateDate": "2018-01-16T11:36:48",
+    "updateUser": "GBRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 204,
+    "interpretSetName": "ioj_iSet_Jan2018",
+    "insertDate": "2018-01-04T14:47:28",
+    "insertUser": "IOJ",
+    "updateDate": "2018-01-04T14:47:29",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 202,
+    "interpretSetName": "GEOSS_ISet_F2AH_mariam",
+    "insertDate": "2017-11-14T10:40:31",
+    "insertUser": "MARIAM",
+    "updateDate": "2017-11-14T10:40:31",
+    "updateUser": "MARIAM"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 199,
+    "interpretSetName": "ioj_main_data_iSet",
+    "insertDate": "2017-09-27T13:41:48",
+    "insertUser": "IOJ",
+    "updateDate": "2017-09-27T13:41:48",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 198,
+    "interpretSetName": "overburden_20170913",
+    "insertDate": "2017-09-13T12:04:21",
+    "insertUser": "ELLAN",
+    "updateDate": "2017-09-13T12:04:21",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 197,
+    "interpretSetName": "LMUE_Quantitative_work_N-segment",
+    "insertDate": "2017-09-13T09:37:47",
+    "insertUser": "LMUE",
+    "updateDate": "2017-09-13T09:37:47",
+    "updateUser": "LMUE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 196,
+    "interpretSetName": "SIGRU_Heidrun_Intro",
+    "insertDate": "2017-09-12T13:55:06",
+    "insertUser": "SIGRU",
+    "updateDate": "2017-09-12T13:55:06",
+    "updateUser": "SIGRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 195,
+    "interpretSetName": "LMUE_basic_time_interpretation",
+    "insertDate": "2017-09-12T09:22:06",
+    "insertUser": "LMUE",
+    "updateDate": "2017-09-12T09:22:06",
+    "updateUser": "LMUE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 194,
+    "interpretSetName": "LMUE_FTAWI-NN2_Planning_slim",
+    "insertDate": "2017-09-08T10:47:24",
+    "insertUser": "LMUE",
+    "updateDate": "2017-09-08T10:47:24",
+    "updateUser": "LMUE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 193,
+    "interpretSetName": "ellan_overburden_20170908",
+    "insertDate": "2017-09-08T08:46:38",
+    "insertUser": "ELLAN",
+    "updateDate": "2017-09-08T08:46:38",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 192,
+    "interpretSetName": "lmue_FTAWI-NN2_Planning",
+    "insertDate": "2017-09-06T16:13:01",
+    "insertUser": "LMUE",
+    "updateDate": "2017-09-06T16:13:01",
+    "updateUser": "LMUE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 191,
+    "interpretSetName": "ELLAN_petro-elastic_082017",
+    "insertDate": "2017-08-31T13:28:42",
+    "insertUser": "ELLAN",
+    "updateDate": "2017-08-31T13:28:42",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 190,
+    "interpretSetName": "SIGRU_A-53 A",
+    "insertDate": "2017-08-30T09:22:50",
+    "insertUser": "SIGRU",
+    "updateDate": "2017-08-30T09:22:50",
+    "updateUser": "SIGRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 189,
+    "interpretSetName": "iSet_Heidrun_Ready_For_Modelling",
+    "insertDate": "2017-08-14T14:12:04",
+    "insertUser": "IOJ",
+    "updateDate": "2017-08-14T14:12:05",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 188,
+    "interpretSetName": "ellan_overburden",
+    "insertDate": "2017-08-11T11:46:34",
+    "insertUser": "ELLAN",
+    "updateDate": "2017-08-11T11:46:34",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 187,
+    "interpretSetName": "gbru_OLCH_sessin_gfix",
+    "insertDate": "2017-08-03T13:50:09",
+    "insertUser": "GBRU",
+    "updateDate": "2017-08-03T13:50:24",
+    "updateUser": "GBRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 185,
+    "interpretSetName": "ioj_seismic_interpretation_17",
+    "insertDate": "2017-07-03T14:32:34",
+    "insertUser": "IOJ",
+    "updateDate": "2017-07-03T14:32:34",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 184,
+    "interpretSetName": "SWIT_ISet_tilje_june17",
+    "insertDate": "2017-06-08T09:55:17",
+    "insertUser": "SWIT",
+    "updateDate": "2017-06-08T09:55:18",
+    "updateUser": "SWIT"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 183,
+    "interpretSetName": "ioj_interpretation_17",
+    "insertDate": "2017-06-01T14:00:28",
+    "insertUser": "IOJ",
+    "updateDate": "2017-06-01T14:00:28",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 181,
+    "interpretSetName": "ELLAN_A-6A_20170519",
+    "insertDate": "2017-05-19T10:41:02",
+    "insertUser": "ELLAN",
+    "updateDate": "2017-05-19T10:41:02",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 180,
+    "interpretSetName": "lmue_iset_16052017",
+    "insertDate": "2017-05-16T15:20:54",
+    "insertUser": "LMUE",
+    "updateDate": "2017-05-16T15:20:55",
+    "updateUser": "LMUE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 179,
+    "interpretSetName": "mrava_PLTs",
+    "insertDate": "2017-05-09T16:43:49",
+    "insertUser": "MRAVA",
+    "updateDate": "2017-05-10T08:22:33",
+    "updateUser": "MRAVA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 178,
+    "interpretSetName": "LMUE_BASIC_INTERPRET_26042017",
+    "insertDate": "2017-04-26T09:45:29",
+    "insertUser": "LMUE",
+    "updateDate": "2017-04-26T09:45:29",
+    "updateUser": "LMUE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 177,
+    "interpretSetName": "ELLAN_UTOP-O1_03042017",
+    "insertDate": "2017-04-03T12:48:54",
+    "insertUser": "ELLAN",
+    "updateDate": "2017-04-03T12:48:54",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 171,
+    "interpretSetName": "katsv_F-3 AH_Iset",
+    "insertDate": "2017-03-06T13:26:03",
+    "insertUser": "KATSV",
+    "updateDate": "2017-03-06T13:26:03",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 164,
+    "interpretSetName": "HSOLE_ISet_A-33 B",
+    "insertDate": "2017-02-08T16:38:09",
+    "insertUser": "HSOLE",
+    "updateDate": "2017-02-08T16:38:09",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 163,
+    "interpretSetName": "MARIAM_F2AH_correlation",
+    "insertDate": "2017-02-07T12:49:40",
+    "insertUser": "MARIAM",
+    "updateDate": "2017-02-07T12:49:40",
+    "updateUser": "MARIAM"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 162,
+    "interpretSetName": "MARIAM_A-36BT2_correlation",
+    "insertDate": "2017-02-07T12:37:17",
+    "insertUser": "MARIAM",
+    "updateDate": "2017-02-07T12:37:17",
+    "updateUser": "MARIAM"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 159,
+    "interpretSetName": "HSOLE_ISet_A-53 A",
+    "insertDate": "2017-02-02T13:30:17",
+    "insertUser": "HSOLE",
+    "updateDate": "2017-02-02T13:30:17",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 157,
+    "interpretSetName": "GBRU_iSet",
+    "insertDate": "2017-01-26T10:49:36",
+    "insertUser": "GBRU",
+    "updateDate": "2017-01-26T10:49:36",
+    "updateUser": "GBRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 156,
+    "interpretSetName": "KATSV_M_2017",
+    "insertDate": "2017-01-25T10:35:20",
+    "insertUser": "KATSV",
+    "updateDate": "2017-01-25T10:35:21",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 155,
+    "interpretSetName": "ellan_AOP-M18_AWI-M4",
+    "insertDate": "2017-01-25T10:18:32",
+    "insertUser": "ELLAN",
+    "updateDate": "2017-01-25T10:18:32",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 154,
+    "interpretSetName": "HSOLE_ISet_I segment",
+    "insertDate": "2017-01-24T13:38:29",
+    "insertUser": "HSOLE",
+    "updateDate": "2017-01-24T13:38:29",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 152,
+    "interpretSetName": "AKAFU_Nn_Option1_deep_Aare1_arb_E1CH",
+    "insertDate": "2016-12-20T15:15:42",
+    "insertUser": "AKAFU",
+    "updateDate": "2016-12-21T10:19:10",
+    "updateUser": "AKAFU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 151,
+    "interpretSetName": "elian_Carmen_iset",
+    "insertDate": "2016-12-07T13:20:03",
+    "insertUser": "ELIAN",
+    "updateDate": "2016-12-07T13:20:03",
+    "updateUser": "ELIAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 150,
+    "interpretSetName": "KATSV_M",
+    "insertDate": "2016-11-17T15:15:25",
+    "insertUser": "KATSV",
+    "updateDate": "2016-11-17T15:15:25",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 149,
+    "interpretSetName": "AKAFU_Carmen_scenarios",
+    "insertDate": "2016-11-10T11:58:02",
+    "insertUser": "AKAFU",
+    "updateDate": "2016-11-10T11:58:16",
+    "updateUser": "AKAFU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 148,
+    "interpretSetName": "AKAFU_Nn_Option2_shallow_Aare1_arb_E1CH",
+    "insertDate": "2016-11-07T09:31:14",
+    "insertUser": "AKAFU",
+    "updateDate": "2016-12-21T10:19:34",
+    "updateUser": "AKAFU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 147,
+    "interpretSetName": "sbus_Geom_TS",
+    "insertDate": "2016-11-04T07:46:43",
+    "insertUser": "SBUS",
+    "updateDate": "2016-11-04T07:46:51",
+    "updateUser": "SBUS"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 146,
+    "interpretSetName": "KATSV_ISet_HDN",
+    "insertDate": "2016-10-27T10:50:08",
+    "insertUser": "KATSV",
+    "updateDate": "2016-10-27T10:50:09",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 145,
+    "interpretSetName": "HSOLE_ISet_X_v2",
+    "insertDate": "2016-10-26T12:08:28",
+    "insertUser": "HSOLE",
+    "updateDate": "2016-10-26T12:10:50",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 140,
+    "interpretSetName": "thros_Heidrun_Oct2016",
+    "insertDate": "2016-10-21T13:20:10",
+    "insertUser": "THROS",
+    "updateDate": "2016-10-21T13:20:33",
+    "updateUser": "THROS"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 139,
+    "interpretSetName": "HSOLE_ISet_X-segment",
+    "insertDate": "2016-10-21T09:19:36",
+    "insertUser": "HSOLE",
+    "updateDate": "2016-10-21T09:19:36",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 128,
+    "interpretSetName": "AKAFU_HD_East_Flank_setup",
+    "insertDate": "2016-10-04T10:47:36",
+    "insertUser": "AKAFU",
+    "updateDate": "2016-12-21T08:56:36",
+    "updateUser": "AKAFU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 127,
+    "interpretSetName": "KATSV_A-19 B",
+    "insertDate": "2016-09-30T15:02:24",
+    "insertUser": "KATSV",
+    "updateDate": "2016-09-30T15:02:24",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 126,
+    "interpretSetName": "Heidrun_StartUP",
+    "insertDate": "2016-09-30T10:07:33",
+    "insertUser": "HMBL",
+    "updateDate": "2016-09-30T10:07:33",
+    "updateUser": "HMBL"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 125,
+    "interpretSetName": "HSOLE_ISet_A-12 B",
+    "insertDate": "2016-09-29T14:41:45",
+    "insertUser": "HSOLE",
+    "updateDate": "2016-09-29T14:41:45",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 122,
+    "interpretSetName": "KATSV_F-3AH_220916",
+    "insertDate": "2016-09-22T08:09:02",
+    "insertUser": "KATSV",
+    "updateDate": "2016-09-22T08:09:04",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 120,
+    "interpretSetName": "katsv_HDN_F3AH",
+    "insertDate": "2016-09-01T14:14:40",
+    "insertUser": "KATSV",
+    "updateDate": "2016-09-01T14:14:41",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 119,
+    "interpretSetName": "ELLAN_RokDocmod_2016",
+    "insertDate": "2016-08-31T15:00:29",
+    "insertUser": "ELLAN",
+    "updateDate": "2016-08-31T15:00:29",
+    "updateUser": "ELLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 118,
+    "interpretSetName": "GBRU_ISet_001",
+    "insertDate": "2016-08-19T11:11:51",
+    "insertUser": "GBRU",
+    "updateDate": "2016-08-19T11:11:52",
+    "updateUser": "GBRU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 117,
+    "interpretSetName": "EIMA_ISet_2016_08",
+    "insertDate": "2016-08-02T12:09:29",
+    "insertUser": "EIMA",
+    "updateDate": "2016-08-02T12:09:29",
+    "updateUser": "EIMA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 116,
+    "interpretSetName": "GRM_SummerStudent2016",
+    "insertDate": "2016-06-29T09:36:15",
+    "insertUser": "TINEK",
+    "updateDate": "2016-06-29T09:36:24",
+    "updateUser": "TINEK"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 114,
+    "interpretSetName": "SAI_HDN_GEO_26April2016",
+    "insertDate": "2016-04-26T09:45:55",
+    "insertUser": "SAI",
+    "updateDate": "2016-04-26T09:45:55",
+    "updateUser": "SAI"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 113,
+    "interpretSetName": "SAI_HDN_GEO_26042016",
+    "insertDate": "2016-04-26T09:17:26",
+    "insertUser": "SAI",
+    "updateDate": "2016-04-26T09:17:26",
+    "updateUser": "SAI"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 112,
+    "interpretSetName": "SAI_HDN_DG1_QC_22042016",
+    "insertDate": "2016-04-26T07:26:52",
+    "insertUser": "SAI",
+    "updateDate": "2016-04-26T07:26:55",
+    "updateUser": "SAI"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 111,
+    "interpretSetName": "SAI_HDN_DG1_19042016",
+    "insertDate": "2016-04-19T19:55:52",
+    "insertUser": "SAI",
+    "updateDate": "2016-04-19T19:55:53",
+    "updateUser": "SAI"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 110,
+    "interpretSetName": "SAI_1404",
+    "insertDate": "2016-04-14T11:43:12",
+    "insertUser": "SAI",
+    "updateDate": "2016-04-14T11:43:12",
+    "updateUser": "SAI"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 109,
+    "interpretSetName": "hmbl-HDN-DG1-1404",
+    "insertDate": "2016-04-14T11:41:22",
+    "insertUser": "HMBL",
+    "updateDate": "2016-04-14T11:41:23",
+    "updateUser": "HMBL"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 108,
+    "interpretSetName": "SAI_HDN_SEG4_13April_DG1",
+    "insertDate": "2016-04-13T09:07:53",
+    "insertUser": "SAI",
+    "updateDate": "2016-04-13T09:07:53",
+    "updateUser": "SAI"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 107,
+    "interpretSetName": "SAI_HDN_SEG4_7April_DG1",
+    "insertDate": "2016-04-07T17:14:00",
+    "insertUser": "SAI",
+    "updateDate": "2016-04-07T17:14:00",
+    "updateUser": "SAI"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 106,
+    "interpretSetName": "SAI_HDN_SEG4_07April_med_Hanna",
+    "insertDate": "2016-04-07T13:11:21",
+    "insertUser": "SAI",
+    "updateDate": "2016-04-07T17:12:42",
+    "updateUser": "SAI"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 105,
+    "interpretSetName": "HDFAU_N_Segmemt_april2016",
+    "insertDate": "2016-04-07T10:38:41",
+    "insertUser": "HMBL",
+    "updateDate": "2016-04-07T10:38:41",
+    "updateUser": "HMBL"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 104,
+    "interpretSetName": "SAI_HDN_ALL_7April2016",
+    "insertDate": "2016-04-07T09:26:38",
+    "insertUser": "SAI",
+    "updateDate": "2016-04-07T09:26:38",
+    "updateUser": "SAI"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 103,
+    "interpretSetName": "TMHAL_HDN_april2016",
+    "insertDate": "2016-04-07T08:59:54",
+    "insertUser": "TMHAL",
+    "updateDate": "2016-04-07T08:59:55",
+    "updateUser": "TMHAL"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 101,
+    "interpretSetName": "OLCH_Reconstruction_IL1240",
+    "insertDate": "2016-03-22T08:43:14",
+    "insertUser": "OLCH",
+    "updateDate": "2016-03-22T08:43:30",
+    "updateUser": "OLCH"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 100,
+    "interpretSetName": "katsv_A-19 B",
+    "insertDate": "2016-02-05T09:25:32",
+    "insertUser": "KATSV",
+    "updateDate": "2016-02-05T09:25:33",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 99,
+    "interpretSetName": "katsv_A-5_Iset",
+    "insertDate": "2016-01-18T10:03:39",
+    "insertUser": "KATSV",
+    "updateDate": "2016-01-18T10:03:40",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 96,
+    "interpretSetName": "elila_A-9C",
+    "insertDate": "2015-11-24T15:58:43",
+    "insertUser": "ELILA",
+    "updateDate": "2015-11-24T15:58:43",
+    "updateUser": "ELILA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 94,
+    "interpretSetName": "EIMA_ISet_001",
+    "insertDate": "2015-11-17T14:39:12",
+    "insertUser": "EIMA",
+    "updateDate": "2015-11-17T14:39:12",
+    "updateUser": "EIMA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 93,
+    "interpretSetName": "tinek_TS_HD",
+    "insertDate": "2015-11-13T12:34:14",
+    "insertUser": "TINEK",
+    "updateDate": "2015-11-13T12:34:14",
+    "updateUser": "TINEK"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 92,
+    "interpretSetName": "mariam_session_set",
+    "insertDate": "2015-11-11T10:53:45",
+    "insertUser": "MARIAM",
+    "updateDate": "2015-11-11T10:53:45",
+    "updateUser": "MARIAM"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 91,
+    "interpretSetName": "TINEK_TimeShift2015",
+    "insertDate": "2015-10-26T11:01:46",
+    "insertUser": "TINEK",
+    "updateDate": "2015-10-26T11:01:46",
+    "updateUser": "TINEK"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 90,
+    "interpretSetName": "katsv_Mseg",
+    "insertDate": "2015-10-19T08:55:58",
+    "insertUser": "KATSV",
+    "updateDate": "2015-10-19T08:55:59",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 89,
+    "interpretSetName": "hsole_iSet_A-42B",
+    "insertDate": "2015-10-12T09:39:26",
+    "insertUser": "HSOLE",
+    "updateDate": "2015-10-12T09:43:12",
+    "updateUser": "HSOLE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 87,
+    "interpretSetName": "eima_workshop",
+    "insertDate": "2015-09-15T12:04:44",
+    "insertUser": "EIMA",
+    "updateDate": "2015-09-15T12:04:44",
+    "updateUser": "EIMA"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 86,
+    "interpretSetName": "TINEK_4DBI maps_2015",
+    "insertDate": "2015-09-08T09:28:28",
+    "insertUser": "TINEK",
+    "updateDate": "2015-09-08T09:28:29",
+    "updateUser": "TINEK"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 83,
+    "interpretSetName": "LMUE_ISet_001",
+    "insertDate": "2015-04-21T16:02:11",
+    "insertUser": "LMUE",
+    "updateDate": "2015-04-21T16:02:11",
+    "updateUser": "LMUE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 82,
+    "interpretSetName": "ioj_wellplanning_ISet",
+    "insertDate": "2015-04-09T10:12:40",
+    "insertUser": "IOJ",
+    "updateDate": "2015-10-05T13:50:16",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 80,
+    "interpretSetName": "A-44B_Correlation",
+    "insertDate": "2015-02-10T07:50:44",
+    "insertUser": "EMMW",
+    "updateDate": "2015-02-10T07:50:53",
+    "updateUser": "EMMW"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 79,
+    "interpretSetName": "ISet",
+    "insertDate": "2015-02-09T12:58:40",
+    "insertUser": "EMMW",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 74,
+    "interpretSetName": "KATSV_Kseg",
+    "insertDate": "2014-12-16T10:46:46",
+    "insertUser": "KATSV",
+    "updateDate": "2014-12-16T10:46:47",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 70,
+    "interpretSetName": "KATSV_4D14_LTA2",
+    "insertDate": "2014-12-04T11:29:43",
+    "insertUser": "KATSV",
+    "updateDate": "2014-12-04T11:29:43",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 68,
+    "interpretSetName": "A53A_wellplanning",
+    "insertDate": "2014-09-03T08:56:54",
+    "insertUser": "MARIAM",
+    "updateDate": "2014-09-03T08:57:03",
+    "updateUser": "MARIAM"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 67,
+    "interpretSetName": "EMMW_Iset",
+    "insertDate": "2014-06-13T10:57:47",
+    "insertUser": "EMMW",
+    "updateDate": "2014-06-13T10:58:05",
+    "updateUser": "EMMW"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 64,
+    "interpretSetName": "M-segment A-17 CD drilling_2014-05",
+    "insertDate": "2014-05-15T08:38:30",
+    "insertUser": "TINEK",
+    "updateDate": "2014-05-15T08:38:49",
+    "updateUser": "TINEK"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 63,
+    "interpretSetName": "F-4_AH_geo",
+    "insertDate": "2014-04-03T14:07:12",
+    "insertUser": "JERING",
+    "updateDate": "2014-04-03T14:08:10",
+    "updateUser": "JERING"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 60,
+    "interpretSetName": "tinek_FW_INPUT",
+    "insertDate": "2013-07-18T10:05:38",
+    "insertUser": "TINEK",
+    "updateDate": "2013-07-18T10:05:54",
+    "updateUser": "TINEK"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 59,
+    "interpretSetName": "ISet_ioj",
+    "insertDate": "2013-02-21T12:38:11",
+    "insertUser": "IOJ",
+    "updateDate": "2013-02-21T12:38:20",
+    "updateUser": "IOJ"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 58,
+    "interpretSetName": "OLCH_A44B",
+    "insertDate": "2013-01-18T07:03:43",
+    "insertUser": "OLCH",
+    "updateDate": "2013-01-18T07:03:52",
+    "updateUser": "OLCH"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 57,
+    "interpretSetName": "ISet2",
+    "insertDate": "2013-01-17T14:33:31",
+    "insertUser": "OLCH",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 56,
+    "interpretSetName": "ISet1",
+    "insertDate": "2013-01-17T14:30:49",
+    "insertUser": "OLCH",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 55,
+    "interpretSetName": "ISet",
+    "insertDate": "2013-01-17T14:28:37",
+    "insertUser": "OLCH",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 54,
+    "interpretSetName": "emte_A-3",
+    "insertDate": "2012-09-20T10:39:39",
+    "insertUser": "EMTE",
+    "updateDate": "2012-09-20T10:39:43",
+    "updateUser": "EMTE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 53,
+    "interpretSetName": "ISet1",
+    "insertDate": "2012-09-14T09:55:51",
+    "insertUser": "EMTE",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 52,
+    "interpretSetName": "ISet",
+    "insertDate": "2012-09-14T09:54:38",
+    "insertUser": "EMTE",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 49,
+    "interpretSetName": "OLCH_FF11",
+    "insertDate": "2012-06-04T11:51:35",
+    "insertUser": "OLCH",
+    "updateDate": "2012-06-04T11:51:46",
+    "updateUser": "OLCH"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 47,
+    "interpretSetName": "emc_LTWI_I4",
+    "insertDate": "2012-02-15T14:50:57",
+    "insertUser": "PNGUYEN",
+    "updateDate": "2012-02-15T14:51:23",
+    "updateUser": "PNGUYEN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 45,
+    "interpretSetName": "OLCH_HDN_Q",
+    "insertDate": "2012-02-09T11:50:07",
+    "insertUser": "OLCH",
+    "updateDate": "2012-02-09T11:50:15",
+    "updateUser": "OLCH"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 41,
+    "interpretSetName": "emc_AMAP",
+    "insertDate": "2012-01-29T15:25:11",
+    "insertUser": "EMC",
+    "updateDate": "2012-01-29T15:25:19",
+    "updateUser": "EMC"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 38,
+    "interpretSetName": "emte_A-21",
+    "insertDate": "2012-01-11T14:56:17",
+    "insertUser": "EMTE",
+    "updateDate": "2012-01-11T14:56:25",
+    "updateUser": "EMTE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 37,
+    "interpretSetName": "emc_4D_Aare",
+    "insertDate": "2012-01-10T13:46:59",
+    "insertUser": "EMC",
+    "updateDate": "2012-01-10T13:47:14",
+    "updateUser": "EMC"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 36,
+    "interpretSetName": "emc_HD_general",
+    "insertDate": "2012-01-10T13:32:51",
+    "insertUser": "EMC",
+    "updateDate": "2012-01-10T13:44:45",
+    "updateUser": "EMC"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 35,
+    "interpretSetName": "TINEK_ALL",
+    "insertDate": "2012-01-09T11:33:49",
+    "insertUser": "TINEK",
+    "updateDate": "2012-01-30T12:03:05",
+    "updateUser": "TINEK"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 34,
+    "interpretSetName": "emte_4D11",
+    "insertDate": "2011-12-19T08:43:01",
+    "insertUser": "EMTE",
+    "updateDate": "2011-12-19T08:43:10",
+    "updateUser": "EMTE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 33,
+    "interpretSetName": "demo_ISet",
+    "insertDate": "2011-12-16T10:03:27",
+    "insertUser": "ANCLAN",
+    "updateDate": "2011-12-16T10:03:37",
+    "updateUser": "ANCLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 30,
+    "interpretSetName": "emc_4D_OPRS",
+    "insertDate": "2011-12-15T14:48:33",
+    "insertUser": "EMC",
+    "updateDate": "2011-12-15T14:49:00",
+    "updateUser": "EMC"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 29,
+    "interpretSetName": "ISet",
+    "insertDate": "2011-12-09T12:35:49",
+    "insertUser": "NAMHP",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 28,
+    "interpretSetName": "tinek-2011",
+    "insertDate": "2011-11-21T14:07:32",
+    "insertUser": "TINEK",
+    "updateDate": "2011-11-21T14:07:46",
+    "updateUser": "TINEK"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 27,
+    "interpretSetName": "katsv_emte_A-8",
+    "insertDate": "2011-11-14T14:11:32",
+    "insertUser": "EMTE",
+    "updateDate": "2011-11-14T14:17:01",
+    "updateUser": "EMTE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 26,
+    "interpretSetName": "ISet_namhp",
+    "insertDate": "2011-11-14T12:16:07",
+    "insertUser": "NAMHP",
+    "updateDate": "2011-11-14T12:16:29",
+    "updateUser": "NAMHP"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 24,
+    "interpretSetName": "mhou_faz3_A-3_ISet",
+    "insertDate": "2011-11-03T14:05:24",
+    "insertUser": "MHOU",
+    "updateDate": "2011-11-03T14:05:51",
+    "updateUser": "MHOU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 23,
+    "interpretSetName": "A-8",
+    "insertDate": "2011-08-31T14:19:56",
+    "insertUser": "EMTE",
+    "updateDate": "2011-08-31T14:20:01",
+    "updateUser": "EMTE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 20,
+    "interpretSetName": "Katsv_ISet",
+    "insertDate": "2011-08-31T12:40:39",
+    "insertUser": "KATSV",
+    "updateDate": "2011-08-31T12:40:48",
+    "updateUser": "KATSV"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 18,
+    "interpretSetName": "lithocube",
+    "insertDate": "2011-07-18T08:06:47",
+    "insertUser": "NAMHP",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 17,
+    "interpretSetName": "Tone_FluidContactsFrom4D",
+    "insertDate": "2011-06-29T16:45:21",
+    "insertUser": "EMTE",
+    "updateDate": "2011-06-29T16:45:32",
+    "updateUser": "EMTE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 16,
+    "interpretSetName": "knstr_Q",
+    "insertDate": "2011-06-28T12:21:15",
+    "insertUser": "KNSTR",
+    "updateDate": "2011-06-28T12:21:23",
+    "updateUser": "KNSTR"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 15,
+    "interpretSetName": "thmaa_session1",
+    "insertDate": "2011-06-17T10:02:05",
+    "insertUser": "EMTE",
+    "updateDate": "2011-06-17T10:02:19",
+    "updateUser": "EMTE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 14,
+    "interpretSetName": "knstrFF11MIJ",
+    "insertDate": "2011-06-14T15:14:20",
+    "insertUser": "KNSTR",
+    "updateDate": "2011-06-14T15:14:51",
+    "updateUser": "KNSTR"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 13,
+    "interpretSetName": "FF11_Hanna",
+    "insertDate": "2011-06-06T13:56:08",
+    "insertUser": "HMBL",
+    "updateDate": "2011-06-06T13:56:20",
+    "updateUser": "HMBL"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 11,
+    "interpretSetName": "anclan_ISet",
+    "insertDate": "2011-05-05T12:14:14",
+    "insertUser": "ANCLAN",
+    "updateDate": "2011-05-05T12:14:20",
+    "updateUser": "ANCLAN"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 9,
+    "interpretSetName": "Hanna",
+    "insertDate": "2011-03-28T11:18:23",
+    "insertUser": "HMBL",
+    "updateDate": "2011-03-28T11:18:27",
+    "updateUser": "HMBL"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 8,
+    "interpretSetName": "mhou_ISET",
+    "insertDate": "2011-03-15T09:27:45",
+    "insertUser": "MHOU",
+    "updateDate": "2011-03-15T09:28:00",
+    "updateUser": "MHOU"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 7,
+    "interpretSetName": "hubm",
+    "insertDate": "2011-02-15T10:16:30",
+    "insertUser": "HUBM",
+    "updateDate": "2011-02-15T10:16:34",
+    "updateUser": "HUBM"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 6,
+    "interpretSetName": "knstrFF11M",
+    "insertDate": "2011-02-14T12:35:31",
+    "insertUser": "KNSTR",
+    "updateDate": "2011-02-14T12:35:40",
+    "updateUser": "KNSTR"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 5,
+    "interpretSetName": "ISet",
+    "insertDate": "2011-02-13T14:46:21",
+    "insertUser": "TINEK",
+    "updateDate": null,
+    "updateUser": ""
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 4,
+    "interpretSetName": "adam1",
+    "insertDate": "2011-02-11T10:34:31",
+    "insertUser": "ADPE",
+    "updateDate": "2011-02-11T10:34:34",
+    "updateUser": "ADPE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 3,
+    "interpretSetName": "AMAP_2011",
+    "insertDate": "2011-02-10T13:21:14",
+    "insertUser": "EMTE",
+    "updateDate": "2011-02-10T13:21:30",
+    "updateUser": "EMTE"
+  },
+  {
+    "sourceProjectId": 1,
+    "interpretationSetId": 2,
+    "interpretSetName": "FF11",
+    "insertDate": "2011-02-10T13:05:35",
+    "insertUser": "TINEK",
+    "updateDate": "2011-02-10T13:05:45",
+    "updateUser": "TINEK"
+  }
+]

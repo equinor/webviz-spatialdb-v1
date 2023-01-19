@@ -1,0 +1,13 @@
+title: SpatialDB Surface Viewer
+
+options:
+  menu:
+    initially_pinned: True
+
+layout:
+
+ - page: SurfaceMapViewer
+   content:
+          - SurfaceMapViewer:
+
+ 

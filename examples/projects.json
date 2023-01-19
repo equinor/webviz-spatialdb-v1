@@ -1,0 +1,62 @@
+[
+  {
+    "sourceProjectId": 1,
+    "source": "OW",
+    "sourceDatabase": "SJ4NORL",
+    "sourceProject": "HEIDRUN_MAIN"
+  },
+  {
+    "sourceProjectId": 2,
+    "source": "OW",
+    "sourceDatabase": "BG4FROST",
+    "sourceProject": "GULLFAKS"
+  },
+  {
+    "sourceProjectId": 3,
+    "source": "OW",
+    "sourceDatabase": "BG4FROST",
+    "sourceProject": "grane_ip_1"
+  },
+  {
+    "sourceProjectId": 4,
+    "source": "OW",
+    "sourceDatabase": "SV4FROST",
+    "sourceProject": "js_all"
+  },
+  {
+    "sourceProjectId": 5,
+    "source": "PetrelStudio",
+    "sourceDatabase": "ST_EUROPE",
+    "sourceProject": "NORTH_SEA_REGIONAL"
+  },
+  {
+    "sourceProjectId": 6,
+    "source": "PetrelStudio",
+    "sourceDatabase": "ST_AFRICA",
+    "sourceProject": "SOUTH_AFRICA_REGIONAL"
+  },
+  {
+    "sourceProjectId": 7,
+    "source": "PetrelStudio",
+    "sourceDatabase": "ST_AMERICA",
+    "sourceProject": "SOUTH_AMERICA"
+  },
+  {
+    "sourceProjectId": 8,
+    "source": "PetrelStudio",
+    "sourceDatabase": "RIO_AMERICA",
+    "sourceProject": "BRAZIL"
+  },
+  {
+    "sourceProjectId": 9,
+    "source": "PetrelStudio",
+    "sourceDatabase": "OSL_AMERICA",
+    "sourceProject": "BRAZIL"
+  },
+  {
+    "sourceProjectId": 10,
+    "source": "PetrelStudio",
+    "sourceDatabase": "HA_EUROPE",
+    "sourceProject": "NS_BS_REGIONAL"
+  }
+]
