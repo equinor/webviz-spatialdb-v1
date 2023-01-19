@@ -26,11 +26,11 @@ stages:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/webviz_output/Dockerfile'
         tags: |
-          $(tag)
-- task: DownloadPipelineArtifact@2
-  inputs:
-    buildType: 'specific'
-    project: '5d6b64e3-e300-43b1-aa7e-417e6ea02138'
-    definition: '211'
-    buildVersionToDownload: 'latest'
-    targetPath: '$(Pipeline.Workspace)'
+              $(tag)
+    - task: DownloadPipelineArtifact@2
+      inputs:
+        buildType: 'specific'
+        project: '5d6b64e3-e300-43b1-aa7e-417e6ea02138'
+        definition: '211'
+        buildVersionToDownload: 'latest'
+        targetPath: '$(Pipeline.Workspace)'
