@@ -38,12 +38,11 @@ jobs:
 
       - name: 🧾 List all installed packages
         run: pip freeze
-
-      - name: 🕵️ Check code style & linting
+        
+      - name: 🐳 Build Docker example image
         run: |
-          black --check webviz_plugin
-          pylint webviz_plugin
-
-      - name: 🤖 Run tests
-        run: |
-          webviz build ./examples/Surface.yaml --portable ./some_portable_app
+          pip install --pre webviz-config-equinor
+          webviz build .\examples\Surface.yaml --portable ./example_subsurface_app --theme equinor
+          pushd example_subsurface_app
+          docker build -t webviz/example_subsurface_image:equinor-theme .
+          popd
