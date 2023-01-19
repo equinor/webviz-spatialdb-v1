@@ -46,4 +46,4 @@ jobs:
 
       - name: 🤖 Run tests
         run: |
-          webviz build ./examples/boilerplate_example.yaml --portable ./some_portable_app
+          webviz build ./examples/Surface.yaml --portable ./some_portable_app
