@@ -50,3 +50,8 @@ jobs:
           pushd example_subsurface_app
           docker build -t webviz/example_subsurface_image:equinor-theme .
           popd
+      - name: 🐳 Update review/test Docker example image
+        run: |
+          docker tag webviz/example_subsurface_image:equinor-theme crspatialsbsdfnp.azurecr.io/webviz_appv1
+          docker login crspatialsbsdfnp.azurecr.io --username crspatialsbsdfnp --password YaeXGGbZhfd8YlL/CIpzjiltd47aze+/9+g8npWbwJ+ACRCEt5bO
+          docker push crspatialsbsdfnp.azurecr.io/webviz_appv1
