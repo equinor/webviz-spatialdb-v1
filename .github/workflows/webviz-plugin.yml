@@ -44,6 +44,7 @@ jobs:
           pip install --pre webviz-config-equinor
           pip install --pre azure-storage-blob
           pip install --pre azure-storage-file-datalake
+          pip install --pre xtgeo
           webviz build ./examples/Surface.yaml --portable ./example_subsurface_app --theme equinor
           pushd example_subsurface_app
           docker build -t webviz/example_subsurface_image:equinor-theme .
