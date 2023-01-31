@@ -30,10 +30,9 @@ jobs:
       - name: 📦 Install dependencies
         run: |
           pip install --upgrade pip
-          pip install .
-          pip install --pre --upgrade webviz-config webviz-core-components webviz-subsurface-components
           pip install webviz-config[deployment]
-
+          pip install .
+          
       - name: 📦 Install test dependencies
         run: |
           pip install .[tests]
