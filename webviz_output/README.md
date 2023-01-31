@@ -11,10 +11,8 @@ You can run it locally with:
 
 If you want to upload it to e.g. Azure Container Registry, you can do e.g.
 
-  cd webviz_output
-  az login 
-  az account set --subscription S327-IT-Subsurface-Data-Fundamentals
-  az acr build --registry crspatialsbsdfnp   --image webviz_app . 
+  cd THISFOLDER
+  az acr build --registry $ACR_NAME --image $IMAGE_NAME . 
 
 assuming you have set the environment variables $ACR_NAME and $IMAGE_NAME.
 
@@ -30,4 +28,3 @@ In order to add the multi-line deploy keys, you should `base64` encode the deplo
 before giving it as the `GITHUB_DEPLOY_KEYS` variable. Multiple keys (in case you have
 multiple private repositiories as dependencies) can be joined together with a comma
 separator (,) before `base64` encoding.
-

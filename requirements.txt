@@ -2,3 +2,5 @@ webviz-config
 webviz-config-equinor
 webviz-subsurface-components
 azure-storage-blob
+azure-storage-file-datalake
+xtgeo

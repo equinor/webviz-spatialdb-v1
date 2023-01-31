@@ -20,9 +20,9 @@
             "'self'",
             "data:",
             "blob:",
-            "https://eds-static.equinor.com"
+            "https://eds-static.equinor.com",
+            "https://dlssdfsandbox.blob.core.windows.net/"
         ],
-        "navigate-to": "'self'",
         "object-src": "'self'",
         "prefetch-src": "'self'",
         "script-src": [

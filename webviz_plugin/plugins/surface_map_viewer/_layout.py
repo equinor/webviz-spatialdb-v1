@@ -196,7 +196,7 @@ class MapViewLayout(FullScreen):
                             "multiPicking": True, "pickDepth": 10},
                     scale={"visible": True},
                     colorTables=color_tables,
-                    bounds=[0, 0, 1000, 1000],
+                    bounds = [-122.519, 37.7045, -122.355, 37.829],
                     layers=[
                         {
                             "@@type": LayoutElements.LAYER_TYPE,
