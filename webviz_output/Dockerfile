@@ -19,8 +19,8 @@ ENV PATH="${PATH}:/home/appuser/.local/bin"
 
 # Install relevant Python packages
 COPY --chown=appuser requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-    pip install git+https://github.com/equinor/webviz-spatialdb.git
+RUN pip install -r requirements.txt 
+RUN pip install git+https://github.com/equinor/webviz-spatialdb.git
 
 ###############
 # Final image #
