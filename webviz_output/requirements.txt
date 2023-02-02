@@ -12,6 +12,7 @@ dash==2.7.1
 flask-caching==1.10.1
 flask-talisman==1.0.0
 flask==2.2.2
+pip install git+https://github.com/equinor/webviz-spatialdb.git
 gunicorn==19.9.0
 idna==3.4
 importlib-metadata==5.2.0
