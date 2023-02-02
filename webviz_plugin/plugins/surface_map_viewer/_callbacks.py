@@ -198,10 +198,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
 
 
 
-                map_bounds = [surf_meta.x_min,
-                              surf_meta.y_min,
-                              surf_meta.x_max,
-                              surf_meta.y_max, ]
+                map_bounds = surf_meta.deckgl_bounds
                 layers.extend([
                     {
                         "id": LayoutElements.COLORMAP_LAYER,
