@@ -10,7 +10,7 @@ import logging.config
 import os
 import threading
 import datetime
-from pathlib import Path, PosixPath, WindowsPath
+from pathlib import Path
 
 from uuid import uuid4
 
@@ -70,7 +70,7 @@ logging.getLogger("werkzeug").setLevel(logging.WARNING)
 # argument to all plugins that request it.
 webviz_settings: webviz_config.WebvizSettings = webviz_config.WebvizSettings(
     shared_settings=webviz_config.SHARED_SETTINGS_SUBSCRIPTIONS.transformed_settings(
-        {}, WindowsPath('C:/Appl/Surajit/Project/webviz-spdb-main/examples'), True 
+        {}, Path(__file__).resolve().parent / "examples", True 
     ),
     theme=theme,
 )
