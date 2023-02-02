@@ -161,7 +161,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                         grid_data['interpretationSetId'] == int(iset_value))]
 
                 json_dict = grid_data.iloc[0]
-                path = blob_url+"SpatialDB/processed/surface_coordinates_Z2/" + \
+                path = blob_url+"SpatialDB/processed/surface_coordinates/" + \
                     relatie_path + grid_value + ".parquet?" + token
                 ncol, nrow = json_dict['NCOL'], json_dict['NROW']
                 xori, yori = float(json_dict['XORI']), float(json_dict['YORI'])
