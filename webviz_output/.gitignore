@@ -1,4 +1,4 @@
-resources/
+resources/webviz_storage
 __pycache__/
 *.pyc
 *~
