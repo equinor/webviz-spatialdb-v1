@@ -45,3 +45,6 @@ webviz-subsurface-components
 azure-storage-blob
 azure-storage-file-datalake
 xtgeo
+# azure-keyvault-secrets 
+# azure-identity
+# msrestazure

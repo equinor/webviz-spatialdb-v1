@@ -105,3 +105,14 @@ venv.bak/
 
 # vscode
 .vscode
+DEMO/example_deckgl_3dgrid.py
+DEMO/example_deckgl_map.py
+DEMO/key.py
+DEMO/topvolantis_depth.gri
+DEMO/topvolantis_faultpolygons.pol
+DEMO/topvolantis_seismic_attribute.gri
+DEMO/xtgeo_grid_to_vtk_polydata.py
+DEMO/xtgeo_polygons_to_json.py
+DEMO/xtgeo_surface_to_float32.py
+spdb-venv/Scripts/autopep8.exe
+spdb-venv/Scripts/pycodestyle.exe

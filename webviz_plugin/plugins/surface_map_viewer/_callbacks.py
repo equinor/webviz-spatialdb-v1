@@ -99,6 +99,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             Output(get_uuid(LayoutElements.DECKGLMAP), "layers"),
             Output(get_uuid(LayoutElements.DECKGLMAP), "bounds"),
             Output(get_uuid(LayoutElements.DECKGLMAP), "views"),
+            Output(get_uuid(LayoutElements.COLOURMAP_DROPDOWN), "disabled"),
         ],
         [
             Input(get_uuid(LayoutElements.COLOURMAP_DROPDOWN), "value"),
@@ -120,9 +121,22 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
         map_bounds = [451250, 6778750, 464500, 6793250]
         layersid = [LayoutElements.BITMAP_LAYER]
 
+        if quickload_value == '1':
+            colour_disabled = True
+        else:
+            colour_disabled = False
+
         if grid_value:
-            project = project_options[project_value]
-            server = server_options[server_value]
+            df_server = pd.DataFrame(server_options)
+            df_server_out = df_server.loc[df_server['value'] == server_value]
+            server = df_server_out.iloc[0]['label']
+
+            df_project = pd.DataFrame(project_options)
+            df_project_out = df_project.loc[df_project['value'] == project_value]
+            project = df_project_out.iloc[0]['label']
+
+            # project = project_options[project_value]
+            # server = server_options[server_value]
             relatie_path = server+"_" + project + "/"
             token = generate_file_system_sas(
                 AZURE_ACC_NAME,
@@ -196,8 +210,6 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
 
                 colormapname = SurfaceModel.COLORMAP_OPTIONS[colour_value]
 
-
-
                 map_bounds = surf_meta.deckgl_bounds
                 layers.extend([
                     {
@@ -245,7 +257,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             ],
         }
 
-        return (layers, map_bounds, map_views)
+        return (layers, map_bounds, map_views, colour_disabled)
 
 # SET SERVER START
 
@@ -318,26 +330,36 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
         [
             Output(get_uuid(LayoutElements.ISET_DROPDOWN), "value"),
             Output(get_uuid(LayoutElements.ISET_DROPDOWN), "options"),
+            Output(get_uuid(LayoutElements.ISET_DROPDOWN), "disabled"),
         ],
         [
-            Input(get_uuid(LayoutElements.PROJECT_DROPDOWN), "value")
+            Input(get_uuid(LayoutElements.PROJECT_DROPDOWN), "value"),
+            State(get_uuid(LayoutElements.SOURCE_DB_DROPDOWN), "value")
         ],
     )
     def _set_iset(
-        project_value: str
+        project_value: str, source_db_value: str
     ) -> dict:
+        db_name = SurfaceModel.source_db[source_db_value]
+        if db_name == 'OW':
+            iset_disabled = False
+        else:
+            iset_disabled = True
+
         if project_value:
             iset_names_fil = iset_names.loc[iset_names['sourceProjectId']
                                             == int(project_value)]
             return (
                 False,
                 SurfaceModel.get_iset_names(iset_names_fil),
+                iset_disabled
 
             )
         else:
             return (
                 False,
                 False,
+                iset_disabled
 
             )
 # SET ISET END

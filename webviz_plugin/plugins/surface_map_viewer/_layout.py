@@ -147,14 +147,14 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
                         label="Settings",
                         children=[
                             wcc.RadioItems(
-                                label="Quick Load :- ",
+                                label="Quick Load (static image only) :- ",
                                 id=field_uuid(LayoutElements.QUICKLOAD_OPTION),
                                 options=[
                                     {"label": "ON", "value": "1"},
                                     {"label": "OFF", "value": "0"}
                                 ],
                                 vertical=False,
-                                value="1",
+                                value="0",
                             ),
                             wcc.Dropdown(
                                 label="Select ColourMap",
