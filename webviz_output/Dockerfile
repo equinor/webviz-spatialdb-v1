@@ -20,7 +20,7 @@ ENV PATH="${PATH}:/home/appuser/.local/bin"
 # Install relevant Python packages
 COPY --chown=appuser requirements.txt requirements.txt
 RUN pip install -r requirements.txt 
-RUN pip install git+ssh://$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@github.com/equinor/webviz-spatialdb.gitt
+RUN pip install git+ssh://$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@github.com/equinor/webviz-spatialdb.git
 
 
 ###############
