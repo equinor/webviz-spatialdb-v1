@@ -1,7 +1,7 @@
 apiVersion: radix.equinor.com/v1
 kind: RadixApplication
 metadata:
-  name: webviz-spatialdb
+  name: webviz-spatialdb-v1
 spec:
   environments:
     - name: dev
