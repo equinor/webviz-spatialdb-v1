@@ -40,3 +40,9 @@ webviz-config==0.5.1
 webviz-core-components==0.6.2
 werkzeug==2.2.2
 zipp==3.13.0
+webviz-config
+webviz-config-equinor
+azure-storage-blob
+azure-storage-file-datalake
+xtgeo
+python-dotenv
