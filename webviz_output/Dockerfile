@@ -20,7 +20,7 @@ ENV PATH="${PATH}:/home/appuser/.local/bin"
 # Install relevant Python packages
 COPY --chown=appuser requirements.txt requirements.txt
 RUN pip install -r requirements.txt 
-RUN pip install git+https://github.com/equinor/webviz-spatialdb.git
+RUN pip install git+https://github.com/equinor/webviz-spatialdb-v1.git
 RUN pip uninstall webviz-subsurface-components 
 RUN pip install webviz-subsurface-components --pre --upgrade
 
