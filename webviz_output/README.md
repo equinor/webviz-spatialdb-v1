@@ -13,10 +13,6 @@ If you want to upload it to e.g. Azure Container Registry, you can do e.g.
 
   cd THISFOLDER
   az acr build --registry $ACR_NAME --image $IMAGE_NAME . 
-cd webviz_output 
-az login 
-az account set --subscription S327-IT-Subsurface-Data-Fundamentals 
-az acr build --registry crspatialsbsdfnp --image webviz_app .
 
 assuming you have set the environment variables $ACR_NAME and $IMAGE_NAME.
 

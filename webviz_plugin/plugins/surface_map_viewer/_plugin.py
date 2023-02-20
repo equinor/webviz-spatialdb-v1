@@ -12,8 +12,8 @@ import pandas as pd
 from webviz_config.common_cache import CACHE
 from webviz_config.webviz_store import webvizstore
 from dash import Dash
-from ._surface_server import SurfaceServer
-
+from .surface_array_server import SurfaceArrayServer
+from dotenv import load_dotenv
 
 from ._color_tables import default_color_tables
 
@@ -71,8 +71,9 @@ class SurfaceMapViewer(WebvizPluginABC):
         self._iset_names = SurfaceModel.get_iset_names(self.isets_df)
         self._grid_names = SurfaceModel.get_grid_names(self.grids_df)
         self.color_tables = default_color_tables
-        self._surface_server = SurfaceServer.instance(app)
+        self._surface_server = SurfaceArrayServer.instance(app)
         self.set_callbacks()
+        load_dotenv()
 
     def add_webvizstore(self) -> List[tuple]:
         return [(get_data, [{"file_path": self.projects_file}]),

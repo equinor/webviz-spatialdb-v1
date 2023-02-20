@@ -7,34 +7,24 @@ import numpy as np
 from dash import ALL, MATCH, Input, Output, State, callback, callback_context, no_update
 from ._color_tables import default_color_tables
 import xtgeo
-
+import os
 from ._business_logic import SurfaceModel
 from ._layout import LayoutElements
 
 
-from ._surface_server import SurfaceServer, QualifiedSurfaceAddress, SimulatedSurfaceAddress
-from ._surface_data import DirectoryClient
+from .surface_array_server import SurfaceArrayServer, QualifiedSurfaceAddress, SimulatedSurfaceAddress
+
 from azure.storage.filedatalake import (
-    AccountSasPermissions,
-    ContentSettings,
-    DataLakeDirectoryClient,
-    DataLakeFileClient,
     DataLakeServiceClient,
-    EncryptionScopeOptions,
-    FileSasPermissions,
-    FileSystemClient,
     FileSystemSasPermissions,
-    generate_account_sas,
-    generate_file_sas,
     generate_file_system_sas,
-    ResourceTypes
 )
 from datetime import datetime, timedelta
 
 
-AZURE_ACC_NAME = "dlssdfsandbox"
-AZURE_PRIMARY_KEY = "hnbCnarDj4A1lWDMWuZ4xcl94tXGQKWBTfDDG3A8NREAvJwMJBiu7i9nmxxCj4jp191pfK4xF3oRkh6uKFSz5Q=="
-AZURE_CONTAINER = "dls"
+# AZURE_ACC_NAME = "dlssdfsandbox"
+# AZURE_PRIMARY_KEY = "hnbCnarDj4A1lWDMWuZ4xcl94tXGQKWBTfDDG3A8NREAvJwMJBiu7i9nmxxCj4jp191pfK4xF3oRkh6uKFSz5Q=="
+# AZURE_CONTAINER = "dls"
 
 
 ###########################################################################
@@ -92,7 +82,7 @@ def generate_sas_token(file_name):
     return sas_url
 
 
-def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: pd.DataFrame, grid_names: pd.DataFrame, surface_server: SurfaceServer):
+def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: pd.DataFrame, grid_names: pd.DataFrame, surface_server: SurfaceArrayServer):
 
     @callback(
         [
@@ -132,12 +122,19 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             server = df_server_out.iloc[0]['label']
 
             df_project = pd.DataFrame(project_options)
-            df_project_out = df_project.loc[df_project['value'] == project_value]
+            df_project_out = df_project.loc[df_project['value']
+                                            == project_value]
             project = df_project_out.iloc[0]['label']
 
             # project = project_options[project_value]
             # server = server_options[server_value]
             relatie_path = server+"_" + project + "/"
+
+
+            AZURE_ACC_NAME = os.environ["AZURE_ACC_NAME"]
+            AZURE_PRIMARY_KEY = os.environ["AZURE_PRIMARY_KEY"]
+            AZURE_CONTAINER = os.environ["AZURE_CONTAINER"]    
+
             token = generate_file_system_sas(
                 AZURE_ACC_NAME,
                 AZURE_CONTAINER,
@@ -149,15 +146,24 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
 
             blob_url = 'https://' + AZURE_ACC_NAME + \
                 '.blob.core.windows.net/' + AZURE_CONTAINER + '/'
+            
+            grid_data = grid_names.loc[(grid_names['gridId'] == (grid_value)) & (
+                grid_names['sourceProjectId'] == int(project_value))]
+            if iset_value:
+                grid_data = grid_data.loc[(
+                    grid_data['interpretationSetId'] == int(iset_value))]
+
+            json_dict = grid_data.iloc[0]
+            source_grid_id = str(json_dict['sourceGridId'])            
 
             if quickload_value == '1':
                 sas_url = blob_url + 'SpatialDB/processed/surface_coordinates/' + relatie_path + 'images/' + \
-                    grid_value+'.png?' + token
+                    source_grid_id +'.png?' + token
 
                 layers.extend([
                     {
                         "id": LayoutElements.BITMAP_LAYER,
-                        "@@type": LayoutElements.LAYER_TYPE,
+                        "@@type": LayoutElements.BITMAP_LAYER_TYPE,
                         "image": sas_url,
                         "bounds": map_bounds
 
@@ -165,18 +171,13 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                 ]
                 )
             else:
-                layersid = [LayoutElements.COLORMAP_LAYER,
-                            LayoutElements.HILLSHADING_LAYER]
+                layersid = [LayoutElements.AXES_LAYER,
+                            LayoutElements.MAP_LAYER]
 
-                grid_data = grid_names.loc[(grid_names['gridId'] == (grid_value)) & (
-                    grid_names['sourceProjectId'] == int(project_value))]
-                if iset_value:
-                    grid_data = grid_data.loc[(
-                        grid_data['interpretationSetId'] == int(iset_value))]
 
-                json_dict = grid_data.iloc[0]
                 path = blob_url+"SpatialDB/processed/surface_coordinates/" + \
-                    relatie_path + grid_value + ".parquet?" + token
+                    relatie_path + source_grid_id + ".parquet?" + token
+                colormapname = SurfaceModel.COLORMAP_OPTIONS[colour_value]
                 ncol, nrow = json_dict['NCOL'], json_dict['NROW']
                 xori, yori = float(json_dict['XORI']), float(json_dict['YORI'])
                 xinc, yinc = float(json_dict['XINC']), float(json_dict['YINC'])
@@ -190,11 +191,10 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                 values = np.transpose(values)
 
                 # ncol, nrow = nrow, ncol  # note flip on ncol/nrow definition
-                surface = xtgeo.RegularSurface(ncol=ncol, nrow=nrow,
-                                               xori=xori, yori=yori,
-                                               xinc=xinc, yinc=yinc, rotation=rotation,
-                                               values=values)
-
+                depth_surface = xtgeo.RegularSurface(ncol=ncol, nrow=nrow,
+                                                     xori=xori, yori=yori,
+                                                     xinc=xinc, yinc=yinc, rotation=rotation,
+                                                     values=values)
                 surface_address = SimulatedSurfaceAddress(
                     attribute=grid_value,
                     name=json_dict['surfaceName'],
@@ -203,46 +203,50 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                 )
                 qualified_address = QualifiedSurfaceAddress(
                     'provider_id', surface_address)
-                surface_server.publish_surface(qualified_address, surface)
+                surface_server.publish_surface(qualified_address, depth_surface)
                 url = surface_server.encode_partial_url(qualified_address)
-                surf_meta = surface_server.get_surface_metadata(
-                    qualified_address)
 
-                colormapname = SurfaceModel.COLORMAP_OPTIONS[colour_value]
-
-                map_bounds = surf_meta.deckgl_bounds
+                
+                
                 layers.extend([
                     {
-                        "id": LayoutElements.COLORMAP_LAYER,
-                        "@@type": "ColormapLayer",
-                        "visible": True,
-                        "colorMapName": colormapname,
-                        "valueRange": [surf_meta.val_min, surf_meta.val_max],
-                        "image": url,
-                        "rotDeg": surf_meta.deckgl_rot_deg,
-                        "bounds": surf_meta.deckgl_bounds,
-
+                        "@@type": "AxesLayer",
+                        "id": LayoutElements.AXES_LAYER,
+                        "bounds": [
+                            depth_surface.xmin,
+                            depth_surface.ymin,
+                            -np.nanmax(depth_surface.values),
+                            depth_surface.xmax,
+                            depth_surface.ymax,
+                            np.nanmin(depth_surface.values),
+                        ],
                     },
                     {
-                        "id": LayoutElements.HILLSHADING_LAYER,
-                        "@@type": "Hillshading2DLayer",
+                        "@@type": "MapLayer",
+                        "id": LayoutElements.MAP_LAYER,
+                        "meshUrl": url,
+                        "frame": {
+                            "origin": [depth_surface.xori, depth_surface.yori],
+                            "count": [depth_surface.ncol, depth_surface.nrow],
+                            "increment": [depth_surface.xinc, depth_surface.yinc],
+                            "rotDeg": depth_surface.rotation,
+                        },
+                        "contours": [0, 20],
+                        "isContoursDepth": True,
+                        "gridLines": False,
+                        "material": True,
                         "colorMapName": colormapname,
-                        "valueRange": [surf_meta.val_min, surf_meta.val_max],
-                        "image": url,
-                        "visible":True,
-                        "rotDeg": surf_meta.deckgl_rot_deg,
-                        "bounds": surf_meta.deckgl_bounds,
+                        "name": "mesh",
                     },
                 ])
-
-        else:
-            layers.extend([
-                {
-                    "@@type": LayoutElements.LAYER_TYPE,
-                    "id": LayoutElements.BITMAP_LAYER,
-                    "bounds": map_bounds
-                },
-            ])
+        # else:
+        #     layers.extend([
+        #         {
+        #             "@@type": LayoutElements.MAP_LAYER_TYPE,
+        #             "id": LayoutElements.MAP_LAYER,
+        #             "bounds": map_bounds
+        #         },
+        #     ])
 
         map_views = {
             "layout": [1, 1],
@@ -252,12 +256,12 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                     "id": "deck_view",
                     "show3D": False,
                     "layerIds": layersid,
-                }
-                for view in range(1)
+                    "isSync": True,
+                },
             ],
         }
 
-        return (layers, map_bounds, map_views, colour_disabled)
+        return (layers, map_bounds,  map_views, colour_disabled)
 
 # SET SERVER START
 
@@ -399,3 +403,6 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             SurfaceModel.get_grid_names(grid_names_fil),
 
         )
+
+
+

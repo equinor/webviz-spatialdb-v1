@@ -15,8 +15,9 @@ from dash import Dash
 from webviz_config.webviz_instance_info import WEBVIZ_INSTANCE_INFO
 
 from ._utils.perf_timer import PerfTimer
-from ._xtgeo_surface_to_float32 import get_surface_float32
+
 from ._surface_to_image import surface_to_png_bytes_optimized
+from ._types import QualifiedDiffSurfaceAddress, QualifiedSurfaceAddress
 from .ensemble_surface_provider import (
     ObservedSurfaceAddress,
     SimulatedSurfaceAddress,
@@ -26,27 +27,13 @@ from .ensemble_surface_provider import (
 
 LOGGER = logging.getLogger(__name__)
 
-_ROOT_URL_PATH = "/SurfaceServer2"
+_ROOT_URL_PATH = "/SurfaceImageServer"
 
-_SURFACE_SERVER_INSTANCE: Optional["SurfaceServer"] = None
-
-
-@dataclass(frozen=True)
-class QualifiedSurfaceAddress:
-    provider_id: str
-    address: SurfaceAddress
+_SURFACE_SERVER_INSTANCE: Optional["SurfaceImageServer"] = None
 
 
 @dataclass(frozen=True)
-class QualifiedDiffSurfaceAddress:
-    provider_id_a: str
-    address_a: SurfaceAddress
-    provider_id_b: str
-    address_b: SurfaceAddress
-
-
-@dataclass(frozen=True)
-class SurfaceMeta:
+class SurfaceImageMeta:
     x_min: float
     x_max: float
     y_min: float
@@ -57,10 +44,11 @@ class SurfaceMeta:
     deckgl_rot_deg: float  # Around upper left corner
 
 
-class SurfaceServer:
+class SurfaceImageServer:
     def __init__(self, app: Dash) -> None:
         cache_dir = (
-            WEBVIZ_INSTANCE_INFO.storage_folder / f"SurfaceServer_filecache_{uuid4()}"
+            WEBVIZ_INSTANCE_INFO.storage_folder
+            / f"SurfaceImageServer_filecache_{uuid4()}"
         )
         LOGGER.debug(f"Setting up file cache in: {cache_dir}")
         self._image_cache = flask_caching.Cache(
@@ -68,6 +56,7 @@ class SurfaceServer:
                 "CACHE_TYPE": "FileSystemCache",
                 "CACHE_DIR": cache_dir,
                 "CACHE_DEFAULT_TIMEOUT": 0,
+                "CACHE_OPTIONS": {"mode": 0o660},
             }
         )
         self._image_cache.init_app(app.server)
@@ -75,12 +64,12 @@ class SurfaceServer:
         self._setup_url_rule(app)
 
     @staticmethod
-    def instance(app: Dash) -> "SurfaceServer":
+    def instance(app: Dash) -> "SurfaceImageServer":
         # pylint: disable=global-statement
         global _SURFACE_SERVER_INSTANCE
         if not _SURFACE_SERVER_INSTANCE:
-            LOGGER.debug("Initializing SurfaceServer instance")
-            _SURFACE_SERVER_INSTANCE = SurfaceServer(app)
+            LOGGER.debug("Initializing SurfaceImageServer instance")
+            _SURFACE_SERVER_INSTANCE = SurfaceImageServer(app)
 
         return _SURFACE_SERVER_INSTANCE
 
@@ -115,7 +104,7 @@ class SurfaceServer:
     def get_surface_metadata(
         self,
         qualified_address: Union[QualifiedSurfaceAddress, QualifiedDiffSurfaceAddress],
-    ) -> Optional[SurfaceMeta]:
+    ) -> Optional[SurfaceImageMeta]:
 
         if isinstance(qualified_address, QualifiedSurfaceAddress):
             base_cache_key = _address_to_str(
@@ -130,12 +119,12 @@ class SurfaceServer:
             )
 
         meta_cache_key = "META:" + base_cache_key
-        meta: Optional[SurfaceMeta] = self._image_cache.get(meta_cache_key)
+        meta: Optional[SurfaceImageMeta] = self._image_cache.get(meta_cache_key)
         if not meta:
             return None
 
-        if not isinstance(meta, SurfaceMeta):
-            LOGGER.error("Error loading SurfaceMeta from cache")
+        if not isinstance(meta, SurfaceImageMeta):
+            LOGGER.error("Error loading SurfaceImageMeta from cache")
             return None
 
         return meta
@@ -162,7 +151,7 @@ class SurfaceServer:
 
     def _setup_url_rule(self, app: Dash) -> None:
         @app.server.route(_ROOT_URL_PATH + "/<full_surf_address_str>")
-        def _handle_surface_request3(full_surf_address_str: str) -> flask.Response:
+        def _handle_surface_request(full_surf_address_str: str) -> flask.Response:
             LOGGER.debug(
                 f"Handling surface_request: "
                 f"full_surf_address_str={full_surf_address_str} "
@@ -197,7 +186,7 @@ class SurfaceServer:
         timer = PerfTimer()
         LOGGER.debug("Converting surface to PNG image...")
         png_bytes: bytes = surface_to_png_bytes_optimized(surface)
-        # LOGGER.debug(f"Got PNG image, size={(len(png_bytes) / (1024 * 1024)):.2f}MB")
+        LOGGER.debug(f"Got PNG image, size={(len(png_bytes) / (1024 * 1024)):.2f}MB")
         et_to_image_s = timer.lap_s()
 
         img_cache_key = "IMG:" + base_cache_key
@@ -212,7 +201,7 @@ class SurfaceServer:
 
         deckgl_bounds, deckgl_rot = _calc_map_component_bounds_and_rot(surface)
 
-        meta = SurfaceMeta(
+        meta = SurfaceImageMeta(
             x_min=surface.xmin,
             x_max=surface.xmax,
             y_min=surface.ymin,
@@ -236,13 +225,13 @@ def _address_to_str(
     provider_id: str,
     address: SurfaceAddress,
 ) -> str:
-    # if isinstance(address, StatisticalSurfaceAddress):
-    #     addr_type_str = "sta"
-    # elif isinstance(address, SimulatedSurfaceAddress):
-    #     addr_type_str = "sim"
-    # elif isinstance(address, ObservedSurfaceAddress):
-    #     addr_type_str = "obs"
-    addr_type_str = "sim"
+    if isinstance(address, StatisticalSurfaceAddress):
+        addr_type_str = "sta"
+    elif isinstance(address, SimulatedSurfaceAddress):
+        addr_type_str = "sim"
+    elif isinstance(address, ObservedSurfaceAddress):
+        addr_type_str = "obs"
+
     addr_hash = hashlib.md5(  # nosec
         json.dumps(asdict(address), sort_keys=True).encode()
     ).hexdigest()

@@ -6,7 +6,7 @@ options:
 
 layout:
 
- - page: SurfaceMapViewer
+ - page: SurfaceMapViewerv1
    content:
           - SurfaceMapViewer:
 

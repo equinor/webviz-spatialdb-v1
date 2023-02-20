@@ -1,5 +1,4 @@
 from typing import Callable,  Any, Dict, List
-from enum import Enum, unique
 import webviz_core_components as wcc
 import webviz_subsurface_components as wsc
 from dash import html
@@ -24,24 +23,6 @@ class LayoutStyle:
     """CSS styling"""
 
     MAPHEIGHT = "80vh"
-    SIDEBAR = {"flex": 1, "height": "90vh", "overflow-x": "auto"}
-    MAINVIEW = {"flex": 3, "height": "90vh"}
-    DISABLED = {"opacity": 0.5, "pointerEvents": "none"}
-    RESET_BUTTON = {
-        "marginTop": "5px",
-        "width": "100%",
-        "height": "20px",
-        "line-height": "20px",
-        "background-color": "#7393B3",
-        "color": "#fff",
-    }
-    OPTIONS_BUTTON = {
-        "marginBottom": "10px",
-        "width": "100%",
-        "height": "30px",
-        "line-height": "30px",
-        "background-color": "lightgrey",
-    }
 
 
 class FullScreen(wcc.WebvizPluginPlaceholder):
@@ -72,11 +53,17 @@ class LayoutElements:
 
     COLOUR_SCALE = "COLOUR_SCALE"
     COLORMAP_LAYER = "deckglcolormaplayer"
-    BITMAP_LAYER = "deckglmap3dlayer"
-    LAYER_TYPE = "BitmapLayer"
+    BITMAP_LAYER = "deckglbitmapLayer"
+    BITMAP_LAYER_TYPE = "BitmapLayer"
+
     HILLSHADING_LAYER = "deckglhillshadinglayer"
     FAULTPOLYGONS_LAYER = "deckglfaultpolygonslayer"
     WELLS_LAYER = "deckglwelllayer"
+
+    AXES_LAYER = "deckglaxeslayer"
+    AXES_LAYER_TYPE = "AxesLayer"
+    MAP_LAYER = "deckglmaplayer"
+    MAP_LAYER_TYPE = "BitmapLayer"
 
 
 def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, graph_uuid: Callable, color_tables: List[Dict],) -> wcc.FlexBox:
@@ -88,7 +75,6 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
                     wcc.Selectors(
                         label="Source Database",
                         children=[
-
                             wcc.Dropdown(
                                 label="Select Source Database",
                                 id=field_uuid(
@@ -110,11 +96,6 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
                                 id=field_uuid(
                                     LayoutElements.SERVER_DROPDOWN
                                 ),
-                                # options=[
-                                #     {"label": v, "value": v}
-                                #     for k, v in sever_names.items()
-                                # ],
-                                # value=list(sever_names.values())[0],
                             ),
                             wcc.Dropdown(
                                 label="Select Project",
@@ -124,7 +105,6 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
                             ),
                             wcc.Dropdown(
                                 label="Select Interpretation Set",
-
                                 id=iset_uuid(
                                     LayoutElements.ISET_DROPDOWN
                                 ),
@@ -137,6 +117,7 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
                         children=[
                             wcc.Dropdown(
                                 label="Surface Grids",
+                                optionHeight=65,
                                 id=grid_uuid(
                                     LayoutElements.GRID_DROPDOWN
                                 ),
@@ -173,37 +154,15 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
                 ],
             ),
             wcc.Frame(
-                highlight=False,
                 style={
                     "height": "800px",
-                    "flex": 3,
+                    "flex": 2,
                 },
-                children=MapViewLayout(graph_uuid, color_tables=color_tables)
+                children=[
+                    wsc.DashSubsurfaceViewer(
+                        id=graph_uuid(LayoutElements.DECKGLMAP),
+                    ),
+                ]
             ),
         ],
     )
-
-
-class MapViewLayout(FullScreen):
-    """Layout for the main view containing the map"""
-
-    def __init__(self, get_uuid: Callable, color_tables: List[Dict]) -> None:
-        super().__init__(
-            children=html.Div(
-                wsc.DeckGLMap(
-                    id=get_uuid(LayoutElements.DECKGLMAP),
-                    coords={"visible": True,
-                            "multiPicking": True, "pickDepth": 10},
-                    scale={"visible": True},
-                    colorTables=color_tables,
-                    layers=[
-                        {
-                            "@@type": LayoutElements.LAYER_TYPE,
-                            "id": LayoutElements.BITMAP_LAYER,
-                        },
-                    ],
-                    coordinateUnit="m",
-                ),
-                style={"height": LayoutStyle.MAPHEIGHT},
-            ),
-        )
