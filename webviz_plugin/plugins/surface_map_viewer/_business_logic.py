@@ -76,7 +76,7 @@ class SurfaceModel:
     @staticmethod
     def get_grid_names(df):
         res = df.to_dict(orient='records')
-        options = [{'label': i['surfaceName']+ " (GRID_ID: " +i['gridId']+')', 'value': i['gridId']}
+        options = [{'label': i['surfaceName']+ " (GRID_ID: " + str(i['gridId']) +')', 'value': i['gridId']}
                    for i in res]
         sorted_options = sorted(options, key=lambda x: x["label"])
         return sorted_options
