@@ -15,3 +15,28 @@ spec:
       ports:
        - name: http
          port: 5000
+      resources:
+        requests:
+          memory: "8G"
+          cpu: "50m"
+        limits:
+          memory: "16G"
+          cpu: "1000m"         
+      environmentConfig:
+        - environment: prod
+          variables:
+            LOGG_LEVEL: "INFO"
+            RUN_POD3: "FALSE"
+            RUN_POD2: "TRUE"
+
+        - environment: dev
+          variables:
+            AZURE_ACC_NAME: "dlssdfsandbox"
+            AZURE_CONTAINER: "dls"   
+      secretRefs:
+        azureKeyVaults:
+          - name: kv-datafundamentals-dev
+            path: /mnt/secrets
+            items:
+              - name: ssdf-spatialdb-storage-key
+                envVar: AZURE_PRIMARY_KEY
