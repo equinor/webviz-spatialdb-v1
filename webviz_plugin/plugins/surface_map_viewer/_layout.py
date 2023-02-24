@@ -104,7 +104,7 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
                                 ),
                             ),
                             wcc.Dropdown(
-                                label="Select Interpretation Set",
+                                label="Select Interpretation Set (Optional)",
                                 id=iset_uuid(
                                     LayoutElements.ISET_DROPDOWN
                                 ),

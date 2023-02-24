@@ -10,24 +10,25 @@ spec:
     - name: prod
   components:
     - name: main
+      authentication:
+        oauth2:
+          clientId: 5247ff0a-8dce-4f38-8fcf-71e5a8a4c368
+          scope: openid profile email offline_access
+          setXAuthRequestHeaders: true
+          setAuthorizationHeader: true
+          sessionStoreType: redis
+          redisStore:
+            connectionUrl: redis://auth-state:6379       
       src: "./webviz_output"
       publicPort: http
       ports:
        - name: http
-         port: 5000
-      resources:
-        requests:
-          memory: "8G"
-          cpu: "50m"
-        limits:
-          memory: "16G"
-          cpu: "1000m"         
+         port: 5000       
       environmentConfig:
         - environment: prod
           variables:
-            LOGG_LEVEL: "INFO"
-            RUN_POD3: "FALSE"
-            RUN_POD2: "TRUE"
+            AZURE_ACC_NAME: "dlssdfsandbox"
+            AZURE_CONTAINER: "dls"
 
         - environment: dev
           variables:
@@ -40,3 +41,10 @@ spec:
             items:
               - name: ssdf-spatialdb-storage-key
                 envVar: AZURE_PRIMARY_KEY
+    - name: auth-state
+      image: bitnami/redis:6.0.16
+      secrets:
+        - REDIS_PASSWORD    
+      ports:
+        - name: redis
+          port: 6379
