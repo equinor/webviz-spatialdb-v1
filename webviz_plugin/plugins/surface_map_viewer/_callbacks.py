@@ -10,7 +10,7 @@ import xtgeo
 import os
 from ._business_logic import SurfaceModel
 from ._layout import LayoutElements
-
+import flask
 
 from .surface_array_server import SurfaceArrayServer, QualifiedSurfaceAddress, SimulatedSurfaceAddress
 
@@ -46,40 +46,7 @@ from datetime import datetime, timedelta
 #
 ###########################################################################
 
-
-AZURE_ACC_NAME = "dlssdfsandbox"
-AZURE_PRIMARY_KEY = "hnbCnarDj4A1lWDMWuZ4xcl94tXGQKWBTfDDG3A8NREAvJwMJBiu7i9nmxxCj4jp191pfK4xF3oRkh6uKFSz5Q=="
-AZURE_CONTAINER = "dls"
-
-
-def generate_sas_token_dl(file_name):
-
-    account_url = "https://{}.dfs.core.windows.net/".format(AZURE_ACC_NAME)
-
-    datalake_service = DataLakeServiceClient(
-        account_url=account_url, credential=AZURE_PRIMARY_KEY
-    )
-    filesystem_client = datalake_service.get_file_system_client(
-        AZURE_CONTAINER)
-    dir_client = filesystem_client.gene.get_directory_client(
-        "SpatialDB/work/POC")
-    sas = ""
-    sas_url = 'https://'+AZURE_ACC_NAME+'.blob.core.windows.net/' + \
-        AZURE_CONTAINER+'/SpatialDB/work/POC/'+file_name+'?'+sas
-    return sas_url
-
-
-def generate_sas_token(file_name):
-    sas = generate_blob_sas(account_name=AZURE_ACC_NAME,
-                            account_key=AZURE_PRIMARY_KEY,
-                            container_name=AZURE_CONTAINER,
-                            blob_name=file_name,
-                            permission=BlobSasPermissions(read=True),
-                            expiry=datetime.utcnow() + timedelta(days=30))
-
-    sas_url = 'https://'+AZURE_ACC_NAME+'.blob.core.windows.net/' + \
-        AZURE_CONTAINER+'/SpatialDB/work/POC/'+file_name+'?'+sas
-    return sas_url
+df_user_projects = pd.DataFrame()
 
 
 def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: pd.DataFrame, grid_names: pd.DataFrame, surface_server: SurfaceArrayServer):
@@ -130,10 +97,9 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             # server = server_options[server_value]
             relatie_path = server+"_" + project + "/"
 
-
             AZURE_ACC_NAME = os.environ["AZURE_ACC_NAME"]
             AZURE_PRIMARY_KEY = os.environ["AZURE_PRIMARY_KEY"]
-            AZURE_CONTAINER = os.environ["AZURE_CONTAINER"]    
+            AZURE_CONTAINER = os.environ["AZURE_CONTAINER"]
 
             token = generate_file_system_sas(
                 AZURE_ACC_NAME,
@@ -146,7 +112,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
 
             blob_url = 'https://' + AZURE_ACC_NAME + \
                 '.blob.core.windows.net/' + AZURE_CONTAINER + '/'
-            
+
             grid_data = grid_names.loc[(grid_names['gridId'] == (grid_value)) & (
                 grid_names['sourceProjectId'] == int(project_value))]
             if iset_value:
@@ -154,11 +120,11 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                     grid_data['interpretationSetId'] == int(iset_value))]
 
             json_dict = grid_data.iloc[0]
-            source_grid_id = str(json_dict['sourceGridId'])            
+            source_grid_id = str(json_dict['sourceGridId'])
 
             if quickload_value == '1':
                 sas_url = blob_url + 'SpatialDB/processed/surface_coordinates/' + relatie_path + 'images/' + \
-                    source_grid_id +'.png?' + token
+                    source_grid_id + '.png?' + token
 
                 layers.extend([
                     {
@@ -173,7 +139,6 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             else:
                 layersid = [LayoutElements.AXES_LAYER,
                             LayoutElements.MAP_LAYER]
-
 
                 path = blob_url+"SpatialDB/processed/surface_coordinates/" + \
                     relatie_path + source_grid_id + ".parquet?" + token
@@ -203,11 +168,10 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                 )
                 qualified_address = QualifiedSurfaceAddress(
                     'provider_id', surface_address)
-                surface_server.publish_surface(qualified_address, depth_surface)
+                surface_server.publish_surface(
+                    qualified_address, depth_surface)
                 url = surface_server.encode_partial_url(qualified_address)
 
-                
-                
                 layers.extend([
                     {
                         "@@type": "AxesLayer",
@@ -281,10 +245,12 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
         db_name = SurfaceModel.source_db[source_db_value]
         server_names_fil = sever_names.loc[sever_names['source']
                                            == (db_name)]
-
+        global df_user_projects
+        df_user_projects = SurfaceModel.get_user_project(
+            flask.session["access_token"], server_names_fil)
         return (
             False,
-            SurfaceModel.get_server_names(server_names_fil),
+            SurfaceModel.get_server_names(df_user_projects),
 
         )
 
@@ -292,7 +258,6 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
 
 
 # SET PROJECT START
-
 
     @callback(
         [
@@ -307,15 +272,23 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
         server_value: str
 
     ) -> dict:
+
         if server_value:
+            global df_user_projects
             database_names_fil = sever_names.loc[sever_names['sourceProjectId']
                                                  == int(server_value)]['sourceDatabase']
 
             project_names_fil = sever_names.loc[sever_names['sourceDatabase']
                                                 == (database_names_fil.iloc[0])]
+            project_names_fil.objectId = project_names_fil.objectId.str.split(
+                ',')
+            project_names_fil = project_names_fil.explode('objectId')
+            df_user_projects = df_user_projects[['objectId']]
+            df_res = pd.merge(df_user_projects,
+                              project_names_fil, on='objectId')
             return (
                 False,
-                SurfaceModel.get_project_names(project_names_fil),
+                SurfaceModel.get_project_names(df_res),
 
             )
         else:
@@ -329,6 +302,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
 # SET PROJECT END
 
 # SET ISET START
+
 
     @callback(
         [
@@ -403,6 +377,3 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             SurfaceModel.get_grid_names(grid_names_fil),
 
         )
-
-
-

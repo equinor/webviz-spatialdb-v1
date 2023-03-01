@@ -12,6 +12,10 @@
 #
 ######################################################################
 
+import os
+import requests
+import pandas as pd
+
 
 class SurfaceModel:
 
@@ -35,48 +39,53 @@ class SurfaceModel:
     }
 
     @staticmethod
+    def get_user_project(token, projects_df):
+        GRAPH_GROUP_URL = os.environ["GRAPH_GROUP_URL"]
+        api_result = requests.get(  # Use token to call downstream api
+            GRAPH_GROUP_URL,
+            headers={'Authorization': 'Bearer ' + token},
+        ).json()
+
+        projects_df.objectId = projects_df.objectId.str.split(',')
+        projects_df = projects_df.explode('objectId')
+
+        df = pd.json_normalize(api_result['value'])
+
+        df = df.rename(columns={"id": "objectId"})
+        df=df[['objectId']]
+        df_res = pd.merge(df, projects_df, on='objectId')
+        return df_res
+
+    @staticmethod
     def get_server_names(df):
-        # dfRes = df[['sourceProjectId', 'sourceDatabase']].drop_duplicates(
-        #     subset=['sourceDatabase'], keep='last').set_index('sourceProjectId').sort_values(
-        #     by=['sourceDatabase'])
-        # res = dfRes.to_dict()['sourceDatabase']
-        # return res
-        df=df[['sourceProjectId', 'sourceDatabase']].drop_duplicates(subset=['sourceDatabase'], keep='last')
+        df = df[['sourceProjectId', 'sourceDatabase']].drop_duplicates(
+            subset=['sourceDatabase'], keep='last')
         res = df.to_dict(orient='records')
         options = [{'label': i['sourceDatabase'], 'value': i['sourceProjectId']}
                    for i in res]
         sorted_options = sorted(options, key=lambda x: x["label"])
-        return sorted_options          
+        return sorted_options
 
     @staticmethod
     def get_project_names(df):
-        # dfRes = df[['sourceProjectId', 'sourceProject']].sort_values(
-        #     by=['sourceProject']).set_index('sourceProjectId')
-
-        # res = dfRes.to_dict()['sourceProject']
-        # return res
         res = df.to_dict(orient='records')
         options = [{'label': i['sourceProject'], 'value': i['sourceProjectId']}
                    for i in res]
         sorted_options = sorted(options, key=lambda x: x["label"])
-        return sorted_options        
+        return sorted_options
 
     @staticmethod
     def get_iset_names(df):
-        # dfRes = df[['interpretationSetId', 'interpretSetName']].sort_values(
-        #     by=['interpretSetName']).set_index('interpretationSetId')
-        # res = dfRes.to_dict()['interpretSetName']
-        # return res
         res = df.to_dict(orient='records')
         options = [{'label': i['interpretSetName'], 'value': i['interpretationSetId']}
                    for i in res]
         sorted_options = sorted(options, key=lambda x: x["label"])
-        return sorted_options         
+        return sorted_options
 
     @staticmethod
     def get_grid_names(df):
         res = df.to_dict(orient='records')
-        options = [{'label': i['surfaceName']+ " (GRID_ID: " + str(i['gridId']) +')', 'value': i['gridId']}
+        options = [{'label': i['surfaceName'] + " (GRID_ID: " + str(i['gridId']) + ')', 'value': i['gridId']}
                    for i in res]
         sorted_options = sorted(options, key=lambda x: x["label"])
         return sorted_options
