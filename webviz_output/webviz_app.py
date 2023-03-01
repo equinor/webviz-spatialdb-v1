@@ -217,7 +217,7 @@ if __name__ == "__main__":
         debug=False,
         use_reloader=False,
         dev_tools_prune_errors=False,
-        
+        ssl_context='adhoc'
     )
 else:
     # This will be applied if not running on localhost
