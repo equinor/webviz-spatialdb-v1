@@ -216,7 +216,7 @@ if __name__ == "__main__":
         port=port,
         debug=False,
         use_reloader=False,
-        dev_tools_prune_errors=False,
+        dev_tools_prune_errors=False
     )
 else:
     # This will be applied if not running on localhost

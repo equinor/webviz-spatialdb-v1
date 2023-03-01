@@ -31,7 +31,10 @@ spec:
             WEBVIZ_TENANT_ID: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
             WEBVIZ_CLIENT_ID: "5247ff0a-8dce-4f38-8fcf-71e5a8a4c368"
             WEBVIZ_SCOPE: "openid profile email offline_access"
-            GRAPH_GROUP_URL: "https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true"    
+            GRAPH_GROUP_URL: "https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true"
+            WEBVIZ_X_FORWARDED_PORT: "1"
+            WEBVIZ_X_FORWARDED_HOST: "1"
+
       secretRefs:
         azureKeyVaults:
           - name: kv-datafundamentals-dev

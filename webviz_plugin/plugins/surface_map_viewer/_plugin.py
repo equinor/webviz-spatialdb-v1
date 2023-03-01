@@ -14,7 +14,7 @@ from webviz_config.webviz_store import webvizstore
 from dash import Dash
 from .surface_array_server import SurfaceArrayServer
 from dotenv import load_dotenv
-from werkzeug.middleware.proxy_fix import ProxyFix
+
 from ._color_tables import default_color_tables
 
 
@@ -50,7 +50,6 @@ class SurfaceMapViewer(WebvizPluginABC):
     """
 
     def __init__(self, app: Dash) -> None:
-        app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
         super().__init__()
         # self.projects_file = projects_file
         # self.isets_file = isets_file
