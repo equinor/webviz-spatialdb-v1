@@ -1,0 +1,43 @@
+apiVersion: radix.equinor.com/v1
+kind: RadixApplication
+metadata:
+  name: webviz-spatialdb-v1
+spec:
+  environments:
+    - name: dev
+      build:
+        from: main
+    - name: prod
+  components:
+    - name: main      
+      src: "./webviz_output"
+      publicPort: http
+      ports:
+       - name: http
+         port: 5000       
+      environmentConfig:
+        - environment: prod
+          variables:
+            AZURE_ACC_NAME: "dlssdfsandbox"
+            AZURE_CONTAINER: "dls"
+            WEBVIZ_TENANT_ID: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
+            WEBVIZ_CLIENT_ID: "5247ff0a-8dce-4f38-8fcf-71e5a8a4c368"
+            WEBVIZ_SCOPE: "openid profile email offline_access"
+            GRAPH_GROUP_URL: "https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true"   
+        - environment: dev
+          variables:
+            AZURE_ACC_NAME: "dlssdfsandbox"
+            AZURE_CONTAINER: "dls"
+            WEBVIZ_TENANT_ID: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
+            WEBVIZ_CLIENT_ID: "5247ff0a-8dce-4f38-8fcf-71e5a8a4c368"
+            WEBVIZ_SCOPE: "openid profile email offline_access"
+            GRAPH_GROUP_URL: "https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true"    
+      secretRefs:
+        azureKeyVaults:
+          - name: kv-datafundamentals-dev
+            path: /mnt/secrets
+            items:
+              - name: ssdf-spatialdb-storage-key
+                envVar: AZURE_PRIMARY_KEY
+              - name: ssdf-spatialdb-client-secret
+                envVar: WEBVIZ_CLIENT_SECRET                

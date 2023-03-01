@@ -116,7 +116,7 @@ WEBVIZ_INSTANCE_INFO.initialize(
 
 WEBVIZ_FACTORY_REGISTRY.initialize(None)
 
-use_oauth2 = False
+use_oauth2 = True
 
 if False and not webviz_config.is_reload_process():
     # When Dash/Flask is started on localhost with hot module reload activated,
@@ -217,7 +217,7 @@ if __name__ == "__main__":
         debug=False,
         use_reloader=False,
         dev_tools_prune_errors=False,
-        
+        ssl_context='adhoc'
         
     )
 else:
