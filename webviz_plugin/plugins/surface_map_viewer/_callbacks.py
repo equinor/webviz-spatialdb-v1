@@ -22,9 +22,7 @@ from azure.storage.filedatalake import (
 from datetime import datetime, timedelta
 
 
-# AZURE_ACC_NAME = "dlssdfsandbox"
-# AZURE_PRIMARY_KEY = "hnbCnarDj4A1lWDMWuZ4xcl94tXGQKWBTfDDG3A8NREAvJwMJBiu7i9nmxxCj4jp191pfK4xF3oRkh6uKFSz5Q=="
-# AZURE_CONTAINER = "dls"
+
 
 
 ###########################################################################

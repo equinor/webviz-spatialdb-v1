@@ -180,13 +180,3 @@ class DirectoryClient:
 
 
 
-# CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=dlssdfsandbox;AccountKey=hnbCnarDj4A1lWDMWuZ4xcl94tXGQKWBTfDDG3A8NREAvJwMJBiu7i9nmxxCj4jp191pfK4xF3oRkh6uKFSz5Q==;EndpointSuffix=core.windows.net"
-# CONTAINER_NAME="dls"
-# client = DirectoryClient(CONNECTION_STRING, CONTAINER_NAME)
-
-# source='SpatialDB/processed/surface_coordinates/BG4FROST_GULLFAKS/5183/z/'
-# files = client.ls_files(source, recursive=True)
-# print(files)    
-# df = pd.concat([pd.read_parquet(client.get_file(source+fp)) for fp in files])
-# df.to_json('5183.json')
-# print('done')
