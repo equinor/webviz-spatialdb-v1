@@ -30,11 +30,13 @@ spec:
             AZURE_ACC_NAME: "dlssdfsandbox"
             AZURE_CONTAINER: "dls"
             GRAPH_GROUP_URL: "https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true"   
+            ENV_SUF: ""
         - environment: dev
           variables:
             AZURE_ACC_NAME: "dlssdfsandbox"
             AZURE_CONTAINER: "dls"   
-            GRAPH_GROUP_URL: "https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true"               
+            GRAPH_GROUP_URL: "https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true" 
+            ENV_SUF: ""                          
       secretRefs:
         azureKeyVaults:
           - name: kv-datafundamentals-dev

@@ -73,6 +73,8 @@ class SurfaceModel:
 
     @staticmethod
     def get_project_names(df):
+        df = df[['sourceProject', 'sourceProjectId']].drop_duplicates(
+            subset=['sourceProjectId'], keep='last')        
         res = df.to_dict(orient='records')
         options = [{'label': i['sourceProject'], 'value': i['sourceProjectId']}
                    for i in res]
@@ -100,6 +102,7 @@ class SurfaceModel:
         AZURE_ACC_NAME = os.environ["AZURE_ACC_NAME"]
         AZURE_PRIMARY_KEY = os.environ["AZURE_PRIMARY_KEY"]
         AZURE_CONTAINER = os.environ["AZURE_CONTAINER"]
+        ENV_SUF = os.environ["ENV_SUF"]
 
         token = generate_file_system_sas(
             AZURE_ACC_NAME,
@@ -111,6 +114,6 @@ class SurfaceModel:
         )
 
         blob_url = 'https://' + AZURE_ACC_NAME + '.blob.core.windows.net/' + \
-            AZURE_CONTAINER + '/' + path + '?' + token
+            AZURE_CONTAINER + '/' + ENV_SUF + path + '?' + token
 
         return blob_url
