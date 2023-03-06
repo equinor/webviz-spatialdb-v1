@@ -15,6 +15,11 @@
 import os
 import requests
 import pandas as pd
+from azure.storage.filedatalake import (
+    FileSystemSasPermissions,
+    generate_file_system_sas,
+)
+from datetime import datetime, timedelta
 
 
 class SurfaceModel:
@@ -52,7 +57,7 @@ class SurfaceModel:
         df = pd.json_normalize(api_result['value'])
 
         df = df.rename(columns={"id": "objectId"})
-        df=df[['objectId']]
+        df = df[['objectId']]
         df_res = pd.merge(df, projects_df, on='objectId')
         return df_res
 
@@ -89,3 +94,23 @@ class SurfaceModel:
                    for i in res]
         sorted_options = sorted(options, key=lambda x: x["label"])
         return sorted_options
+
+    @staticmethod
+    def get_sas_token(path):
+        AZURE_ACC_NAME = os.environ["AZURE_ACC_NAME"]
+        AZURE_PRIMARY_KEY = os.environ["AZURE_PRIMARY_KEY"]
+        AZURE_CONTAINER = os.environ["AZURE_CONTAINER"]
+
+        token = generate_file_system_sas(
+            AZURE_ACC_NAME,
+            AZURE_CONTAINER,
+            AZURE_PRIMARY_KEY,
+            FileSystemSasPermissions(
+                write=False, read=True, delete=False),
+            datetime.utcnow() + timedelta(days=1),
+        )
+
+        blob_url = 'https://' + AZURE_ACC_NAME + '.blob.core.windows.net/' + \
+            AZURE_CONTAINER + '/' + path + '?' + token
+
+        return blob_url

@@ -54,14 +54,17 @@ class SurfaceMapViewer(WebvizPluginABC):
         # self.projects_file = projects_file
         # self.isets_file = isets_file
         # self.grids_file = grids_file
-        self.projects_file = "https://dlssdfsandbox.blob.core.windows.net/dls/SpatialDB/processed/webviz_data/projects.json?sp=r&st=2023-01-15T07:15:32Z&se=2025-01-15T15:15:32Z&spr=https&sv=2021-06-08&sr=b&sig=FrOMFhIjC4yEWc3ZRRTFAfZjN%2F%2B6sN%2BdgNKI64QrNRQ%3D"
-        self.isets_file = "https://dlssdfsandbox.blob.core.windows.net/dls/SpatialDB/processed/webviz_data/isets.json?sp=r&st=2023-01-15T07:16:19Z&se=2025-01-15T15:16:19Z&spr=https&sv=2021-06-08&sr=b&sig=af5mXYUB2IA2sbnaPGehGv%2BFQAcTVnlwLZ4%2BhTDTWig%3D"       
-        self.grids_file = "https://dlssdfsandbox.blob.core.windows.net/dls/SpatialDB/processed/webviz_data/grids.json?sp=r&st=2023-01-15T07:11:38Z&se=2025-01-15T15:11:38Z&spr=https&sv=2021-06-08&sr=b&sig=hOcIp%2B4MpPauIeKigTtT4n99F4bSAh3%2B31eVA0%2BJUPc%3D"
+
+        self.projects_file = SurfaceModel.get_sas_token(
+            'SpatialDB/processed/webviz_data/projects.json')
+        self.isets_file = SurfaceModel.get_sas_token(
+            'SpatialDB/processed/webviz_data/isets.json')
+        self.grids_file = SurfaceModel.get_sas_token(
+            'SpatialDB/processed/webviz_data/grids.json')
 
         self.projects_df = pd.read_json(self.projects_file)
         self.isets_df = pd.read_json(self.isets_file)
         self.grids_df = pd.read_json(self.grids_file)
-
 
         self.grids_df = self.grids_df.fillna(0)
         self.grids_df = self.grids_df.astype({"interpretationSetId": int})
@@ -83,19 +86,19 @@ class SurfaceMapViewer(WebvizPluginABC):
     @property
     def layout(self) -> Union[str, Type[Component]]:
         return main_layout(
-            field_uuid = self.uuid,
-            iset_uuid = self.uuid,
-            grid_uuid = self.uuid,
-            graph_uuid = self.uuid,
-            color_tables = self.color_tables
+            field_uuid=self.uuid,
+            iset_uuid=self.uuid,
+            grid_uuid=self.uuid,
+            graph_uuid=self.uuid,
+            color_tables=self.color_tables
         )
 
     def set_callbacks(self) -> None:
         plugin_callbacks(self.uuid,
-                         iset_names = self.isets_df,
-                         sever_names = self.projects_df,
-                         grid_names = self.grids_df,
-                         surface_server = self._surface_server,
+                         iset_names=self.isets_df,
+                         sever_names=self.projects_df,
+                         grid_names=self.grids_df,
+                         surface_server=self._surface_server,
                          )
 
 

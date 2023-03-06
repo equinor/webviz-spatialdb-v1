@@ -1,11 +1,9 @@
-from azure.storage.blob import generate_blob_sas, BlobSasPermissions
-from azure.storage.filedatalake import DataLakeServiceClient
+
 from datetime import datetime, timedelta
 from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 import pandas as pd
 import numpy as np
 from dash import ALL, MATCH, Input, Output, State, callback, callback_context, no_update
-from ._color_tables import default_color_tables
 import xtgeo
 import os
 from ._business_logic import SurfaceModel
@@ -15,14 +13,10 @@ import flask
 from .surface_array_server import SurfaceArrayServer, QualifiedSurfaceAddress, SimulatedSurfaceAddress
 
 from azure.storage.filedatalake import (
-    DataLakeServiceClient,
     FileSystemSasPermissions,
     generate_file_system_sas,
 )
 from datetime import datetime, timedelta
-
-
-
 
 
 ###########################################################################
@@ -95,21 +89,13 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             # server = server_options[server_value]
             relatie_path = server+"_" + project + "/"
 
-            AZURE_ACC_NAME = os.environ["AZURE_ACC_NAME"]
-            AZURE_PRIMARY_KEY = os.environ["AZURE_PRIMARY_KEY"]
-            AZURE_CONTAINER = os.environ["AZURE_CONTAINER"]
+            # AZURE_ACC_NAME = os.environ["AZURE_ACC_NAME"]
+            # AZURE_CONTAINER = os.environ["AZURE_CONTAINER"]
 
-            token = generate_file_system_sas(
-                AZURE_ACC_NAME,
-                AZURE_CONTAINER,
-                AZURE_PRIMARY_KEY,
-                FileSystemSasPermissions(
-                    write=True, read=True, delete=True),
-                datetime.utcnow() + timedelta(days=30),
-            )
+            # token = SurfaceModel.get_sas_token()
 
-            blob_url = 'https://' + AZURE_ACC_NAME + \
-                '.blob.core.windows.net/' + AZURE_CONTAINER + '/'
+            # blob_url = 'https://' + AZURE_ACC_NAME + \
+            #     '.blob.core.windows.net/' + AZURE_CONTAINER + '/'
 
             grid_data = grid_names.loc[(grid_names['gridId'] == (grid_value)) & (
                 grid_names['sourceProjectId'] == int(project_value))]
@@ -121,9 +107,9 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             source_grid_id = str(json_dict['sourceGridId'])
 
             if quickload_value == '1':
-                sas_url = blob_url + 'SpatialDB/processed/surface_coordinates/' + relatie_path + 'images/' + \
-                    source_grid_id + '.png?' + token
-
+                img_path = 'SpatialDB/processed/surface_coordinates/' + relatie_path + 'images/' + \
+                    source_grid_id + '.png'
+                sas_url = SurfaceModel.get_sas_token(img_path)
                 layers.extend([
                     {
                         "id": LayoutElements.BITMAP_LAYER,
@@ -138,15 +124,16 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                 layersid = [LayoutElements.AXES_LAYER,
                             LayoutElements.MAP_LAYER]
 
-                path = blob_url+"SpatialDB/processed/surface_coordinates/" + \
-                    relatie_path + source_grid_id + ".parquet?" + token
+                z_path = "SpatialDB/processed/surface_coordinates/" + \
+                    relatie_path + source_grid_id + ".parquet"
+                z_sas_url = SurfaceModel.get_sas_token(z_path)
                 colormapname = SurfaceModel.COLORMAP_OPTIONS[colour_value]
                 ncol, nrow = json_dict['NCOL'], json_dict['NROW']
                 xori, yori = float(json_dict['XORI']), float(json_dict['YORI'])
                 xinc, yinc = float(json_dict['XINC']), float(json_dict['YINC'])
                 rotation = float(json_dict['ROTATION'])
 
-                df = pd.read_parquet(path)
+                df = pd.read_parquet(z_sas_url)
 
                 values = df['z'].to_numpy(copy=True)
                 values = values*-1
@@ -244,8 +231,15 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
         server_names_fil = sever_names.loc[sever_names['source']
                                            == (db_name)]
         global df_user_projects
+
+        if 'localhost' in flask.request.url:
+            token = flask.session["access_token"]
+        else:
+            token = flask.request.headers["X-Auth-Request-Access-Token"]
+
         df_user_projects = SurfaceModel.get_user_project(
-            flask.session["access_token"], server_names_fil)
+            token, server_names_fil)
+
         return (
             False,
             SurfaceModel.get_server_names(df_user_projects),
@@ -256,6 +250,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
 
 
 # SET PROJECT START
+
 
     @callback(
         [
@@ -300,7 +295,6 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
 # SET PROJECT END
 
 # SET ISET START
-
 
     @callback(
         [
