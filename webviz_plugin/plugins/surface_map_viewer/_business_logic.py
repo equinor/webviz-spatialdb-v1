@@ -46,15 +46,31 @@ class SurfaceModel:
     @staticmethod
     def get_user_project(token, projects_df):
         GRAPH_GROUP_URL = os.environ["GRAPH_GROUP_URL"]
-        api_result = requests.get(  # Use token to call downstream api
+        headers = {'Authorization': 'Bearer ' +token}
+        result = requests.get(  # Use token to call downstream api
             GRAPH_GROUP_URL,
-            headers={'Authorization': 'Bearer ' + token},
+            headers=headers,
         ).json()
+
+        resultNextLink = result['@odata.nextLink']
+        joined_result = result['value']
+        i = 0
+        while resultNextLink:
+            try:
+                nextpageUsersUrl = resultNextLink
+                rNext = requests.get(nextpageUsersUrl, headers=headers)
+                resultNext = rNext.json()
+                joined_result = [*joined_result, *resultNext['value']]
+                resultNextLink = resultNext['@odata.nextLink']
+                i += 1
+            except KeyError:
+                print('this is the last page')
+                break
 
         projects_df.objectId = projects_df.objectId.str.split(',')
         projects_df = projects_df.explode('objectId')
 
-        df = pd.json_normalize(api_result['value'])
+        df = pd.json_normalize(joined_result)
 
         df = df.rename(columns={"id": "objectId"})
         df = df[['objectId']]
