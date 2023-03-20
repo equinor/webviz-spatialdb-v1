@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from dash import ALL, MATCH, Input, Output, State, callback, callback_context, no_update
 import xtgeo
-import os
+from ._layer_model import DeckGLMapLayersModel
 from ._business_logic import SurfaceModel
 from ._layout import LayoutElements
 import flask
@@ -45,8 +45,10 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
 
     @callback(
         [
+            Output('image', 'src'),
+            Output('divimg', 'style'),
+            Output('divdeck', 'style'),
             Output(get_uuid(LayoutElements.DECKGLMAP), "layers"),
-            Output(get_uuid(LayoutElements.DECKGLMAP), "bounds"),
             Output(get_uuid(LayoutElements.DECKGLMAP), "views"),
             Output(get_uuid(LayoutElements.COLOURMAP_DROPDOWN), "disabled"),
         ],
@@ -66,9 +68,12 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
     ) -> tuple:
 
         layers: List[Dict] = []
-
-        map_bounds = [451250, 6778750, 464500, 6793250]
-        layersid = [LayoutElements.BITMAP_LAYER]
+        sas_url = ''
+        map_bounds = []
+        layersid = []
+        map_views = []
+        divimg = {'display': 'none',  "flex": "2"}
+        divdeck = {'display': 'block',  "flex": "2"}
 
         if quickload_value == '1':
             colour_disabled = True
@@ -85,17 +90,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                                             == project_value]
             project = df_project_out.iloc[0]['label']
 
-            # project = project_options[project_value]
-            # server = server_options[server_value]
             relatie_path = server+"_" + project + "/"
-
-            # AZURE_ACC_NAME = os.environ["AZURE_ACC_NAME"]
-            # AZURE_CONTAINER = os.environ["AZURE_CONTAINER"]
-
-            # token = SurfaceModel.get_sas_token()
-
-            # blob_url = 'https://' + AZURE_ACC_NAME + \
-            #     '.blob.core.windows.net/' + AZURE_CONTAINER + '/'
 
             grid_data = grid_names.loc[(grid_names['gridId'] == (grid_value)) & (
                 grid_names['sourceProjectId'] == int(project_value))]
@@ -110,16 +105,9 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                 img_path = 'SpatialDB/processed/surface_coordinates/' + relatie_path + 'images/' + \
                     source_grid_id + '.png'
                 sas_url = SurfaceModel.get_sas_token(img_path)
-                layers.extend([
-                    {
-                        "id": LayoutElements.BITMAP_LAYER,
-                        "@@type": LayoutElements.BITMAP_LAYER_TYPE,
-                        "image": sas_url,
-                        "bounds": map_bounds
 
-                    },
-                ]
-                )
+                divimg = {'display': 'block',  "flex": "2"}
+                divdeck = {'display': 'none',  "flex": "2"}
             else:
                 layersid = [LayoutElements.AXES_LAYER,
                             LayoutElements.MAP_LAYER]
@@ -156,19 +144,19 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                 surface_server.publish_surface(
                     qualified_address, depth_surface)
                 url = surface_server.encode_partial_url(qualified_address)
-
+                map_bounds = [
+                    depth_surface.xmin,
+                    depth_surface.ymin,
+                    -np.nanmax(depth_surface.values),
+                    depth_surface.xmax,
+                    depth_surface.ymax,
+                    np.nanmin(depth_surface.values),
+                ]
                 layers.extend([
                     {
                         "@@type": "AxesLayer",
                         "id": LayoutElements.AXES_LAYER,
-                        "bounds": [
-                            depth_surface.xmin,
-                            depth_surface.ymin,
-                            -np.nanmax(depth_surface.values),
-                            depth_surface.xmax,
-                            depth_surface.ymax,
-                            np.nanmin(depth_surface.values),
-                        ],
+                        "bounds": map_bounds,
                     },
                     {
                         "@@type": "MapLayer",
@@ -188,14 +176,9 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                         "name": "mesh",
                     },
                 ])
-        # else:
-        #     layers.extend([
-        #         {
-        #             "@@type": LayoutElements.MAP_LAYER_TYPE,
-        #             "id": LayoutElements.MAP_LAYER,
-        #             "bounds": map_bounds
-        #         },
-        #     ])
+
+                divimg = {'display': 'none',  "flex": "2"}
+                divdeck = {'display': 'block',  "flex": "2"}
 
         map_views = {
             "layout": [1, 1],
@@ -210,7 +193,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             ],
         }
 
-        return (layers, map_bounds,  map_views, colour_disabled)
+        return (sas_url, divimg, divdeck, layers,   map_views, colour_disabled)
 
 # SET SERVER START
 
@@ -233,7 +216,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
         global df_user_projects
 
         if 'localhost' in flask.request.url:
-            token = flask.session["access_token"]
+            token = 'eyJ0eXAiOiJKV1QiLCJub25jZSI6InRRRlpKWHA5SFFYVlhQTnVlY2E0ZmZITWRmME5iN3ppQjdnZ19LTFhSUWsiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zYWE0YTIzNS1iNmUyLTQ4ZDUtOTE5NS03ZmNmMDViNDU5YjAvIiwiaWF0IjoxNjc5MzIxODI4LCJuYmYiOjE2NzkzMjE4MjgsImV4cCI6MTY3OTMyNjY2MywiYWNjdCI6MCwiYWNyIjoiMSIsImFjcnMiOlsidXJuOnVzZXI6cmVnaXN0ZXJzZWN1cml0eWluZm8iXSwiYWlvIjoiQVRRQXkvOFRBQUFBK01VV0IzakFkbStqMzVXSzk5V0dJTzh2NUlZaDNVY1Z4eEFET1hnV1RXa2l1WkdOZFo3dks0R1dCZk1zbXI1eSIsImFtciI6WyJwd2QiXSwiYXBwX2Rpc3BsYXluYW1lIjoicmFkaXgtd2Vidml6LXNwYXRpYWxkYiIsImFwcGlkIjoiNTI0N2ZmMGEtOGRjZS00ZjM4LThmY2YtNzFlNWE4YTRjMzY4IiwiYXBwaWRhY3IiOiIxIiwiZmFtaWx5X25hbWUiOiJLaGFtcmFpIiwiZ2l2ZW5fbmFtZSI6IlN1cmFqaXQiLCJpZHR5cCI6InVzZXIiLCJpcGFkZHIiOiI1MS4xMy42OC45OCIsIm5hbWUiOiJTdXJhaml0IEtoYW1yYWkgKFRhdGEgQ29uc3VsdGFuY3kgU2VydmljZXMgTGltaSkiLCJvaWQiOiIyMjJhZmZiYS0wM2FjLTQxOTQtYTg1OS0xOGVkNmI3ZjZiYWMiLCJvbnByZW1fc2lkIjoiUy0xLTUtMjEtMjIwNTIzMzg4LTEwODUwMzEyMTQtNzI1MzQ1NTQzLTI2MzQwNTMiLCJwbGF0ZiI6IjMiLCJwdWlkIjoiMTAwMzIwMDFCMkZCMzk5RiIsInJoIjoiMC5BUUlBTmFLa091SzIxVWlSbFhfUEJiUlpzQU1BQUFBQUFBQUF3QUFBQUFBQUFBQUNBRlEuIiwic2NwIjoiZW1haWwgb3BlbmlkIHByb2ZpbGUgVXNlci5SZWFkIFVzZXIuUmVhZC5BbGwgVXNlci5SZWFkQmFzaWMuQWxsIiwic2lnbmluX3N0YXRlIjpbImlua25vd25udHdrIiwia21zaSJdLCJzdWIiOiI2SFhKb0tXYVNQTGdLNWZocTVQdFZjX0ItbF8wcmxqT2JTaXlHSzVxTm5FIiwidGVuYW50X3JlZ2lvbl9zY29wZSI6IkVVIiwidGlkIjoiM2FhNGEyMzUtYjZlMi00OGQ1LTkxOTUtN2ZjZjA1YjQ1OWIwIiwidW5pcXVlX25hbWUiOiJTS0hBTUBlcXVpbm9yLmNvbSIsInVwbiI6IlNLSEFNQGVxdWlub3IuY29tIiwidXRpIjoieWdaVUF0WlNSVVd5a0FyZnQ0b1ZBQSIsInZlciI6IjEuMCIsIndpZHMiOlsiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc19zdCI6eyJzdWIiOiJwc1N6UGlrdzhFSFVPRlpURkVoVEthZmhhLWZsQ193TDhDbHJaYkJGTnBFIn0sInhtc190Y2R0IjoxMzQ0NTgzNjAyLCJ4bXNfdGRiciI6IkVVIn0.e1YqE2CbvHuWe9TSmTyTZFbJfNXaOkpVwMS1BRXIy9KEbr_upAniozElGIow1sMDDGCTAb5fI_YzbdEgX9w9QIzg_Y9JeXZMxZsqckmkqsJoc5pWTI16cBazbqrlD2fS7sKS9wVGdgNcJ2lhflq_e6FHCJlNOJkIeMwuBJenzRJ4oQPrFfJWBThVPOg2IXuCQ_LAmlD2c6thy7WngbBO0W12rI0rPVH7XDH897F4x1TKBFZOqTutftJ3JOW8HEuw8v_fkIGSaOFerEKTsMin8fhmhkQ7UFkF57hggiy9t9xs_7kMO7QfAYeuwXVXxrowz1B8DEXaPEpQI8iNFG3gDg'
         else:
             token = flask.request.headers["X-Auth-Request-Access-Token"]
 
@@ -243,14 +226,12 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
         return (
             False,
             SurfaceModel.get_server_names(df_user_projects),
-
         )
 
 # SET SERVER END
 
 
 # SET PROJECT START
-
 
     @callback(
         [
@@ -282,19 +263,18 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             return (
                 False,
                 SurfaceModel.get_project_names(df_res),
-
             )
         else:
             return (
                 False,
                 False,
-
             )
 
 
 # SET PROJECT END
 
 # SET ISET START
+
 
     @callback(
         [

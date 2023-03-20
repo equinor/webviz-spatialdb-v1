@@ -22,7 +22,10 @@ from ._business_logic import SurfaceModel
 class LayoutStyle:
     """CSS styling"""
 
-    MAPHEIGHT = "80vh"
+    MAPHEIGHT = "87vh"
+    SIDEBAR = {"flex": 1, "width": "100px",
+               "height": "90vh", "overflow-x": "auto"}
+    MAINVIEW = {"flex": 3, "height": "90vh"}
 
 
 class FullScreen(wcc.WebvizPluginPlaceholder):
@@ -70,7 +73,6 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
     return wcc.FlexBox(
         children=[
             wcc.Frame(
-                style={"flex": 1},
                 children=[
                     wcc.Selectors(
                         label="Source Database",
@@ -152,17 +154,35 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
                         ]
                     ),
                 ],
+                style={"width": "50px"}
             ),
             wcc.Frame(
-                style={
-                    "height": "800px",
-                    "flex": 2,
-                },
                 children=[
-                    wsc.DashSubsurfaceViewer(
-                        id=graph_uuid(LayoutElements.DECKGLMAP),
+                    html.Div([
+                        wsc.DashSubsurfaceViewer(
+                            coords={"visible": True},
+                            scale={"visible": True},
+                            id=graph_uuid(LayoutElements.DECKGLMAP)
+                        ),
+                    ],
+                        style={
+                        "height": "400px",
+                        "position": "relative",
+                    },
                     ),
-                ]
+                ],
+                id='divdeck',
+                style={'display': 'block',  "flex": "2"}
+            ),
+            wcc.Frame(
+                children=[
+                    html.Div([
+                        html.Img(id='image', width='95%'),
+                    ],
+                    ),
+                ],
+                id='divimg',
+                style={'display': 'none',  "flex": "2"}
             ),
         ],
     )
