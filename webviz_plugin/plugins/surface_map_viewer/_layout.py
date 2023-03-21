@@ -177,7 +177,7 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
             wcc.Frame(
                 children=[
                     html.Div([
-                        html.Img(id='image', width='95%'),
+                        html.Img(id='image', width='100%'),
                     ],
                     ),
                 ],
