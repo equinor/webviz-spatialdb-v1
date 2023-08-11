@@ -188,10 +188,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                     "id": "deck_view",
                     "show3D": False,
                     "layerIds": layersid,
-                    "name": "Depth surface",
-                    "isSync": False,
-                    "incrementValue": 100, 
-                    "widthPerUnit": 10,
+                    "isSync": True
                 },
             ],
         }
