@@ -49,6 +49,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
             Output('divimg', 'style'),
             Output('divdeck', 'style'),
             Output(get_uuid(LayoutElements.DECKGLMAP), "layers"),
+            #Output(get_uuid(LayoutElements.DECKGLMAP), "bounds"),
             Output(get_uuid(LayoutElements.DECKGLMAP), "views"),
             Output(get_uuid(LayoutElements.COLOURMAP_DROPDOWN), "disabled"),
         ],
@@ -99,6 +100,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                     grid_data['interpretationSetId'] == int(iset_value))]
 
             json_dict = grid_data.iloc[0]
+            #print(grid_data)
             source_grid_id = str(json_dict['sourceGridId'])
 
             if quickload_value == '1':
@@ -123,16 +125,15 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
 
                 df = pd.read_parquet(z_sas_url)
 
-                values = df['z'].to_numpy(copy=True)
-                values = values*-1
+                values = df['z'].to_numpy(copy=True) 
                 values = np.reshape(values, (nrow, ncol)).astype(np.float32)
                 values = np.transpose(values)
 
                 # ncol, nrow = nrow, ncol  # note flip on ncol/nrow definition
                 depth_surface = xtgeo.RegularSurface(ncol=ncol, nrow=nrow,
-                                                     xori=xori, yori=yori,
-                                                     xinc=xinc, yinc=yinc, rotation=rotation,
-                                                     values=values)
+                            xori=xori, yori=yori,
+                            xinc=xinc, yinc=yinc, rotation=rotation,
+                            values=values)
                 surface_address = SimulatedSurfaceAddress(
                     attribute=grid_value,
                     name=json_dict['surfaceName'],
@@ -144,6 +145,7 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                 surface_server.publish_surface(
                     qualified_address, depth_surface)
                 url = surface_server.encode_partial_url(qualified_address)
+                #bounds=[456150, 5925800, 467400, 5939500],
                 map_bounds = [
                     depth_surface.xmin,
                     depth_surface.ymin,
@@ -153,30 +155,28 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                     np.nanmin(depth_surface.values),
                 ]
                 layers.extend([
-                    {
-                        "@@type": "AxesLayer",
-                        "id": LayoutElements.AXES_LAYER,
-                        "bounds": map_bounds,
-                    },
-                    {
-                        "@@type": "MapLayer",
-                        "id": LayoutElements.MAP_LAYER,
-                        "meshUrl": url,
-                        "frame": {
-                            "origin": [depth_surface.xori, depth_surface.yori],
-                            "count": [depth_surface.ncol, depth_surface.nrow],
-                            "increment": [depth_surface.xinc, depth_surface.yinc],
-                            "rotDeg": depth_surface.rotation,
-                        },
-                        "contours": [0, 20],
-                        "isContoursDepth": True,
-                        "gridLines": False,
-                        "material": True,
-                        "colorMapName": colormapname,
-                        "name": "mesh",
-                    },
-                ])
+               {
+                "@@type": "AxesLayer",
+                "id": LayoutElements.AXES_LAYER,
+                "bounds": map_bounds},
+            {
+                "@@type": "MapLayer",
+                "id":LayoutElements.MAP_LAYER,
+                "meshData": url,
+                "frame": {
+                    "origin": [depth_surface.xori, depth_surface.yori],
+                    "count": [depth_surface.ncol, depth_surface.nrow],
+                    "increment": [depth_surface.xinc, depth_surface.yinc],
+                    "rotDeg": depth_surface.rotation,
+                },
+                "contours": [0, 20],
+                "isContoursDepth": True,
+                "gridLines": False,
+                "material": True,
+                "colorMapName": colormapname,
+                "name": "mesh",
 
+            },])
                 divimg = {'display': 'none',  "flex": "2"}
                 divdeck = {'display': 'block',  "flex": "2"}
 
@@ -188,14 +188,18 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
                     "id": "deck_view",
                     "show3D": False,
                     "layerIds": layersid,
-                    "isSync": True,
+                    "name": "Depth surface",
+                    "isSync": False,
+                    "incrementValue": 100, 
+                    "widthPerUnit": 10,
                 },
             ],
         }
 
-        return (sas_url, divimg, divdeck, layers,   map_views, colour_disabled)
+        return (sas_url,divimg, divdeck, layers,  map_views, colour_disabled)
 
-# SET SERVER START
+# SET SERVER START# Given the desired distance in kilometers and the map's pixel size
+
 
     @callback(
         [
@@ -213,19 +217,11 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
         db_name = SurfaceModel.source_db[source_db_value]
         server_names_fil = sever_names.loc[sever_names['source']
                                            == (db_name)]
-        global df_user_projects
-
-        if 'localhost' in flask.request.url:
-            token = 'eyJ0eXAiOiJKV1QiLCJub25jZSI6Im41V0NWV1FudnBOQTROTi1DUi14Mkd5UGl5MVZVMkY0ZmlVbndGYlcwQ0kiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zYWE0YTIzNS1iNmUyLTQ4ZDUtOTE5NS03ZmNmMDViNDU5YjAvIiwiaWF0IjoxNjc5Mzc2NDExLCJuYmYiOjE2NzkzNzY0MTEsImV4cCI6MTY3OTM4MDc4NiwiYWNjdCI6MCwiYWNyIjoiMSIsImFjcnMiOlsidXJuOnVzZXI6cmVnaXN0ZXJzZWN1cml0eWluZm8iXSwiYWlvIjoiQVRRQXkvOFRBQUFBaUxBelkwM3FFdjlFeGdLNHFVK0NwWEJoRmVyZGdvc3Y2OTdQT3plYUhsR0drcUFjdVRtQ0RkcldncmE5dmcwUyIsImFtciI6WyJwd2QiXSwiYXBwX2Rpc3BsYXluYW1lIjoicmFkaXgtd2Vidml6LXNwYXRpYWxkYiIsImFwcGlkIjoiNTI0N2ZmMGEtOGRjZS00ZjM4LThmY2YtNzFlNWE4YTRjMzY4IiwiYXBwaWRhY3IiOiIxIiwiZmFtaWx5X25hbWUiOiJLaGFtcmFpIiwiZ2l2ZW5fbmFtZSI6IlN1cmFqaXQiLCJpZHR5cCI6InVzZXIiLCJpcGFkZHIiOiI1MS4xMy42OC45OCIsIm5hbWUiOiJTdXJhaml0IEtoYW1yYWkgKFRhdGEgQ29uc3VsdGFuY3kgU2VydmljZXMgTGltaSkiLCJvaWQiOiIyMjJhZmZiYS0wM2FjLTQxOTQtYTg1OS0xOGVkNmI3ZjZiYWMiLCJvbnByZW1fc2lkIjoiUy0xLTUtMjEtMjIwNTIzMzg4LTEwODUwMzEyMTQtNzI1MzQ1NTQzLTI2MzQwNTMiLCJwbGF0ZiI6IjMiLCJwdWlkIjoiMTAwMzIwMDFCMkZCMzk5RiIsInJoIjoiMC5BUUlBTmFLa091SzIxVWlSbFhfUEJiUlpzQU1BQUFBQUFBQUF3QUFBQUFBQUFBQUNBRlEuIiwic2NwIjoiZW1haWwgb3BlbmlkIHByb2ZpbGUgVXNlci5SZWFkIFVzZXIuUmVhZC5BbGwgVXNlci5SZWFkQmFzaWMuQWxsIiwic2lnbmluX3N0YXRlIjpbImlua25vd25udHdrIiwia21zaSJdLCJzdWIiOiI2SFhKb0tXYVNQTGdLNWZocTVQdFZjX0ItbF8wcmxqT2JTaXlHSzVxTm5FIiwidGVuYW50X3JlZ2lvbl9zY29wZSI6IkVVIiwidGlkIjoiM2FhNGEyMzUtYjZlMi00OGQ1LTkxOTUtN2ZjZjA1YjQ1OWIwIiwidW5pcXVlX25hbWUiOiJTS0hBTUBlcXVpbm9yLmNvbSIsInVwbiI6IlNLSEFNQGVxdWlub3IuY29tIiwidXRpIjoiRVJJZXIwYU5NMG1kYzZzS0xQQUdBQSIsInZlciI6IjEuMCIsIndpZHMiOlsiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc19zdCI6eyJzdWIiOiJwc1N6UGlrdzhFSFVPRlpURkVoVEthZmhhLWZsQ193TDhDbHJaYkJGTnBFIn0sInhtc190Y2R0IjoxMzQ0NTgzNjAyLCJ4bXNfdGRiciI6IkVVIn0.FeiOKWuBMpSYT7TuVod2xKBqlnp0yUQjgNkp6y-xN8PwxZE_40wxciAlqKWJJ95cY9Bw2Mi8fVhdLTtNvn6nDYeUNFoQvM8B0OKrKFaUvm2wb-_PuDg3EX07McphgBH9F_2T37A8DkegLweinWpDTi8jHlwqkfDRdIWwGHsPN4l8_hyVFBEKDRfPaqr9QmlhURxTvpVU40gh2kDrZt92u1izbfDNL_INwU3ll8tfSSQETabJW7pqlF173CUFM0FImD7gwfvmBLGZBOxF9zidLRs802An-saO0bD8gYD6KFs-9YFTcYThHl1nydwuzwgOLuPAsGwF_97cglJJIM4JIw'
-        else:
-            token = flask.request.headers["X-Auth-Request-Access-Token"]
-
-        df_user_projects = SurfaceModel.get_user_project(
-            token, server_names_fil)
 
         return (
             False,
-            SurfaceModel.get_server_names(df_user_projects),
+            SurfaceModel.get_server_names(server_names_fil),
+
         )
 
 # SET SERVER END
@@ -248,26 +244,21 @@ def plugin_callbacks(get_uuid: Callable, iset_names: pd.DataFrame, sever_names: 
     ) -> dict:
 
         if server_value:
-            global df_user_projects
             database_names_fil = sever_names.loc[sever_names['sourceProjectId']
                                                  == int(server_value)]['sourceDatabase']
 
             project_names_fil = sever_names.loc[sever_names['sourceDatabase']
                                                 == (database_names_fil.iloc[0])]
-            project_names_fil.objectId = project_names_fil.objectId.str.split(
-                ',')
-            project_names_fil = project_names_fil.explode('objectId')
-            df_user_projects = df_user_projects[['objectId']]
-            df_res = pd.merge(df_user_projects,
-                              project_names_fil, on='objectId')
             return (
                 False,
-                SurfaceModel.get_project_names(df_res),
+                SurfaceModel.get_project_names(project_names_fil),
+
             )
         else:
             return (
                 False,
                 False,
+
             )
 
 
