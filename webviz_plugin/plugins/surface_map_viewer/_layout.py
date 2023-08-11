@@ -154,35 +154,34 @@ def main_layout(field_uuid: Callable, iset_uuid: Callable, grid_uuid: Callable, 
                         ]
                     ),
                 ],
-                style={"width": "50px"}
+                #style={"display": "flex", "height": "90vh"},
+                style={"flex": "0 0 350px"},
             ),
-            wcc.Frame(
-                children=[
-                    html.Div([
-                        wsc.DashSubsurfaceViewer(
-                            coords={"visible": True},
-                            scale={"visible": True},
-                            id=graph_uuid(LayoutElements.DECKGLMAP)
-                        ),
-                    ],
-                        style={
-                        "height": "400px",
-                        "position": "relative",
-                    },
-                    ),
-                ],
-                id='divdeck',
-                style={'display': 'block',  "flex": "2"}
-            ),
-            wcc.Frame(
-                children=[
-                    html.Div([
-                        html.Img(id='image', width='100%'),
-                    ],
-                    ),
-                ],
-                id='divimg',
-                style={'display': 'none',  "flex": "2"}
-            ),
+wcc.Frame(
+    children=[
+        wsc.DashSubsurfaceViewer(
+            coords={"visible": True},
+            scale={
+            "visible": True  # Set to False to hide the scale
+        },
+            id=graph_uuid(LayoutElements.DECKGLMAP)
+        )
+    ],
+    id='divdeck',
+    #style={"flex": "5", "position": "relative", "height": "90vh"},
+    style={'display': 'block', "height": "800px", "width": "60%","position": "relative"}
+),
+# Image Viewer
+wcc.Frame(
+    children=[
+        html.Div([
+            html.Img(id='image'),
+        ])
+    ],
+    id='divimg',
+    style={'display': 'none', "height": "800px"}
+),
+
         ],
     )
+
